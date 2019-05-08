@@ -18,7 +18,7 @@ namespace ProcesadorTicket
                     log.WriteLine();
                 }
 
-                throw new Exception("Error en la aplicación, comunicarse a a Rubik" + Environment.NewLine + Err.Message + Environment.NewLine + "Metodo " + Err.TargetSite.Name);
+                throw new Exception("Error en la aplicación, comunicarse a Soporte" + Environment.NewLine + Err.Message + Environment.NewLine + "Metodo " + Err.TargetSite.Name);
             }
             catch (Exception ex)
             {

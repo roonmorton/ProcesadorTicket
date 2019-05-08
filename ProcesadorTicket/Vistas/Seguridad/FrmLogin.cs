@@ -55,6 +55,8 @@ namespace ProcesadorTicket
                 {
                     count -= 1;
                     Helper.MensajeSistema("Usuario incorrecto, " + count.ToString() + " intentos restantes");
+                    limpiar();
+                    txtUsuario.Focus();
                     if (count == 0) { Application.Exit(); }
                 }
             }
@@ -132,6 +134,17 @@ namespace ProcesadorTicket
             if (e.KeyCode == Keys.Enter)
             {
                 login();
+            }
+        }
+
+        private void limpiar()
+        {
+            try
+            {
+                txtPass.Clear();
+            }catch(Exception ex)
+            {
+                throw ex;
             }
         }
     }

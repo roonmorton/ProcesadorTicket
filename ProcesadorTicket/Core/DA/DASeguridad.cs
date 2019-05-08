@@ -8,21 +8,38 @@ using System.Threading.Tasks;
 
 namespace ProcesadorTicket.Core.DA
 {
-    class DASeguridad
+    class DASeguridad : DB
     {
         public DataTable login(string usuario, string pass)
         {
 
             try
             {
-                DB db = new DB();
-                return db.ejecutarConsulta("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + pass + "'and TBL_Usuario.usuario = '"+ usuario +"'; ");
+                return ejecutarConsultaDT("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + pass + "'and TBL_Usuario.usuario = '" + usuario + "'; ");
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
 
+        }
+
+
+        public Boolean cambioPass(string nuevaPass, string usuario)
+        {
+            Boolean res = false;
+            try
+            {
+                ejecutarConsulta("UPDATE TBL_USUARIO SET TBL_USUARIO.pass = '"+nuevaPass+"' WHERE TBL_USUARIO.usuario = '"+usuario+"'");
+                res = true;
+            }
+            catch (Exception ex)
+            {
+                res = false;
+                throw ex;
+            }
+            return res;
         }
     }
 }

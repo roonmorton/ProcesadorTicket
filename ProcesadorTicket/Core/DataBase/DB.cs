@@ -34,7 +34,7 @@ namespace ProcesadorTicket.Core.DataBase
 
         }
 
-        public DataTable ejecutarConsulta(string query, int tiempo = 0)
+        public DataTable ejecutarConsultaDT(string query, int tiempo = 0)
         {
             OleDbDataAdapter da = new OleDbDataAdapter();
             DataTable dt = new DataTable();
@@ -56,6 +56,36 @@ namespace ProcesadorTicket.Core.DataBase
                     if (con.State == ConnectionState.Open) con.Close();
                 }
                 return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open) con.Close();
+            }
+        }
+
+        public void ejecutarConsulta(string query, int tiempo = 0)
+        {
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            DataSet ds = new DataSet();
+            OleDbCommand cmd = new OleDbCommand();
+
+            try
+            {
+                if (!fNull(query))
+                {
+                    if (con.State == ConnectionState.Open) con.Close();
+                    con.Open();
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.CommandTimeout = tiempo;
+                    cmd.ExecuteNonQuery();
+                    if (con.State == ConnectionState.Open) con.Close();
+                }
             }
             catch (Exception ex)
             {

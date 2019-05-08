@@ -60,5 +60,49 @@ namespace ProcesadorTicket
                 throw;
             }
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                Application.Exit();
+
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmCambioPass frmPass = new FrmCambioPass();
+                frmPass.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void ingresosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ingresarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmTicket frm = new FrmTicket();
+                frm.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
     }
 }

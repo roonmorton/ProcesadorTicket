@@ -49,6 +49,7 @@
     <Compile Include="Core\DA\DASeguridad.cs" />
     <Compile Include="Core\DA\DATicket.cs" />
     <Compile Include="Core\DataBase\DB.cs" />
+    <Compile Include="Core\DA\DATipo.cs" />
     <Compile Include="Core\Helpers\Globals.cs" />
     <Compile Include="Core\Helpers\Helper.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -76,6 +77,12 @@
     <Compile Include="Vistas\Maestros\FrmTicket.Designer.cs">
       <DependentUpon>FrmTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Seguridad\FrmCambioPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Seguridad\FrmCambioPass.Designer.cs">
+      <DependentUpon>FrmCambioPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Seguridad\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Maestros\FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Seguridad\FrmCambioPass.resx">
+      <DependentUpon>FrmCambioPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -153,6 +163,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\icons\key_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\restart_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\broom_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\save_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\save_as_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\trash_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\edit_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
