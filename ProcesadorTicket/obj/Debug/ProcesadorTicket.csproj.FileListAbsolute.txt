@@ -1,0 +1,1 @@
+c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ProcesadorTicket.exe.config
