@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,23 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Core\DA\DASeguridad.cs" />
+    <Compile Include="Core\DA\DATicket.cs" />
+    <Compile Include="Core\DataBase\DB.cs" />
+    <Compile Include="Core\Helpers\Globals.cs" />
+    <Compile Include="Core\Helpers\Helper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmProducto.Designer.cs">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmTicket.Designer.cs">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Seguridad\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Seguridad\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Vistas\FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Maestros\FrmProducto.resx">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Maestros\FrmTicket.resx">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Seguridad\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +111,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\key_2_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\exit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\combo_chart_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\pie_chart_42px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\ticket_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\package_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\shutdown_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\password_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\move_by_trolley_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\product_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\product_2_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\ticket_2_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\cancel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\key_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
