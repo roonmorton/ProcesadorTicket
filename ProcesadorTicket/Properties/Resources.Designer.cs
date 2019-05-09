@@ -103,6 +103,16 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap filter_32px {
+            get {
+                object obj = ResourceManager.GetObject("filter_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key_32px {
             get {
                 object obj = ResourceManager.GetObject("key_32px", resourceCulture);
@@ -116,6 +126,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap move_by_trolley_32px {
             get {
                 object obj = ResourceManager.GetObject("move_by_trolley_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ms_excel_32px {
+            get {
+                object obj = ResourceManager.GetObject("ms_excel_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

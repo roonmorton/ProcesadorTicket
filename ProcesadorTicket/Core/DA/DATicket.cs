@@ -39,7 +39,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT top 50 t.idTicket, t.noTicket, t.monto, tipo.descripcion, t.fecha,tipo.idTipo   FROM TBL_Ticket as t LEFT OUTER JOIN TBL_Tipo tipo ON t.idTipo = tipo.idTipo WHERE t.noTicket LIKE '%" + ticket.Trim() + "%' ORDER BY t.idTicket DESC");
+                return ejecutarConsultaDT("SELECT top 50 t.idTicket, t.noTicket, t.monto, tipo.descripcion, format(t.fecha,'dd/MM/yyyy') as fecha,tipo.idTipo   FROM TBL_Ticket as t LEFT OUTER JOIN TBL_Tipo tipo ON t.idTipo = tipo.idTipo WHERE t.noTicket LIKE '%" + ticket.Trim() + "%' ORDER BY t.idTicket DESC");
             } catch (Exception ex)
             {
                 throw ex;
@@ -52,7 +52,7 @@ namespace ProcesadorTicket.Core.DA
             try
             {
                 //Helper.MensajeSistema("SELECT top 50 t.idTicket, t.noTicket, t.monto, tipo.descripcion, t.fecha  FROM TBL_Ticket as t LEFT OUTER JOIN TBL_Tipo tipo ON t.idTipo = tipo.idTipo WHERE t.fecha between #"+fecha+"# and #"+fecha+"# ORDER BY t.idTicket DESC");
-                return ejecutarConsultaDT("SELECT top 50 t.idTicket, t.noTicket, t.monto, tipo.descripcion, t.fecha, tipo.idTipo  FROM TBL_Ticket as t LEFT OUTER JOIN TBL_Tipo tipo ON t.idTipo = tipo.idTipo WHERE  (((format(t.fecha,'dd/MM/yyyy'))  Between format(#" + fecha+"#,'dd/MM/yyyy') And format('"+fecha+ "','dd/MM/yyyy'))) ORDER BY t.idTicket DESC");
+                return ejecutarConsultaDT("SELECT top 50 t.idTicket, t.noTicket, t.monto, tipo.descripcion, format(t.fecha,'dd/MM/yyyy') as fecha, tipo.idTipo  FROM TBL_Ticket as t LEFT OUTER JOIN TBL_Tipo tipo ON t.idTipo = tipo.idTipo WHERE  (((format(t.fecha,'dd/MM/yyyy'))  Between format('" + fecha+"','dd/MM/yyyy') And format('"+fecha+ "','dd/MM/yyyy'))) ORDER BY t.idTicket DESC");
             }
             catch(Exception ex)
             {

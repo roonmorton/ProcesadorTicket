@@ -104,5 +104,17 @@ namespace ProcesadorTicket
                 Helper.erroLog(ex);
             }
         }
+
+        private void ticketsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmReports rpt = new FrmReports();
+                rpt.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
     }
 }

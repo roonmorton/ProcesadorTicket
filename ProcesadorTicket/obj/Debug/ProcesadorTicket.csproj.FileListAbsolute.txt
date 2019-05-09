@@ -11,3 +11,17 @@ c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\Proc
 c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.csproj.GenerateResource.Cache
 c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.exe
 c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.pdb
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmDashboard_update.resources
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmReports.resources
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ClosedXML.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\FastMember.dll
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ClosedXML.pdb
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ClosedXML.xml
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ExcelNumberFormat.xml
