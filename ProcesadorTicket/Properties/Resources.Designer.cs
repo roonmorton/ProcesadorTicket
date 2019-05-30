@@ -63,6 +63,16 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barcode_scanner_32px {
+            get {
+                object obj = ResourceManager.GetObject("barcode_scanner_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap broom_32px {
             get {
                 object obj = ResourceManager.GetObject("broom_32px", resourceCulture);

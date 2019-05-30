@@ -102,6 +102,7 @@ namespace ProcesadorTicket
                         {
                             DataTable dt = (DataTable)grdHistorico.DataSource;
                             wb.Worksheets.Add(dt, "Ticket");
+                           
                             wb.SaveAs(fileName);
                             if (MessageBox.Show("Archivo generado correctamente,¿Desea abrirlo?", "Abrir Archivo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                             {
