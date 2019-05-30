@@ -124,6 +124,9 @@
   <data name="password_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\password_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="product_2_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\product_2_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="filter_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\filter_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,9 +135,6 @@
   </data>
   <data name="package_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\package_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ms_excel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\ms_excel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shutdown_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\shutdown_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,17 +148,23 @@
   <data name="cancel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\cancel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ms_excel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\ms_excel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\key_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="move_by_trolley_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\move_by_trolley_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\search_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer_insight_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\customer_insight_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="restart_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\restart_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +178,8 @@
   <data name="package_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\package_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="product_2_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\product_2_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barcode_scanner_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\barcode_scanner_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ticket_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\ticket_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,7 +193,7 @@
   <data name="trash_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\trash_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="barcode_scanner_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\barcode_scanner_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_user_male_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\add_user_male_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

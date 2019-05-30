@@ -77,6 +77,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\DA\DACliente.cs" />
     <Compile Include="Core\DA\DAReporte.cs" />
     <Compile Include="Core\DA\DASeguridad.cs" />
     <Compile Include="Core\DA\DATicket.cs" />
@@ -253,6 +254,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\icons\ms_excel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\barcode_scanner_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\customer_insight_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\add_user_male_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

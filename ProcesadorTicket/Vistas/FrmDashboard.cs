@@ -116,5 +116,17 @@ namespace ProcesadorTicket
                 Helper.erroLog(ex);
             }
         }
+
+        private void nuevoClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmClientes frmCl = new FrmClientes();
+                frmCl.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
     }
 }

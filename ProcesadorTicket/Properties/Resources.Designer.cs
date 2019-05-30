@@ -63,6 +63,16 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_user_male_32px {
+            get {
+                object obj = ResourceManager.GetObject("add_user_male_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barcode_scanner_32px {
             get {
                 object obj = ResourceManager.GetObject("barcode_scanner_32px", resourceCulture);
@@ -96,6 +106,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap combo_chart_32px {
             get {
                 object obj = ResourceManager.GetObject("combo_chart_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customer_insight_32px {
+            get {
+                object obj = ResourceManager.GetObject("customer_insight_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

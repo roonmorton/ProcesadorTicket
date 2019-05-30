@@ -18,13 +18,13 @@ namespace ProcesadorTicket.Core.DA
                 if (id.Equals("0"))
                 {
                     //Inserta
-                    ejecutarConsulta("INSERT INTO TBL_Ticket ( noTicket, monto, idTipo, fecha,usuarioCreacion ) VALUES('" + ticket + "','" + monto + "'," + tipo + ",'" + DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss") + "','" + Globals.usuario + "');");
+                    ejecutarConsulta("INSERT INTO TBL_Cliente ( nombres, codigoEmpleado,usuarioCreacion ) VALUES('" + nombres + "','" + codigoEmpleado + "','" + Globals.usuario + "');");
                 }
                 else
                 {
                     // Helper.MensajeSistema("UPDATE TBL_Ticket set noTicket = '" + ticket + "', monto = " + monto + ", idTipo = " + tipo + ", usuarioModificacion = '" + Globals.usuario + "' WHERE idTicket = " + id + ";");
                     //Modifica
-                    ejecutarConsulta("UPDATE TBL_Ticket set noTicket = '" + ticket + "', monto = " + monto + ", idTipo = " + tipo + ", usuarioModificacion = '" + Globals.usuario + "' WHERE idTicket = " + id + ";");
+                    ejecutarConsulta("UPDATE TBL_Cliente set nombres = '" + nombres + "', codigoEmpleado = '" + codigoEmpleado + "', usuarioModificacion = '" + Globals.usuario + "' WHERE idCliente = " + id + ";");
                 }
                 res = true;
             }
@@ -41,7 +41,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT top 50 * FROM TBL_Cliente ORDER BY t.idCliente DESC");
+                return ejecutarConsultaDT("SELECT top 50 * FROM TBL_Cliente WHERE LIKE '%"+cliente +"%' ORDER BY idCliente DESC");
             }
             catch (Exception ex)
             {

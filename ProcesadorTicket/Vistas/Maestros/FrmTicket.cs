@@ -78,7 +78,9 @@ namespace ProcesadorTicket
             try
             {
                 DATicket ticket = new DATicket();
-                grdHistorico.DataSource = ticket.buscar(txtTicket.Text.Trim());
+                DataTable dt = ticket.buscar(txtTicket.Text.Trim());
+                grdHistorico.DataSource = dt;
+                txtContador.Text = "Registros ("+ dt.Rows.Count+")";
             }
             catch (Exception ex)
             {
