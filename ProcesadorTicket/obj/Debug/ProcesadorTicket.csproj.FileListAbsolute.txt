@@ -26,3 +26,4 @@ C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\Proc
 C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\ExcelNumberFormat.xml
 C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmClientes.resources
+C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\bin\Debug\zxing.dll

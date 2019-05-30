@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using ZXing;
 
 namespace ProcesadorTicket
 {
@@ -143,6 +145,19 @@ namespace ProcesadorTicket
         {
             float output;
             return float.TryParse(s, out output);
+        }
+
+
+        public static Bitmap GenerarCodigoBarras(string cadena,int largo=400, int alto = 250 )
+        {
+            try{
+                BarcodeWriter barra = new BarcodeWriter();
+                barra.Format = BarcodeFormat.CODE_128;
+                return new Bitmap(barra.Write(cadena),largo,alto);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
 

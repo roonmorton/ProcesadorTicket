@@ -113,3 +113,110 @@ Nombre del parámetro: dataType   cargar      en ProcesadorTicket.FrmReports.car
    8/05/2019 21:42:18   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'format(t.fecha,'dd/MM/yyyy') asfecha'.   buscar      en ProcesadorTicket.FrmTicket.buscar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 85
    en ProcesadorTicket.FrmTicket.btnSerach_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 182
 
+   29/05/2019 21:45:03   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'LIKE '%%''.   limpiar      en ProcesadorTicket.FrmClientes.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 41
+   en ProcesadorTicket.FrmClientes.FrmClientes_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 164
+
+   29/05/2019 21:47:08   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada codigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 109
+
+   29/05/2019 21:54:20   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada codigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 110
+
+   29/05/2019 21:54:47   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada CodigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 110
+
+   29/05/2019 22:02:59   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:04:01   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:04:54   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:05:31   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:06:09   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:07:21   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:10:49   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:11:50   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:20:05   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:34:06   ron   DESKTOP-FGSF9HR   La cadena de filtro proporcionada no es válida. Ésta debería contener una descripción del filtro, seguida de una barra vertical (|) y el patrón del filtro. Las cadenas de las distintas opciones de filtro también deben estar separadas por una barra vertical. Ejemplo: "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"   set_Filter      en System.Windows.Forms.FileDialog.set_Filter(String value)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 135
+
+   29/05/2019 22:35:53   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+
+   29/05/2019 22:36:08   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+
+   29/05/2019 22:36:40   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+

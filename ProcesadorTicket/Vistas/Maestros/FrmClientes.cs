@@ -2,6 +2,8 @@
 using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 
 namespace ProcesadorTicket
 {
@@ -33,7 +35,7 @@ namespace ProcesadorTicket
                 txtCodigoEmpleado.Clear();
                 txtCodigoEmpleado.Enabled = true;
                 idCliente = "0";
-
+                buscar();
                 txtNombre.Focus();
             }
             catch(Exception ex)
@@ -106,7 +108,7 @@ namespace ProcesadorTicket
                         idCliente = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString();
                         txtNombre.Text = grdHistorico.SelectedRows[0].Cells["nombres"].Value.ToString();
                         // cmbTipo.SelectedValue = grdHistorico.SelectedRows[0].Cells["idTipo"].Value;
-                        txtCodigoEmpleado.Text = grdHistorico.SelectedRows[0].Cells["codigoCliente"].Value.ToString();
+                        txtCodigoEmpleado.Text = grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString();
                         txtCodigoEmpleado.Enabled = false;
                         //txtMonto.Text = grdHistorico.SelectedRows[0].Cells["monto"].Value.ToString();
                         //txtNombre.Enabled = true;
@@ -125,6 +127,22 @@ namespace ProcesadorTicket
                             limpiar();
 
                         }
+                        break;
+                    case 2:
+
+                        SaveFileDialog dialog = new SaveFileDialog();
+
+                        dialog.Filter = "Archivos jpg (*.jpg)| *.jpg";
+                        if (dialog.ShowDialog() == DialogResult.OK)
+                         {
+                        string cadena = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString() + "|" + grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString();
+                        Bitmap btm = Helper.GenerarCodigoBarras(cadena, 325, 150);
+                        Image img = btm;
+                        img.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        FileInfo img__ = new FileInfo(dialog.FileName );
+                        //img__.MoveTo(dialog.FileName );
+                        Helper.MensajeSistema("Guardado...");
+                }
                         break;
                 }
             }

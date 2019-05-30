@@ -41,7 +41,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT top 50 * FROM TBL_Cliente WHERE LIKE '%"+cliente +"%' ORDER BY idCliente DESC");
+                return ejecutarConsultaDT("SELECT top 50 nombres,codigoEmpleado,idCliente FROM TBL_Cliente WHERE nombres LIKE '%"+cliente +"%' ORDER BY idCliente DESC");
             }
             catch (Exception ex)
             {
