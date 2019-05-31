@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace ProcesadorTicket
     public partial class FrmTicket : Form
     {
         private string idTicket = "0";
+        private string idCliente = "0";
         public FrmTicket()
         {
             InitializeComponent();
@@ -23,10 +25,10 @@ namespace ProcesadorTicket
         {
             try
             {
-                limpiar();
                 cargarComboTipo();
-                cmbTipo.Focus();
-            }catch(Exception ex)
+                limpiar();
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -36,12 +38,17 @@ namespace ProcesadorTicket
         {
             try
             {
-                txtMonto.Clear();
                 txtTicket.Clear();
-                txtTicket.Focus();
+                txtCliente.Clear();
+                //cmbTipo.Focus();
                 cargar();
                 idTicket = "0";
-            }catch(Exception ex)
+                idCliente = "0";
+                txtMonto.Text = "0";
+                txtTicket.Focus();
+                txtCliente.BackColor = Color.White;
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -54,7 +61,7 @@ namespace ProcesadorTicket
                 DATipo tipo = new DATipo();
                 cargarCombos(tipo.seleccionar(), this.cmbTipo);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -77,10 +84,34 @@ namespace ProcesadorTicket
         {
             try
             {
-                DATicket ticket = new DATicket();
-                DataTable dt = ticket.buscar(txtTicket.Text.Trim());
-                grdHistorico.DataSource = dt;
-                txtContador.Text = "Registros ("+ dt.Rows.Count+")";
+                string texto = txtTicket.Text;
+                if (!texto.Equals(""))
+                {
+                    texto = texto.Replace(" ", "");
+                    string[] data = texto.Split(Globals.Separator);
+                    if (data.Length < 2)
+                    {
+                        Helper.MensajeSistema("Ingrese numero Ticket...");
+                        txtTicket.Focus();
+                        //txtCliente.BackColor = Color.White;
+                        //txtCliente.Clear();
+                        return;
+                    }
+
+                    if (!Helper.IsNumeric(data[0].ToString().Trim()))
+                    {
+                        Helper.MensajeSistema("EL numero Ticket no es valido...");
+                        txtMonto.Focus();
+                        return;
+                    }
+
+                    DATicket ticket = new DATicket();
+                    DataTable dt = ticket.buscar(data[0]);
+                    grdHistorico.DataSource = dt;
+                    txtContador.Text = "Registros (" + dt.Rows.Count + ")";
+
+                }
+
             }
             catch (Exception ex)
             {
@@ -93,7 +124,9 @@ namespace ProcesadorTicket
             try
             {
                 DATicket ticket = new DATicket();
-                grdHistorico.DataSource = ticket.seleccionDia(DateTime.Today.ToString("dd/MM/yyyy"));
+                DataTable dt = ticket.seleccionDia(DateTime.Today.ToString("dd/MM/yyyy"));
+                grdHistorico.DataSource = dt;
+                txtContador.Text = "Registros (" + dt.Rows.Count + ")";
             }
             catch (Exception ex)
             {
@@ -107,7 +140,8 @@ namespace ProcesadorTicket
             try
             {
                 limpiar();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -118,7 +152,8 @@ namespace ProcesadorTicket
             try
             {
                 guardar();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -128,8 +163,8 @@ namespace ProcesadorTicket
         {
             try
             {
-                if(txtTicket.Text.Equals(""))
-                    {
+                if (txtTicket.Text.Equals(""))
+                {
                     Helper.MensajeSistema("Debe de ingresar un numero Ticket");
                     txtTicket.Focus();
                     return;
@@ -140,7 +175,8 @@ namespace ProcesadorTicket
                     txtMonto.Focus();
                     return;
                 }
-                if (!Helper.IsNumeric(txtMonto.Text)){
+                if (!Helper.IsNumeric(txtMonto.Text))
+                {
                     Helper.MensajeSistema("Monto debe de se un numero");
                     txtMonto.Focus();
                     return;
@@ -152,12 +188,19 @@ namespace ProcesadorTicket
                     cmbTipo.Focus();
                     return;
                 }
+                if (idCliente.Equals("0"))
+                {
+                    Helper.MensajeSistema("No se ha registrado ticket...");
+                    txtTicket.Focus();
+                    return;
+                }
+
                 DATicket ticket = new DATicket();
-                ticket.insertaActualizar(idTicket, txtTicket.Text.Trim(), txtMonto.Text.Trim(), cmbTipo.SelectedValue.ToString());
+                ticket.insertaActualizar(idTicket, idCliente, txtMonto.Text.Trim(), cmbTipo.SelectedValue.ToString());
                 limpiar();
                 Helper.MensajeSistema("Guardado Correctamente...");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -167,11 +210,12 @@ namespace ProcesadorTicket
         {
             try
             {
-                if(e.KeyCode == Keys.Enter)
+                if (e.KeyCode == Keys.Enter)
                 {
                     guardar();
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -182,7 +226,8 @@ namespace ProcesadorTicket
             try
             {
                 buscar();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -196,9 +241,9 @@ namespace ProcesadorTicket
                 {
                     case 0:
                         idTicket = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString();
-                        txtTicket.Text = grdHistorico.SelectedRows[0].Cells["ticket"].Value.ToString();
+                        txtCliente.Text = grdHistorico.SelectedRows[0].Cells["nombres"].Value.ToString();
                         cmbTipo.SelectedValue = grdHistorico.SelectedRows[0].Cells["idTipo"].Value;
-
+                        idCliente = grdHistorico.SelectedRows[0].Cells["Cliente"].Value.ToString();
                         txtMonto.Text = grdHistorico.SelectedRows[0].Cells["monto"].Value.ToString();
                         //txtNombre.Enabled = true;
                         txtTicket.Focus();
@@ -214,7 +259,7 @@ namespace ProcesadorTicket
                             limpiarControles();*/
                             Helper.MensajeSistema("Registro Eliminado");
                             limpiar();
-                    
+
                         }
                         break;
                 }
@@ -222,6 +267,71 @@ namespace ProcesadorTicket
             catch (Exception ex)
             {
                 idTicket = "0";
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void txtTicket_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string texto = ((TextBox)sender).Text.ToString();
+                if (!texto.Equals(""))
+                {
+                    texto = texto.Replace(" ", "");
+                    string[] data = texto.Split(Globals.Separator);
+                    if (data.Length < 2)
+                    {
+
+                        txtCliente.BackColor = Color.White;
+                        txtCliente.Clear();
+                        return;
+                    }
+
+                    if (!Helper.IsNumeric(data[0].ToString().Trim()))
+                    {
+                        Helper.MensajeSistema("El código es erroneo...");
+                        txtMonto.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        txtCliente.Clear();
+
+                        txtCliente.BackColor = Color.White;
+                    }
+                    DATicket ticket = new DATicket();
+                    DataTable dt = ticket.ticket(
+                        data[0].ToString().Trim(),
+                        data[1].ToString().Trim()
+                        );
+                    if (dt.Rows.Count > 0)
+                    {
+                        txtCliente.Text = dt.Rows[0]["nombres"].ToString();
+                        idCliente = dt.Rows[0]["idCliente"].ToString();
+                        SystemSounds.Hand.Play();
+                        txtCliente.BackColor = Color.DarkSeaGreen;
+                        //Helper.MensajeSistema("Texto: " + dt.Rows.Count);
+                    }
+                    else
+                    {
+                        txtCliente.BackColor = Color.White;
+                        txtCliente.Clear();
+
+                    }
+
+                }
+                else
+                {
+                    txtCliente.BackColor = Color.White;
+                    txtCliente.Clear();
+                }
+                txtTicket.Text = texto;
+                txtTicket.Focus();
+
+            }
+            catch (Exception ex)
+            {
                 Helper.erroLog(ex);
             }
         }

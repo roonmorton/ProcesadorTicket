@@ -71,6 +71,12 @@ namespace ProcesadorTicket
                     txtNombre.Focus();
                     return;
                 }
+                if (txtCodigoEmpleado.Text.ToString().Equals(""))
+                {
+                    Helper.MensajeSistema("Debe de ingresar un codigo de Empleado");
+                    txtCodigoEmpleado.Focus();
+                    return;
+                }
                 DACliente cliente = new DACliente();
                 cliente.insertaActualizar(idCliente, txtNombre.Text.ToString().Trim(), txtCodigoEmpleado.Text.ToString().Trim());
                 limpiar();
@@ -135,7 +141,7 @@ namespace ProcesadorTicket
                         dialog.Filter = "Archivos jpg (*.jpg)| *.jpg";
                         if (dialog.ShowDialog() == DialogResult.OK)
                          {
-                        string cadena = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString() + "|" + grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString();
+                        string cadena = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString() + Globals.Separator + grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString();
                         Bitmap btm = Helper.GenerarCodigoBarras(cadena, 325, 150);
                         Image img = btm;
                         img.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);

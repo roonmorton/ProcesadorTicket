@@ -10,6 +10,7 @@ namespace ProcesadorTicket
     {
         public static string usuario = string.Empty;
         public static Int32 idUSuario = 0;
+        public static char Separator = '#';
         
 
     }
