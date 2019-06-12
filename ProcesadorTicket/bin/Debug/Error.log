@@ -323,3 +323,37 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    30/05/2019 21:31:32   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   buscar      en ProcesadorTicket.FrmTicket.buscar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 94
    en ProcesadorTicket.FrmTicket.btnSerach_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 204
 
+   1/06/2019 13:50:17   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:50:41   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:56:51   ron   DESKTOP-FGSF9HR   La instrucción SELECT incluye una palabra reservada, le falta un argumento o está mal escrito, o bien los signos de puntuación no son correctos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:58:05   ron   DESKTOP-FGSF9HR   La instrucción SELECT incluye una palabra reservada, le falta un argumento o está mal escrito, o bien los signos de puntuación no son correctos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.btnConsultar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 37
+
+   1/06/2019 13:58:54   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 15:33:58   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:01   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:02   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:04   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:05   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:55:48   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 289
+
+   1/06/2019 16:16:11   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
+
+   1/06/2019 16:16:12   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
+

@@ -125,6 +125,24 @@
     <Compile Include="Vistas\Maestros\FrmTicket.Designer.cs">
       <DependentUpon>FrmTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Maestros\FrmUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Maestros\FrmUnidadMedida.Designer.cs">
+      <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\FrmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\FrmVenta.Designer.cs">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\FrmEntradaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\FrmEntradaProducto.Designer.cs">
+      <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Reportes\FrmReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Maestros\FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Maestros\FrmUnidadMedida.resx">
+      <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Movimientos\FrmVenta.resx">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Movimientos\FrmEntradaProducto.resx">
+      <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Reportes\FrmReports.resx">
       <DependentUpon>FrmReports.cs</DependentUpon>
@@ -266,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\icons\add_user_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\24px\key_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

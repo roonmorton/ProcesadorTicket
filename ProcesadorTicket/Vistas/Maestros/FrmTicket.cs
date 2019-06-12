@@ -47,6 +47,8 @@ namespace ProcesadorTicket
                 txtMonto.Text = "0";
                 txtTicket.Focus();
                 txtCliente.BackColor = Color.White;
+                cmbTipo.Enabled = true;
+
             }
             catch (Exception ex)
             {
@@ -191,11 +193,13 @@ namespace ProcesadorTicket
                 if (idCliente.Equals("0"))
                 {
                     Helper.MensajeSistema("No se ha registrado ticket...");
+                    txtTicket.Clear();
                     txtTicket.Focus();
                     return;
                 }
 
                 DATicket ticket = new DATicket();
+               // ComprobarTiempoComida(ticket);
                 ticket.insertaActualizar(idTicket, idCliente, txtMonto.Text.Trim(), cmbTipo.SelectedValue.ToString());
                 limpiar();
                 Helper.MensajeSistema("Guardado Correctamente...");
@@ -276,64 +280,141 @@ namespace ProcesadorTicket
             try
             {
                 string texto = ((TextBox)sender).Text.ToString();
-                if (!texto.Equals(""))
+                if (texto.Length > 0)
                 {
-                    texto = texto.Replace(" ", "");
-                    string[] data = texto.Split(Globals.Separator);
-                    if (data.Length < 2)
+                    //Helper.MensajeSistema("ultimo: " + texto[texto.Length]);
+                    if(texto[texto.Length-1] == 'H')
                     {
+                        Helper.MensajeSistema("");
+                        //texto = txtTicket.Text.Replace(" ", "");
+                        string[] data = texto.Split(Globals.Separator);
+                        if (data.Length < 2)
+                        {
 
-                        txtCliente.BackColor = Color.White;
-                        txtCliente.Clear();
-                        return;
-                    }
+                            txtCliente.BackColor = Color.White;
+                            txtTicket.Focus();
+                            //txtCliente.Clear();
+                             return;
+                        }
+                        //else
+                        //{
+                            if (!data[1].Equals(""))
+                            {
+                                if (cmbTipo.SelectedValue.ToString().Equals("0"))
+                                {
+                                    Helper.MensajeSistema("Seleccione un tiempo de comida para continuar...");
+                                    txtTicket.Clear();
+                                    cmbTipo.Focus();
+                                     return;
+                                }
 
-                    if (!Helper.IsNumeric(data[0].ToString().Trim()))
-                    {
-                        Helper.MensajeSistema("El código es erroneo...");
-                        txtMonto.Focus();
-                        return;
-                    }
-                    else
-                    {
-                        txtCliente.Clear();
+                                if (!Helper.IsNumeric(data[0].ToString().Trim()))
+                                {
+                                    Helper.MensajeSistema("El código es erroneo...");
+                                    txtCliente.Focus();
+                                    return;
+                                }
+                                //else
+                                //{
 
-                        txtCliente.BackColor = Color.White;
-                    }
-                    DATicket ticket = new DATicket();
-                    DataTable dt = ticket.ticket(
-                        data[0].ToString().Trim(),
-                        data[1].ToString().Trim()
-                        );
-                    if (dt.Rows.Count > 0)
-                    {
-                        txtCliente.Text = dt.Rows[0]["nombres"].ToString();
-                        idCliente = dt.Rows[0]["idCliente"].ToString();
-                        SystemSounds.Hand.Play();
-                        txtCliente.BackColor = Color.DarkSeaGreen;
-                        //Helper.MensajeSistema("Texto: " + dt.Rows.Count);
-                    }
-                    else
-                    {
-                        txtCliente.BackColor = Color.White;
-                        txtCliente.Clear();
+                                    DATicket ticket = new DATicket();
+                                    DataTable dt = ticket.ticket(
+                                        data[0].ToString().Trim(),
+                                        data[1].ToString().Trim().Replace("H", "")
+                                        );
+                                    if (dt.Rows.Count > 0)
+                                    {
+
+                                        idCliente = dt.Rows[0]["idCliente"].ToString();
+
+                                        //Helper.MensajeSistema(ticket.tiemposCliente(cmbTipo.SelectedValue.ToString(), idCliente, DateTime.Today.ToString("dd/MM/yyyy")).Rows[0]["tiempos"].ToString());
+                                        // ComprobarTiempoComida(ticket);
+
+                                        if (Convert.ToInt32(ticket.tiemposCliente(cmbTipo.SelectedValue.ToString(), idCliente, DateTime.Today.ToString("dd/MM/yyyy")).Rows[0]["tiempos"].ToString()) >= 1)
+                                        {
+
+                                            Helper.MensajeSistema("Ya Cambio el ticket en este tiempo de comida...");
+                                            txtTicket.Clear();
+                                            idCliente = "0";
+                                            return;
+                                        }
+                                        //else
+                                        //{
+
+                                            cmbTipo.Enabled = false;
+                                            txtCliente.Text = dt.Rows[0]["nombres"].ToString();
+                                            SystemSounds.Hand.Play();
+                                            txtCliente.BackColor = Color.DarkSeaGreen;
+                                            //Helper.MensajeSistema("Texto: " + dt.Rows.Count);
+                                        //}
+                                    }
+                                    else
+                                    {
+                                        cmbTipo.Enabled = true;
+                                        Helper.MensajeSistema("No encontro cliente...");
+                                        txtCliente.BackColor = Color.White;
+                                        idCliente = "0";
+                                        txtCliente.Clear();
+
+                                    }
+
+                                //}
+                                /*else
+                                {
+                                    txtCliente.Clear();
+                                    txtCliente.BackColor = Color.White;
+                                }*/
+
+
+
+
+
+                         //   }
+
+                        }
 
                     }
-
+                    //else
+                    //{
+                    //    txtCliente.BackColor = Color.White;
+                    //    txtCliente.Clear();
+                    //}
+                    // txtTicket.Text = texto;
+                    //txtTicket.Focus();
                 }
-                else
-                {
-                    txtCliente.BackColor = Color.White;
-                    txtCliente.Clear();
-                }
-                txtTicket.Text = texto;
-                txtTicket.Focus();
+
+
+
 
             }
             catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
+        }
+
+        private void txtTicket_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Helper.MensajeSistema("keyPRess");
+        }
+
+        private void txtTicket_KeyUp(object sender, KeyEventArgs e)
+        {
+            //Helper.MensajeSistema("keyup");
+
+        }
+
+        private void txtTicket_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            Helper.MensajeSistema("keydown");
+
+        }
+
+        private void txtTicket_TabStopChanged(object sender, EventArgs e)
+        {
+            Helper.MensajeSistema("keystop");
+
+
         }
     }
 }

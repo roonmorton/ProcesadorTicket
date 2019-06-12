@@ -141,7 +141,7 @@ namespace ProcesadorTicket
                         dialog.Filter = "Archivos jpg (*.jpg)| *.jpg";
                         if (dialog.ShowDialog() == DialogResult.OK)
                          {
-                        string cadena = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString() + Globals.Separator + grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString();
+                        string cadena = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString() + Globals.Separator + grdHistorico.SelectedRows[0].Cells["codigoEmpleado"].Value.ToString()+"H";
                         Bitmap btm = Helper.GenerarCodigoBarras(cadena, 325, 150);
                         Image img = btm;
                         img.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);

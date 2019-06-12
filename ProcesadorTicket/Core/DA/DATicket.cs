@@ -47,6 +47,22 @@ namespace ProcesadorTicket.Core.DA
         
         }
 
+        public DataTable tiemposCliente(string idTipo, string idCliente,string fecha)
+        {
+
+            try
+            {
+                string query = "SELECT count(*) as tiempos FROM TBL_Ticket as ticket, TBL_TIPO as tipo WHERE ticket.idTipo = tipo.idTipo  and tipo.idTipo = " + idTipo + " and ticket.idCliente = " + idCliente + " and format(ticket.fecha,'dd/MM/yyyy') = format('" + fecha + "','dd/MM/yyyy')";
+                //Helper.MensajeSistema("Query " + query);
+                return ejecutarConsultaDT(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
         public DataTable ticket(string id, string codigoEmpleado)
         {
 

@@ -44,8 +44,8 @@ namespace ProcesadorTicket
                 {
                     //lblUsuario.Text = "Usuario: " + ClsGlobals.usuario + "  ";
                     //lblComputadora.Text = "Computadora: " + Environment.MachineName;
-                    toolStripStatusLabel1.Text = "Usuario: " + Globals.usuario + "  ";
-                    lblComputadora.Text = "Computadora: " + Environment.MachineName;
+                    toolStripStatusLabel1.Text = "Usuario: " + Globals.usuario.ToUpper() + "  ";
+                    lblComputadora.Text = "Computadora: " + Environment.MachineName.ToUpper();
                     //mostrarMenu();
 
                 }

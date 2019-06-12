@@ -41,7 +41,7 @@
             this.btnExportar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +84,7 @@
             this.grdHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdHistorico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.Ticket,
+            this.Nombres,
             this.Tipo,
             this.fecha,
             this.monto});
@@ -201,14 +201,14 @@
             this.ID.ReadOnly = true;
             this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Ticket
+            // Nombres
             // 
-            this.Ticket.DataPropertyName = "TICKET";
-            this.Ticket.FillWeight = 69.19699F;
-            this.Ticket.HeaderText = "Ticket";
-            this.Ticket.Name = "Ticket";
-            this.Ticket.ReadOnly = true;
-            this.Ticket.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Nombres.DataPropertyName = "Nombres";
+            this.Nombres.FillWeight = 69.19699F;
+            this.Nombres.HeaderText = "Ticket";
+            this.Nombres.Name = "Nombres";
+            this.Nombres.ReadOnly = true;
+            this.Nombres.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Tipo
             // 
@@ -254,7 +254,7 @@
             this.Controls.Add(this.grdHistorico);
             this.Controls.Add(this.label1);
             this.Name = "FrmReports";
-            this.Text = "FrmReports";
+            this.Text = "Rerportes";
             this.Load += new System.EventHandler(this.FrmReports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).EndInit();
             this.statusStrip1.ResumeLayout(false);
@@ -276,7 +276,7 @@
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ticket;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn monto;

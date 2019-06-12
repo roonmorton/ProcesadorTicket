@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashboard));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +39,9 @@
             this.nuevoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,33 +58,9 @@
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(860, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1055, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.lblComputadora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 592);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(860, 30);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 25);
-            // 
-            // lblComputadora
-            // 
-            this.lblComputadora.Name = "lblComputadora";
-            this.lblComputadora.Size = new System.Drawing.Size(179, 25);
-            this.lblComputadora.Text = "toolStripStatusLabel2";
-            this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // archivoToolStripMenuItem
             // 
@@ -163,19 +139,43 @@
             this.ticketsToolStripMenuItem1.Text = "Tickets";
             this.ticketsToolStripMenuItem1.Click += new System.EventHandler(this.ticketsToolStripMenuItem1_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.lblComputadora});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 592);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1055, 30);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 25);
+            // 
+            // lblComputadora
+            // 
+            this.lblComputadora.Name = "lblComputadora";
+            this.lblComputadora.Size = new System.Drawing.Size(19, 25);
+            this.lblComputadora.Text = "_";
+            this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(860, 622);
+            this.ClientSize = new System.Drawing.Size(1055, 622);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmDashboard";
-            this.Text = "Inicio";
+            this.Text = "Inicio - Tickets";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.menuStrip1.ResumeLayout(false);

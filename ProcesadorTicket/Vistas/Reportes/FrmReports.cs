@@ -47,7 +47,7 @@ namespace ProcesadorTicket
                 DAReporte rpt = new DAReporte();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("ID");
-                dt.Columns.Add("Ticket");
+                dt.Columns.Add("Nombres");
                 dt.Columns.Add("Monto", System.Type.GetType("System.Decimal"));
                 dt.Columns.Add("Tipo");
                 dt.Columns.Add("Fecha");

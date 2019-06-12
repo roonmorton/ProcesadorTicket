@@ -114,7 +114,7 @@
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIniciar.Image = global::ProcesadorTicket.Properties.Resources.key_32px;
+            this.btnIniciar.Image = global::ProcesadorTicket.Properties.Resources.key_24px;
             this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIniciar.Location = new System.Drawing.Point(17, 253);
             this.btnIniciar.Name = "btnIniciar";

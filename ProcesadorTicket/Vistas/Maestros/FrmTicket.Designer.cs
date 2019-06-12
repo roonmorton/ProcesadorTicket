@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,6 +37,15 @@
             this.txtTicket = new System.Windows.Forms.TextBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.grdHistorico = new System.Windows.Forms.DataGridView();
+            this.editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.borrar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnSerach = new System.Windows.Forms.Button();
@@ -47,15 +56,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.txtContador = new System.Windows.Forms.ToolStripStatusLabel();
-            this.editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.borrar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +117,7 @@
             this.txtTicket.Name = "txtTicket";
             this.txtTicket.Size = new System.Drawing.Size(333, 30);
             this.txtTicket.TabIndex = 2;
+            this.txtTicket.TabStopChanged += new System.EventHandler(this.txtTicket_TabStopChanged);
             this.txtTicket.TextChanged += new System.EventHandler(this.txtTicket_TextChanged);
             this.txtTicket.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTicket_KeyDown);
             // 
@@ -142,14 +143,14 @@
             this.grdHistorico.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.grdHistorico.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdHistorico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdHistorico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdHistorico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdHistorico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.editar,
@@ -172,6 +173,84 @@
             this.grdHistorico.Size = new System.Drawing.Size(1196, 592);
             this.grdHistorico.TabIndex = 17;
             this.grdHistorico.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdHistorico_CellClick);
+            // 
+            // editar
+            // 
+            this.editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.editar.FillWeight = 50F;
+            this.editar.HeaderText = "";
+            this.editar.Image = global::ProcesadorTicket.Properties.Resources.edit_32px;
+            this.editar.Name = "editar";
+            this.editar.ReadOnly = true;
+            this.editar.Width = 50;
+            // 
+            // borrar
+            // 
+            this.borrar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.borrar.FillWeight = 50F;
+            this.borrar.HeaderText = "";
+            this.borrar.Image = global::ProcesadorTicket.Properties.Resources.trash_32px;
+            this.borrar.Name = "borrar";
+            this.borrar.ReadOnly = true;
+            this.borrar.Width = 50;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID.DataPropertyName = "idTicket";
+            this.ID.FillWeight = 75F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 75;
+            // 
+            // nombres
+            // 
+            this.nombres.DataPropertyName = "nombres";
+            this.nombres.FillWeight = 74.18671F;
+            this.nombres.HeaderText = "Ticket";
+            this.nombres.Name = "nombres";
+            this.nombres.ReadOnly = true;
+            // 
+            // Tipo
+            // 
+            this.Tipo.DataPropertyName = "descripcion";
+            this.Tipo.FillWeight = 74.18671F;
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            // 
+            // fecha
+            // 
+            this.fecha.DataPropertyName = "fecha";
+            this.fecha.FillWeight = 74.18671F;
+            this.fecha.HeaderText = "Fecha";
+            this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            // 
+            // monto
+            // 
+            this.monto.DataPropertyName = "monto";
+            this.monto.FillWeight = 74.18671F;
+            this.monto.HeaderText = "Monto";
+            this.monto.Name = "monto";
+            this.monto.ReadOnly = true;
+            // 
+            // idTipo
+            // 
+            this.idTipo.DataPropertyName = "idTipo";
+            this.idTipo.HeaderText = "idTipo";
+            this.idTipo.Name = "idTipo";
+            this.idTipo.ReadOnly = true;
+            this.idTipo.Visible = false;
+            // 
+            // Cliente
+            // 
+            this.Cliente.DataPropertyName = "Cliente";
+            this.Cliente.HeaderText = "IDCliente";
+            this.Cliente.Name = "Cliente";
+            this.Cliente.ReadOnly = true;
+            this.Cliente.Visible = false;
             // 
             // dataGridViewImageColumn1
             // 
@@ -278,92 +357,15 @@
             // txtContador
             // 
             this.txtContador.Name = "txtContador";
-            this.txtContador.Size = new System.Drawing.Size(179, 25);
-            this.txtContador.Text = "toolStripStatusLabel2";
+            this.txtContador.Size = new System.Drawing.Size(19, 25);
+            this.txtContador.Text = "_";
             this.txtContador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // editar
-            // 
-            this.editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.editar.FillWeight = 50F;
-            this.editar.HeaderText = "";
-            this.editar.Image = global::ProcesadorTicket.Properties.Resources.edit_32px;
-            this.editar.Name = "editar";
-            this.editar.ReadOnly = true;
-            this.editar.Width = 50;
-            // 
-            // borrar
-            // 
-            this.borrar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.borrar.FillWeight = 50F;
-            this.borrar.HeaderText = "";
-            this.borrar.Image = global::ProcesadorTicket.Properties.Resources.trash_32px;
-            this.borrar.Name = "borrar";
-            this.borrar.ReadOnly = true;
-            this.borrar.Width = 50;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID.DataPropertyName = "idTicket";
-            this.ID.FillWeight = 75F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 75;
-            // 
-            // nombres
-            // 
-            this.nombres.DataPropertyName = "nombres";
-            this.nombres.FillWeight = 74.18671F;
-            this.nombres.HeaderText = "Ticket";
-            this.nombres.Name = "nombres";
-            this.nombres.ReadOnly = true;
-            // 
-            // Tipo
-            // 
-            this.Tipo.DataPropertyName = "descripcion";
-            this.Tipo.FillWeight = 74.18671F;
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            // 
-            // fecha
-            // 
-            this.fecha.DataPropertyName = "fecha";
-            this.fecha.FillWeight = 74.18671F;
-            this.fecha.HeaderText = "Fecha";
-            this.fecha.Name = "fecha";
-            this.fecha.ReadOnly = true;
-            // 
-            // monto
-            // 
-            this.monto.DataPropertyName = "monto";
-            this.monto.FillWeight = 74.18671F;
-            this.monto.HeaderText = "Monto";
-            this.monto.Name = "monto";
-            this.monto.ReadOnly = true;
-            // 
-            // idTipo
-            // 
-            this.idTipo.DataPropertyName = "idTipo";
-            this.idTipo.HeaderText = "idTipo";
-            this.idTipo.Name = "idTipo";
-            this.idTipo.ReadOnly = true;
-            this.idTipo.Visible = false;
-            // 
-            // Cliente
-            // 
-            this.Cliente.DataPropertyName = "Cliente";
-            this.Cliente.HeaderText = "IDCliente";
-            this.Cliente.Name = "Cliente";
-            this.Cliente.ReadOnly = true;
-            this.Cliente.Visible = false;
             // 
             // FrmTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1190, 820);
             this.Controls.Add(this.statusStrip1);
@@ -384,7 +386,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmTicket";
-            this.Text = "FrmTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro Tickets";
             this.Load += new System.EventHandler(this.FrmTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).EndInit();
             this.statusStrip1.ResumeLayout(false);
