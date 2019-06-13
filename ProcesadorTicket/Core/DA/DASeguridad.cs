@@ -15,7 +15,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + Helper.GetMD5( pass )+ "'and TBL_Usuario.usuario = '" + usuario + "'; ");
+                return ejecutarConsultaDT("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + Helper.GetMD5( pass )+ "'and TBL_Usuario.usuario = '" + usuario + "' and estado = 1; ");
 
             }
             catch (Exception ex)

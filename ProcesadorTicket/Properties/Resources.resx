@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-vuelva-a-introducir-el-código-pin-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\icons8-vuelva-a-introducir-el-código-pin-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="approval_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\approval_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="password_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\password_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,17 +127,20 @@
   <data name="icons8-seguridad-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-seguridad-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ms_excel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\ms_excel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\24px\key_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\edit_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="barcode_scanner_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\barcode_scanner_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_row_below_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\insert_row_below_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\cancel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +148,17 @@
   <data name="trash_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\trash_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="save_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\save_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-seleccionar-usuarios-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-seleccionar-usuarios-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\search_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-agregar-base-de-datos-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\icons8-agregar-base-de-datos-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="combo_chart_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\combo_chart_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +202,17 @@
   <data name="ticket_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\ticket_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-vuelva-a-introducir-el-código-pin-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\icons8-vuelva-a-introducir-el-código-pin-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_user_male_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\add_user_male_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="product_2_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\product_2_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\edit_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="customer_insight_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\customer_insight_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +223,8 @@
   <data name="package_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\package_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\save_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="industrial_scales_connected_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\industrial_scales_connected_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-herramientas-del-administrador-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-herramientas-del-administrador-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +238,7 @@
   <data name="icons8-mover-por-carretilla-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-mover-por-carretilla-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-agregar-base-de-datos-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\icons8-agregar-base-de-datos-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grocery_bag_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\grocery_bag_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

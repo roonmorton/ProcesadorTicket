@@ -357,3 +357,18 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    1/06/2019 16:16:12   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
    en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
 
+   12/06/2019 19:24:56   Admin   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   .ctor      en ProcesadorTicket.FrmCambioPass..ctor() en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmCambioPass.cs:línea 29
+   en ProcesadorTicket.FrmDashboard.CambiarContraseniaToolStripMenuItem_Click_1(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 124
+
+   12/06/2019 19:25:41   Admin   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   .ctor      en ProcesadorTicket.FrmCambioPass..ctor() en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmCambioPass.cs:línea 29
+   en ProcesadorTicket.FrmDashboard.CambiarContraseniaToolStripMenuItem_Click_1(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 124
+
+   12/06/2019 19:59:31   Admin   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta '1 nombres = 'Ronaldo''.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 30
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+
+   12/06/2019 20:01:01   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 30
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+
+   12/06/2019 20:06:13   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 32
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+

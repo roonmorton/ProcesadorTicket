@@ -86,6 +86,7 @@
     <Compile Include="Core\DA\DATicket.cs" />
     <Compile Include="Core\DataBase\DB.cs" />
     <Compile Include="Core\DA\DATipo.cs" />
+    <Compile Include="Core\DA\DAUnidadMedida.cs" />
     <Compile Include="Core\DA\DAUsuario.cs" />
     <Compile Include="Core\Helpers\Globals.cs" />
     <Compile Include="Core\Helpers\Helper.cs" />
@@ -162,6 +163,12 @@
     <Compile Include="Vistas\Seguridad\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Seguridad\FrmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Seguridad\FrmPermisos.Designer.cs">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Seguridad\FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Seguridad\FrmPermisos.resx">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
@@ -306,6 +316,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\icons\24px\key_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\approval_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\industrial_scales_connected_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\insert_row_below_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\grocery_bag_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

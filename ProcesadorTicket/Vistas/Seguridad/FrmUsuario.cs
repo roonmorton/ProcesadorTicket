@@ -29,6 +29,8 @@ namespace ProcesadorTicket
                 DataTable dt = usuario.buscar(txtNombres.Text.ToString().Trim());
                 txtContador.Text = "Registros(" + dt.Rows.Count + ")";
                 grdHistorico.DataSource = dt;
+                txtUsuario.Enabled = true;
+                checkEstado.Checked = false;
             }catch(Exception ex)
             {
                 throw ex;
@@ -56,6 +58,8 @@ namespace ProcesadorTicket
                 checkEstado.Checked = false;
                 idUsuario = "0";
                 txtNombres.Focus();
+                txtUsuario.Enabled = true;
+                buscar();
             }catch(Exception ex)
             {
                 throw ex;
@@ -67,7 +71,6 @@ namespace ProcesadorTicket
             try
             {
                 limpiar();
-                buscar();
             }catch(Exception ex)
             {
                 Helper.erroLog(ex);
@@ -113,9 +116,27 @@ namespace ProcesadorTicket
                     return;
                 }
                 DAUsuario usuario = new DAUsuario();
-                usuario.insertaActualizar(idUsuario, txtNombres.Text.ToString().Trim(), txtApellidos.Text.ToString().Trim(), txtUsuario.Text.ToString().Trim(), (checkEstado.Checked == true ? "1" : "0").ToString());
-                Helper.MensajeSistema("Guardado Correctamente...");
-                limpiar();
+                string vUsuaro = usuario.validarUsuario(txtUsuario.Text.ToString()).Rows[0]["usuarios"].ToString();
+
+                //Si hay usuario y es nuevo, Se detiene 
+                if (!vUsuaro.Equals("0") && idUsuario.Equals("0"))
+                {
+                    Helper.MensajeSistema("Usuario ya existe, ingresar uno diferente...");
+                    txtUsuario.Focus();
+                    return;
+                }
+                //Si hay usuario y no es el a modificar se detiene 
+               /* if (!usuario.validarUsuarioID(txtUsuario.Text.ToString(),idUsuario).Rows[0]["usuarios"].ToString().Equals("1"))
+                {
+                    Helper.MensajeSistema("Usuario no se puede modificar ya existe, ingresar uno diferente...");
+                    txtUsuario.Focus();
+                    return;
+                }*/
+                    usuario.insertaActualizar(idUsuario, txtNombres.Text.ToString().Trim(), txtApellidos.Text.ToString().Trim(), txtUsuario.Text.ToString().Trim(), (checkEstado.Checked == true ? "1" : "0").ToString());
+                    Helper.MensajeSistema("Guardado Correctamente...");
+                    limpiar();
+                
+                
             }
             catch(Exception ex)
             {
@@ -135,25 +156,9 @@ namespace ProcesadorTicket
                         txtApellidos.Text = grdHistorico.SelectedRows[0].Cells["apellidos"].Value.ToString();
                         txtUsuario.Text = grdHistorico.SelectedRows[0].Cells["usuario"].Value.ToString();
                         checkEstado.Checked = (grdHistorico.SelectedRows[0].Cells["estadoUsuario"].Value.ToString() == "Activo" ? true : false);
-
+                        txtUsuario.Enabled = false;
                         break;
                     case 1:
-                        DialogResult r = MessageBox.Show("¿Confirma que desea deshabilitar usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (r == DialogResult.Yes)
-                        {
-                            // DACliente cliente = new DACliente();
-                            //cliente.eliminar(grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString());
-                            /*clsLinea.eliminar(grdExistentes.SelectedRows[0].Cells["idLineaCol"].Value.ToString());
-                            ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");
-                            limpiarControles();*/
-                            //DAUsuario usuario = new DAUsuario();
-                            //usuario.eliminar(grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString());
-                            //Helper.MensajeSistema("Usuario Deshabilitado...");
-                            //limpiar();
-                        }
-                        break;
-                    case 2:
-
                         DialogResult dr = MessageBox.Show("¿Reestablecer contraseña de usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (dr == DialogResult.Yes)
                         {
@@ -162,7 +167,11 @@ namespace ProcesadorTicket
                             Helper.MensajeSistema("Se ha reestablecido la contraseña...");
                         }
 
-                            break;
+                        break;
+                    case 2:
+                        string id = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString();
+                        
+                        break;
                 }
             }
             catch (Exception ex)
