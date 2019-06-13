@@ -1,0 +1,15 @@
+
+
+
+Unidad de Medida (Descripcion)
+Producto(Descripcion)
+Stock(producto,cantidad,precio)
+
+IngresosProducto(fechaIngreso,Referencia=
+DetalleIngresoProducto(producto,(Descripcion opcional), cantidadPorProducto)
+
+Venta(fechaVenta, correlativo, empleado)
+DetalleVenta(Producto, cantidad, precio)
+
+Permisos
+DetallePermisos
