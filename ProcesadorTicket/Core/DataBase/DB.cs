@@ -33,6 +33,7 @@ namespace ProcesadorTicket.Core.DataBase
             }
 
         }
+        
 
         public DataTable ejecutarConsultaDT(string query, int tiempo = 0)
         {

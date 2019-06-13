@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\DA\DACliente.cs" />
+    <Compile Include="Core\DA\DAProducto.cs" />
     <Compile Include="Core\DA\DAReporte.cs" />
     <Compile Include="Core\DA\DASeguridad.cs" />
     <Compile Include="Core\DA\DATicket.cs" />

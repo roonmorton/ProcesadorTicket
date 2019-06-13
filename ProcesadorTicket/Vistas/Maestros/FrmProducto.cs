@@ -20,7 +20,7 @@ namespace ProcesadorTicket
         private void FrmProducto_Load(object sender, EventArgs e)
         {
             try
-            {
+            { 
                 
                 DataTable dt = new DataTable();
                 dt.Columns.Add("id");
@@ -39,6 +39,26 @@ namespace ProcesadorTicket
 
                 grdData.DataSource = dt;
 
+
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void BtnPrecio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmLogin login = new FrmLogin();
+                login.setPermiso("Precios");
+                login.ShowDialog(this);
+                if (login.getvalidacion())
+                {
+                    Helper.MensajeSistema("Usuario Validado");
+                }else
+                    Helper.MensajeSistema("Usuario invalido");
 
             }
             catch (Exception ex)

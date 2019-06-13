@@ -153,5 +153,17 @@ namespace ProcesadorTicket
                 Helper.erroLog(ex);
             }
         }
+
+        private void AdministrarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmProducto producto = new FrmProducto();
+                producto.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
     }
 }
