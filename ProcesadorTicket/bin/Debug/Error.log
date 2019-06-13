@@ -1,0 +1,359 @@
+   7/05/2019 21:52:50   ron   DESKTOP-FGSF9HR   Un formulario que ya es visible no se puede mostrar como un cuadro de diálogo modal. Establezca la propiedad visible del formulario en false antes de llamar a showDialog.   ShowDialog      en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en ProcesadorTicket.FrmDashboard.cambiarContraseñaToolStripMenuItem_Click(Object sender, EventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 83
+
+   7/05/2019 21:53:45   ron   DESKTOP-FGSF9HR   Un formulario que ya es visible no se puede mostrar como un cuadro de diálogo modal. Establezca la propiedad visible del formulario en false antes de llamar a showDialog.   ShowDialog      en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en ProcesadorTicket.FrmDashboard.cambiarContraseñaToolStripMenuItem_Click(Object sender, EventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 84
+
+   8/05/2019 00:07:34   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 120
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 130
+
+   8/05/2019 00:07:36   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 120
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 130
+
+   8/05/2019 00:15:47   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 137
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 147
+
+   8/05/2019 00:16:30   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Tipo'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 137
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 102
+
+   8/05/2019 00:18:04   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Tipo'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 143
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 153
+
+   8/05/2019 00:18:32   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Tipo'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 143
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 102
+
+   8/05/2019 00:45:48   ron   DESKTOP-FGSF9HR   La columna no se puede agregar porque está inmovilizada y situada después de una columna que no está inmovilizada.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 45
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en c:\users\ron quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 26
+
+   8/05/2019 01:10:30   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 46
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 26
+
+   8/05/2019 01:24:15   ron   DESKTOP-FGSF9HR   La tabla 'TBL_Ticket' está abierta en modo exclusivo por otro usuario o ya está abierta mediante la interfaz de usuario y no se puede manipular mediante código.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 46
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 26
+
+   8/05/2019 01:44:26   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada idTicket.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 196
+
+   8/05/2019 01:46:06   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada idTicket.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 196
+
+   8/05/2019 01:46:16   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada idTicket.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 196
+
+   8/05/2019 01:51:25   ron   DESKTOP-FGSF9HR   El valor no puede ser nulo.
+Nombre del parámetro: key   Find      en System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   en System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 198
+
+   8/05/2019 01:51:37   ron   DESKTOP-FGSF9HR   El valor no puede ser nulo.
+Nombre del parámetro: key   Find      en System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   en System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 198
+
+   8/05/2019 01:52:44   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 01:55:14   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 01:57:44   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 01:59:24   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:00:56   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:01:22   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:02:00   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:02:07   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:02:44   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 02:02:53   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 160
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 118
+
+   8/05/2019 21:13:19   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'TBL_Ticket.noTicket TIKET'.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 54
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   8/05/2019 21:17:33   ron   DESKTOP-FGSF9HR   La columna 'ID' no pertenece a la tabla .   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 60
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   8/05/2019 21:23:30   ron   DESKTOP-FGSF9HR   El argumento 'dataType' no puede ser nulo.
+Nombre del parámetro: dataType   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 69
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   8/05/2019 21:24:40   ron   DESKTOP-FGSF9HR   La columna 'ID' no pertenece a la tabla .   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 69
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   8/05/2019 21:25:16   ron   DESKTOP-FGSF9HR   La columna 'ID' no pertenece a la tabla .   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 69
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   8/05/2019 21:26:41   ron   DESKTOP-FGSF9HR   El proceso no puede obtener acceso al archivo 'C:\Users\Ron Quevedo\Desktop\adasd.xlsx' porque está siendo utilizado en otro proceso.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.File.InternalDelete(String path, Boolean checkHost)
+   en System.IO.File.Delete(String path)
+   en ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   en ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   en ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   en ProcesadorTicket.FrmReports.btnExportar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 104
+
+   8/05/2019 21:41:26   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'format(t.fecha,'dd/MM/yyyy') fecha'.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 46
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 26
+
+   8/05/2019 21:42:18   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'format(t.fecha,'dd/MM/yyyy') asfecha'.   buscar      en ProcesadorTicket.FrmTicket.buscar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 85
+   en ProcesadorTicket.FrmTicket.btnSerach_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 182
+
+   29/05/2019 21:45:03   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 'LIKE '%%''.   limpiar      en ProcesadorTicket.FrmClientes.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 41
+   en ProcesadorTicket.FrmClientes.FrmClientes_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 164
+
+   29/05/2019 21:47:08   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada codigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 109
+
+   29/05/2019 21:54:20   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada codigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 110
+
+   29/05/2019 21:54:47   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada CodigoCliente.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 110
+
+   29/05/2019 22:02:59   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:04:01   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:04:54   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:05:31   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:06:09   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.Path.GetFullPath(String path)
+   en System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   en System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   en System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   en System.Drawing.Image.Save(String filename, ImageFormat format)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 139
+
+   29/05/2019 22:07:21   ron   DESKTOP-FGSF9HR   Caracteres no válidos en la ruta de acceso.   LegacyNormalizePath      en System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   en System.IO.Path.GetFullPathInternal(String path)
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:10:49   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:11:50   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:20:05   ron   DESKTOP-FGSF9HR   No se puede crear un archivo que ya existe.
+   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 141
+
+   29/05/2019 22:34:06   ron   DESKTOP-FGSF9HR   La cadena de filtro proporcionada no es válida. Ésta debería contener una descripción del filtro, seguida de una barra vertical (|) y el patrón del filtro. Las cadenas de las distintas opciones de filtro también deben estar separadas por una barra vertical. Ejemplo: "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"   set_Filter      en System.Windows.Forms.FileDialog.set_Filter(String value)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 135
+
+   29/05/2019 22:35:53   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+
+   29/05/2019 22:36:08   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+
+   29/05/2019 22:36:40   ron   DESKTOP-FGSF9HR   No se puede encontrar el archivo especificado.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.__Error.WinIOError()
+   en System.IO.FileInfo.MoveTo(String destFileName)
+   en ProcesadorTicket.FrmClientes.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmClientes.cs:línea 143
+
+   30/05/2019 19:38:47   ron   DESKTOP-FGSF9HR   La longitud de la cadena no puede ser cero.
+Nombre del parámetro: oldValue   ReplaceInternal      en System.String.ReplaceInternal(String oldValue, String newValue)
+   en System.String.Replace(String oldValue, String newValue)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 239
+
+   30/05/2019 19:38:58   ron   DESKTOP-FGSF9HR   La longitud de la cadena no puede ser cero.
+Nombre del parámetro: oldValue   ReplaceInternal      en System.String.ReplaceInternal(String oldValue, String newValue)
+   en System.String.Replace(String oldValue, String newValue)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 239
+
+   30/05/2019 19:43:31   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:31   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:41   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:43   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:44   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:45   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:47   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:49   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:43:50   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 237
+
+   30/05/2019 19:51:45   ron   DESKTOP-FGSF9HR   No coinciden los tipos de datos en la expresión de criterios.   ticket      en ProcesadorTicket.Core.DA.DATicket.ticket(String id) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DATicket.cs:línea 59
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 245
+
+   30/05/2019 19:54:00   ron   DESKTOP-FGSF9HR   Error de sintaxis en la expresión de consulta 'idTicket = SELECT*FROMTBL_TicketWHEREidTicket='.   ticket      en ProcesadorTicket.Core.DA.DATicket.ticket(String id) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DATicket.cs:línea 59
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 243
+
+   30/05/2019 19:57:52   ron   DESKTOP-FGSF9HR   La columna 'nombres' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 250
+
+   30/05/2019 19:58:48   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   ticket      en ProcesadorTicket.Core.DA.DATicket.ticket(String id) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DATicket.cs:línea 59
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 249
+
+   30/05/2019 20:06:44   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:06:58   ron   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   GetNodeByIndex      en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 254
+
+   30/05/2019 20:10:02   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:10:06   ron   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   GetNodeByIndex      en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 259
+
+   30/05/2019 20:10:15   ron   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   GetNodeByIndex      en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 259
+
+   30/05/2019 20:10:17   ron   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   GetNodeByIndex      en System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   en System.Data.DataRowCollection.get_Item(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 259
+
+   30/05/2019 20:11:12   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:12:25   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:15:13   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:27:44   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 't.idTipo = tipo.idTipo INNER JOIN TBL_Cliente as c ON c.idCliente =t.idClient'.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 20:28:42   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 't.idTipo = tipo.idTipo INNER JOIN TBL_Cliente as e ON e.idCliente = t.idClient'.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 21:00:35   ron   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta 't.idTipo = tipo.idTipo INNER JOIN TBL_Cliente as e ON e.idCliente = t.idClient'.   limpiar      en ProcesadorTicket.FrmTicket.limpiar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 52
+   en ProcesadorTicket.FrmTicket.FrmTicket_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 28
+
+   30/05/2019 21:01:48   ron   DESKTOP-FGSF9HR   La instrucción INSERT INTO contiene el siguiente nombre de campo desconocido: 'noTicket'. Asegúrese de que haya escrito correctamente el nombre y vuelva a intentar la operación.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 170
+   en ProcesadorTicket.FrmTicket.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 128
+
+   30/05/2019 21:08:28   ron   DESKTOP-FGSF9HR   No se pudo encontrar la columna denominada ticket.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.FrmTicket.grdHistorico_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 207
+
+   30/05/2019 21:16:06   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Cliente'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 170
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 180
+
+   30/05/2019 21:16:16   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Cliente'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 170
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 180
+
+   30/05/2019 21:16:21   ron   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Cliente'.   guardar      en ProcesadorTicket.FrmTicket.guardar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 170
+   en ProcesadorTicket.FrmTicket.txtTicket_KeyDown(Object sender, KeyEventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 180
+
+   30/05/2019 21:31:22   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   buscar      en ProcesadorTicket.FrmTicket.buscar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 94
+   en ProcesadorTicket.FrmTicket.btnSerach_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 204
+
+   30/05/2019 21:31:32   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   buscar      en ProcesadorTicket.FrmTicket.buscar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 94
+   en ProcesadorTicket.FrmTicket.btnSerach_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 204
+
+   1/06/2019 13:50:17   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:50:41   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:56:51   ron   DESKTOP-FGSF9HR   La instrucción SELECT incluye una palabra reservada, le falta un argumento o está mal escrito, o bien los signos de puntuación no son correctos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 13:58:05   ron   DESKTOP-FGSF9HR   La instrucción SELECT incluye una palabra reservada, le falta un argumento o está mal escrito, o bien los signos de puntuación no son correctos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.btnConsultar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 37
+
+   1/06/2019 13:58:54   ron   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.FrmReports.cargar() en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 70
+   en ProcesadorTicket.FrmReports.FrmReports_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\FrmReports.cs:línea 26
+
+   1/06/2019 15:33:58   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:01   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:02   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:04   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:34:05   ron   DESKTOP-FGSF9HR   No se puede convertir un objeto de tipo 'System.EventArgs' al tipo 'System.Windows.Forms.KeyEventArgs'.   txtTicket_TextChanged      en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 283
+
+   1/06/2019 15:55:48   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 289
+
+   1/06/2019 16:16:11   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
+
+   1/06/2019 16:16:12   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
+   en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
+
