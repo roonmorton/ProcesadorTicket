@@ -52,6 +52,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nuevaEntradaProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -209,6 +210,8 @@
             // 
             // entradasToolStripMenuItem
             // 
+            this.entradasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaEntradaProductoToolStripMenuItem});
             this.entradasToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_éxito_en_la_cesta_32;
             this.entradasToolStripMenuItem.Name = "entradasToolStripMenuItem";
             this.entradasToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
@@ -263,6 +266,14 @@
             this.lblComputadora.Text = "_";
             this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // nuevaEntradaProductoToolStripMenuItem
+            // 
+            this.nuevaEntradaProductoToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.new_product_32px;
+            this.nuevaEntradaProductoToolStripMenuItem.Name = "nuevaEntradaProductoToolStripMenuItem";
+            this.nuevaEntradaProductoToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
+            this.nuevaEntradaProductoToolStripMenuItem.Text = "Nueva Entrada Producto";
+            this.nuevaEntradaProductoToolStripMenuItem.Click += new System.EventHandler(this.NuevaEntradaProductoToolStripMenuItem_Click);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,7 +285,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmDashboard";
             this.Text = "Inicio - Tickets";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -313,5 +324,6 @@
         private System.Windows.Forms.ToolStripMenuItem unidadMedidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarUnidadesDeMedidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaEntradaProductoToolStripMenuItem;
     }
 }
