@@ -375,3 +375,15 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    13/06/2019 22:05:49   Admin   DESKTOP-FGSF9HR   La tabla 'TBL_Producto' está abierta en modo exclusivo por otro usuario o ya está abierta mediante la interfaz de usuario y no se puede manipular mediante código.   limpiar      en ProcesadorTicket.FrmProducto.limpiar() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 49
    en ProcesadorTicket.FrmProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 28
 
+   14/06/2019 14:50:19   Admin   CEN-SIS-6395W9L   La columna 'stock' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:37:21   Admin   CEN-SIS-6395W9L   Error de sintaxis (falta operador) en la expresión de consulta 'TBL_Producto.codigo = '1000'1000''.   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:38:24   Admin   CEN-SIS-6395W9L   La columna 'stock' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:39:47   Admin   CEN-SIS-6395W9L   La columna 'idProducto' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+

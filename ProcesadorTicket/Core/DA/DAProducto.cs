@@ -51,7 +51,7 @@ namespace ProcesadorTicket.Core.DA
         {
             try
             {
-                string query = "SELECT TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio FROM TBL_Producto WHERE TBL_Producto.codigo = '"+codigo+"'";
+                string query = "SELECT TBL_Producto.idProducto, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,   TBL_StockProducto.cantidad as stock FROM TBL_Producto  LEFT JOIN TBL_StockProducto ON  TBL_StockProducto.idProducto = TBL_Producto.idProducto WHERE TBL_Producto.codigo = '"+codigo+"'";
                 return ejecutarConsultaDT(query);
             }
             catch (Exception ex)
