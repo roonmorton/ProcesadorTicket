@@ -2,3 +2,4 @@
 *.cache
 *.csproj
 .vs/
+ProcesadorTicket/bin/
