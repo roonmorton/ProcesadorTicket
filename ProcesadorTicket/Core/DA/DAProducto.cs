@@ -46,6 +46,19 @@ namespace ProcesadorTicket.Core.DA
             }
 
         }
-        
+
+        public DataTable buscarCodigo(string codigo)
+        {
+            try
+            {
+                string query = "SELECT TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio FROM TBL_Producto WHERE TBL_Producto.codigo = '"+codigo+"'";
+                return ejecutarConsultaDT(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

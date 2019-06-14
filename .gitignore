@@ -2,4 +2,6 @@
 *.cache
 *.csproj
 .vs/
-ProcesadorTicket/bin/
+*.exe
+*.exe.*
+*.pdb
