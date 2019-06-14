@@ -127,14 +127,20 @@
   <data name="icons8-seguridad-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-seguridad-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ms_excel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\ms_excel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="industrial_scales_connected_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\industrial_scales_connected_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="key_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\24px\key_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grocery_bag_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\grocery_bag_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\edit_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="barcode_scanner_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\barcode_scanner_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,9 +153,6 @@
   </data>
   <data name="trash_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\trash_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\save_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-seleccionar-usuarios-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-seleccionar-usuarios-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +214,8 @@
   <data name="product_2_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\product_2_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\edit_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="broom_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\broom_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="customer_insight_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\customer_insight_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +226,8 @@
   <data name="package_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\package_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="industrial_scales_connected_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\industrial_scales_connected_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\save_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-herramientas-del-administrador-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-herramientas-del-administrador-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +241,7 @@
   <data name="icons8-mover-por-carretilla-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Content\icons\icons8-mover-por-carretilla-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grocery_bag_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Content\icons\grocery_bag_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unlock_2_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Content\icons\unlock_2_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

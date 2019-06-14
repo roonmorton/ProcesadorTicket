@@ -469,5 +469,15 @@ namespace ProcesadorTicket.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlock_2_24px {
+            get {
+                object obj = ResourceManager.GetObject("unlock_2_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -32,6 +32,8 @@ namespace ProcesadorTicket
             try
             {
                 this.CenterToScreen();
+                if (!strPermiso.Equals(""))
+                    txtTitulo.Text = "Validar Usuario...";
             }
             catch (Exception ex)
             {
@@ -72,7 +74,7 @@ namespace ProcesadorTicket
                     if (dtSeg.Rows.Count > 0)
                     {
                         this.validacion = true;
-                        Helper.MensajeSistema("Usuario Valido");
+                        //Helper.MensajeSistema("Usuario Valido");
                         this.Close();
                     }
                 }

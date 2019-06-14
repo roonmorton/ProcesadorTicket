@@ -372,3 +372,6 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    12/06/2019 20:06:13   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 32
    en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
 
+   13/06/2019 22:05:49   Admin   DESKTOP-FGSF9HR   La tabla 'TBL_Producto' está abierta en modo exclusivo por otro usuario o ya está abierta mediante la interfaz de usuario y no se puede manipular mediante código.   limpiar      en ProcesadorTicket.FrmProducto.limpiar() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 49
+   en ProcesadorTicket.FrmProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 28
+
