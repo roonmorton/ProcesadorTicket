@@ -5,3 +5,4 @@
 *.exe
 *.exe.*
 *.pdb
+*.vshost.exe
