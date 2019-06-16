@@ -357,3 +357,71 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    1/06/2019 16:16:12   ron   DESKTOP-FGSF9HR   Índice fuera de los límites de la matriz.   get_Chars      en System.String.get_Chars(Int32 index)
    en ProcesadorTicket.FrmTicket.txtTicket_TextChanged(Object sender, EventArgs e) en C:\Users\Ron Quevedo\documents\visual studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmTicket.cs:línea 285
 
+   12/06/2019 19:24:56   Admin   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   .ctor      en ProcesadorTicket.FrmCambioPass..ctor() en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmCambioPass.cs:línea 29
+   en ProcesadorTicket.FrmDashboard.CambiarContraseniaToolStripMenuItem_Click_1(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 124
+
+   12/06/2019 19:25:41   Admin   DESKTOP-FGSF9HR   No hay ninguna fila en la posición 0.   .ctor      en ProcesadorTicket.FrmCambioPass..ctor() en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmCambioPass.cs:línea 29
+   en ProcesadorTicket.FrmDashboard.CambiarContraseniaToolStripMenuItem_Click_1(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\FrmDashboard.cs:línea 124
+
+   12/06/2019 19:59:31   Admin   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta '1 nombres = 'Ronaldo''.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 30
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+
+   12/06/2019 20:01:01   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 30
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+
+   12/06/2019 20:06:13   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   insertaActualizar      en ProcesadorTicket.Core.DA.DAUsuario.insertaActualizar(String id, String nombres, String apellidos, String usuario, String estado) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Core\DA\DAUsuario.cs:línea 32
+   en ProcesadorTicket.FrmUsuario.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\Visual Studio 2015\Projects\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmUsuario.cs:línea 125
+
+   13/06/2019 22:05:49   Admin   DESKTOP-FGSF9HR   La tabla 'TBL_Producto' está abierta en modo exclusivo por otro usuario o ya está abierta mediante la interfaz de usuario y no se puede manipular mediante código.   limpiar      en ProcesadorTicket.FrmProducto.limpiar() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 49
+   en ProcesadorTicket.FrmProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\FrmProducto.cs:línea 28
+
+   14/06/2019 14:50:19   Admin   CEN-SIS-6395W9L   La columna 'stock' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:37:21   Admin   CEN-SIS-6395W9L   Error de sintaxis (falta operador) en la expresión de consulta 'TBL_Producto.codigo = '1000'1000''.   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:38:24   Admin   CEN-SIS-6395W9L   La columna 'stock' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   14/06/2019 15:39:47   Admin   CEN-SIS-6395W9L   La columna 'idProducto' no pertenece a la tabla .   buscarProducto      en ProcesadorTicket.FrmEntradaProducto.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 121
+   en ProcesadorTicket.FrmEntradaProducto.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 186
+
+   15/06/2019 08:37:01   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 164
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 172
+
+   15/06/2019 08:37:14   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 164
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 172
+
+   15/06/2019 08:39:03   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 164
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 172
+
+   15/06/2019 08:46:38   Admin   DESKTOP-FGSF9HR   No se han especificado valores para algunos de los parámetros requeridos.   cargarComboUnidadMedia      en ProcesadorTicket.FrmEntradaProducto.cargarComboUnidadMedia() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 94
+   en ProcesadorTicket.FrmEntradaProducto.FrmEntradaProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 54
+
+   15/06/2019 08:47:39   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 191
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 199
+
+   15/06/2019 08:47:55   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 191
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 199
+
+   15/06/2019 08:51:21   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 180
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 188
+
+   15/06/2019 09:01:57   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 190
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 198
+
+   15/06/2019 13:15:48   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 182
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 190
+
+   15/06/2019 13:17:04   Admin   DESKTOP-FGSF9HR   El argumento 'dataType' no puede ser nulo.
+Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaProducto.limpiar() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 80
+   en ProcesadorTicket.FrmEntradaProducto.FrmEntradaProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 54
+
+   15/06/2019 13:19:56   Admin   DESKTOP-FGSF9HR   El argumento 'dataType' no puede ser nulo.
+Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaProducto.limpiar() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 80
+   en ProcesadorTicket.FrmEntradaProducto.FrmEntradaProducto_Load(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 54
+
+   15/06/2019 13:20:29   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 185
+   en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 193
+

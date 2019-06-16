@@ -37,9 +37,12 @@
             this.gestionUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarUnidadesDeMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entradasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +52,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nuevaEntradaProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +93,7 @@
             this.seguridadToolStripMenuItem});
             this.herramientasToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_herramientas_del_administrador_32;
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(168, 30);
             this.herramientasToolStripMenuItem.Text = "Herramientas";
             // 
             // cambiarContraseniaToolStripMenuItem
@@ -121,19 +125,54 @@
             // 
             this.salirToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.shutdown_32px;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(168, 30);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // movimientosToolStripMenuItem
             // 
             this.movimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteToolStripMenuItem,
-            this.productoToolStripMenuItem});
+            this.unidadMedidaToolStripMenuItem,
+            this.productoToolStripMenuItem,
+            this.clienteToolStripMenuItem});
             this.movimientosToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_agregar_base_de_datos_32;
             this.movimientosToolStripMenuItem.Name = "movimientosToolStripMenuItem";
             this.movimientosToolStripMenuItem.Size = new System.Drawing.Size(145, 28);
             this.movimientosToolStripMenuItem.Text = "Mantenimientos";
+            // 
+            // unidadMedidaToolStripMenuItem
+            // 
+            this.unidadMedidaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarUnidadesDeMedidaToolStripMenuItem});
+            this.unidadMedidaToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.industrial_scales_connected_32px;
+            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
+            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
+            this.unidadMedidaToolStripMenuItem.Text = "Unidad de Medida";
+            // 
+            // administrarUnidadesDeMedidaToolStripMenuItem
+            // 
+            this.administrarUnidadesDeMedidaToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.insert_row_below_32px;
+            this.administrarUnidadesDeMedidaToolStripMenuItem.Name = "administrarUnidadesDeMedidaToolStripMenuItem";
+            this.administrarUnidadesDeMedidaToolStripMenuItem.Size = new System.Drawing.Size(287, 30);
+            this.administrarUnidadesDeMedidaToolStripMenuItem.Text = "Administrar Unidades de Medida";
+            this.administrarUnidadesDeMedidaToolStripMenuItem.Click += new System.EventHandler(this.administrarUnidadesDeMedidaToolStripMenuItem_Click);
+            // 
+            // productoToolStripMenuItem
+            // 
+            this.productoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarProductosToolStripMenuItem});
+            this.productoToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_mover_por_carretilla_32;
+            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
+            this.productoToolStripMenuItem.Text = "Producto";
+            // 
+            // administrarProductosToolStripMenuItem
+            // 
+            this.administrarProductosToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.grocery_bag_32px;
+            this.administrarProductosToolStripMenuItem.Name = "administrarProductosToolStripMenuItem";
+            this.administrarProductosToolStripMenuItem.Size = new System.Drawing.Size(223, 30);
+            this.administrarProductosToolStripMenuItem.Text = "Administrar Productos";
+            this.administrarProductosToolStripMenuItem.Click += new System.EventHandler(this.AdministrarProductosToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
@@ -141,22 +180,16 @@
             this.nuevoClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.customer_insight_32px;
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
             this.clienteToolStripMenuItem.Text = "Clientes";
             // 
             // nuevoClienteToolStripMenuItem
             // 
             this.nuevoClienteToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.add_user_male_32px;
             this.nuevoClienteToolStripMenuItem.Name = "nuevoClienteToolStripMenuItem";
-            this.nuevoClienteToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
-            this.nuevoClienteToolStripMenuItem.Text = "Nuevo Cliente";
-            // 
-            // productoToolStripMenuItem
-            // 
-            this.productoToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_mover_por_carretilla_32;
-            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(142, 30);
-            this.productoToolStripMenuItem.Text = "Producto";
+            this.nuevoClienteToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
+            this.nuevoClienteToolStripMenuItem.Text = "Administrar Clientes";
+            this.nuevoClienteToolStripMenuItem.Click += new System.EventHandler(this.nuevoClienteToolStripMenuItem_Click_1);
             // 
             // ticketsToolStripMenuItem
             // 
@@ -177,6 +210,8 @@
             // 
             // entradasToolStripMenuItem
             // 
+            this.entradasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaEntradaProductoToolStripMenuItem});
             this.entradasToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_éxito_en_la_cesta_32;
             this.entradasToolStripMenuItem.Name = "entradasToolStripMenuItem";
             this.entradasToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
@@ -231,6 +266,14 @@
             this.lblComputadora.Text = "_";
             this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // nuevaEntradaProductoToolStripMenuItem
+            // 
+            this.nuevaEntradaProductoToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.new_product_32px;
+            this.nuevaEntradaProductoToolStripMenuItem.Name = "nuevaEntradaProductoToolStripMenuItem";
+            this.nuevaEntradaProductoToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
+            this.nuevaEntradaProductoToolStripMenuItem.Text = "Nueva Entrada Producto";
+            this.nuevaEntradaProductoToolStripMenuItem.Click += new System.EventHandler(this.NuevaEntradaProductoToolStripMenuItem_Click);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,5 +321,9 @@
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unidadMedidaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarUnidadesDeMedidaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaEntradaProductoToolStripMenuItem;
     }
 }

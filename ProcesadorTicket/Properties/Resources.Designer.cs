@@ -73,9 +73,29 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap approval_24px {
+            get {
+                object obj = ResourceManager.GetObject("approval_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barcode_scanner_32px {
             get {
                 object obj = ResourceManager.GetObject("barcode_scanner_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap broom_24px {
+            get {
+                object obj = ResourceManager.GetObject("broom_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +153,29 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap filled_plus_2_math_24px {
+            get {
+                object obj = ResourceManager.GetObject("filled_plus_2_math_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filter_32px {
             get {
                 object obj = ResourceManager.GetObject("filter_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grocery_bag_32px {
+            get {
+                object obj = ResourceManager.GetObject("grocery_bag_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +283,26 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap industrial_scales_connected_32px {
+            get {
+                object obj = ResourceManager.GetObject("industrial_scales_connected_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insert_row_below_32px {
+            get {
+                object obj = ResourceManager.GetObject("insert_row_below_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key_24px {
             get {
                 object obj = ResourceManager.GetObject("key_24px", resourceCulture);
@@ -276,6 +336,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap ms_excel_32px {
             get {
                 object obj = ResourceManager.GetObject("ms_excel_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_product_32px {
+            get {
+                object obj = ResourceManager.GetObject("new_product_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,6 +443,16 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap save_close_24px {
+            get {
+                object obj = ResourceManager.GetObject("save_close_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_32px {
             get {
                 object obj = ResourceManager.GetObject("search_32px", resourceCulture);
@@ -426,6 +506,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap trash_32px {
             get {
                 object obj = ResourceManager.GetObject("trash_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlock_2_24px {
+            get {
+                object obj = ResourceManager.GetObject("unlock_2_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

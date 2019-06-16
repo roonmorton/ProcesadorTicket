@@ -1,12 +1,6 @@
 ﻿using ProcesadorTicket.Core.DA;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProcesadorTicket
@@ -15,7 +9,19 @@ namespace ProcesadorTicket
     {
         private int count = 5;
         private Boolean success = false;
+        private Boolean validacion = false;
+        private string strPermiso = "";
+        public Boolean getvalidacion()
+        {
+            return validacion;
+        }
 
+        public void setPermiso( string permiso)
+        {
+            this.strPermiso = permiso;
+        }
+
+       
         public FrmLogin()
         {
             InitializeComponent();
@@ -26,6 +32,8 @@ namespace ProcesadorTicket
             try
             {
                 this.CenterToScreen();
+                if (!strPermiso.Equals(""))
+                    txtTitulo.Text = "Validar Usuario...";
             }
             catch (Exception ex)
             {
@@ -35,7 +43,47 @@ namespace ProcesadorTicket
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            login();
+            try
+            {
+
+                login();
+                if (!this.strPermiso.Equals(""))
+                {
+                    validarUsuarioPermiso();
+
+                }
+
+            }
+            catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+
+        protected void validarUsuarioPermiso()
+        {
+            try
+            {
+                if (success)
+                {
+
+                    DASeguridad seg = new DASeguridad();
+                    DataTable dtSeg = seg.validarPermisoUsuario(this.txtUsuario.Text.ToString(), this.strPermiso);
+
+                    if (dtSeg.Rows.Count > 0)
+                    {
+                        this.validacion = true;
+                        //Helper.MensajeSistema("Usuario Valido");
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         protected void login(){
@@ -49,7 +97,8 @@ namespace ProcesadorTicket
                     Globals.idUSuario = Convert.ToInt32(tblInformacionLogin.Rows[0]["idUsuario"].ToString());
                     Globals.usuario = tblInformacionLogin.Rows[0]["usuario"].ToString();
                     success = true;
-                    this.Close();
+                    if(this.strPermiso.Equals(""))
+                        this.Close();
                 }
                 else
                 {
@@ -57,7 +106,12 @@ namespace ProcesadorTicket
                     Helper.MensajeSistema("Usuario incorrecto, " + count.ToString() + " intentos restantes");
                     limpiar();
                     txtUsuario.Focus();
-                    if (count == 0) { Application.Exit(); }
+                    if (count == 0) {
+                        if (this.strPermiso.Equals(""))
+                            Application.Exit();
+                        else
+                            this.Close();        
+                    }
                 }
             }
             catch (Exception ex)
@@ -76,9 +130,10 @@ namespace ProcesadorTicket
                     ClsHelper.MensajeSistema(ex.Message + " " + count.ToString() + " intentos restantes");
                     if (count == 0) { Application.Exit(); }
                 }*/
-                count -= 1;
-                Helper.MensajeSistema(ex.Message + " " + count.ToString() + " intentos restantes");
-                if (count == 0) { Application.Exit(); }
+                //count -= 1;
+                Helper.erroLog(ex);
+                //Helper.MensajeSistema(ex.Message + " " + count.ToString() + " intentos restantes");
+                //if (count == 0) { Application.Exit(); }
 
 
             }
@@ -87,7 +142,9 @@ namespace ProcesadorTicket
         {
             try
             {
-                if (!success)
+                //if (!this.strPermiso.Equals(""))
+                //    this.Close();
+                if (!success && this.strPermiso.Equals(""))
                 {
                     Application.Exit();
                 }
@@ -101,7 +158,17 @@ namespace ProcesadorTicket
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            salir();
+            try
+            {
+                salir();
+                if (!this.strPermiso.Equals(""))
+                    this.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
         }
 
         private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -134,6 +201,11 @@ namespace ProcesadorTicket
             if (e.KeyCode == Keys.Enter)
             {
                 login();
+                if (!this.strPermiso.Equals(""))
+                {
+                    validarUsuarioPermiso();
+
+                }
             }
         }
 

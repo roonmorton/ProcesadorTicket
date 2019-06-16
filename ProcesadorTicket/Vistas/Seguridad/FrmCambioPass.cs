@@ -20,7 +20,21 @@ namespace ProcesadorTicket
 
         private void FrmCambioPass_Load(object sender, EventArgs e)
         {
-            
+            try
+            {
+                DAUsuario usuario = new DAUsuario();
+                if (usuario.obtenerConfigurable().Rows[0]["configurable"].ToString().Equals("0"))
+                {
+                    Helper.MensajeSistema("No se puede configurar este usuario...");
+                    this.Dispose();
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

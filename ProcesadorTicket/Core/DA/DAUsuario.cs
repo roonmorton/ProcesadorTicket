@@ -19,8 +19,8 @@ namespace ProcesadorTicket.Core.DA
                 else
                 {
                     // Helper.MensajeSistema("UPDATE TBL_Ticket set noTicket = '" + ticket + "', monto = " + monto + ", idTipo = " + tipo + ", usuarioModificacion = '" + Globals.usuario + "' WHERE idTicket = " + id + ";");
-                    //Modifica
-                    ejecutarConsulta("UPDATE TBL_Usuario set estado = "+ estado +" nombres = '" + nombres + "', apellidos = '" + apellidos + "', usuarioModificacion = '" + Globals.usuario + "', usuario = '" + usuario + "', fechaModificacion = '" + DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss") + "' WHERE idCliente = " + id + ";");
+                    //Modific
+                    ejecutarConsulta("UPDATE TBL_Usuario set estado = "+ estado +", nombres = '" + nombres + "', apellidos = '" + apellidos + "', usuarioModificacion = '" + Globals.usuario + "', usuario = '" + usuario + "', fechaModificacion = '" + DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss") + "' WHERE idUsuario = " + id );
                 }
                 res = true;
             }
@@ -37,7 +37,25 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                string query = "SELECT  top 20 (Switch(estado=0,\"Inactivo\",estado=1,\"Activo\"))  AS estadoUsuario,nombres, apellidos, idUsuario AS ID,usuario FROM TBL_Usuario WHERE   configurable = 1  and nombres like '*"+nombres+"*'";
+                string query = "SELECT  top 20 (Switch(estado=0,'Inactivo',estado=1,'Activo'))  AS estadoUsuario,nombres, apellidos, idUsuario AS ID,usuario FROM TBL_Usuario WHERE configurable = 1 and nombres like '%"+nombres+"%'";
+                //Helper.MensajeSistema(query);
+                DataTable dt=  ejecutarConsultaDT(query);
+                //Helper.MensajeSistema("Datos: " + dt.Rows.Count);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public DataTable validarUsuario(string usuario = "")
+        {
+
+            try
+            {
+                string query = "SELECT count(1) AS usuarios FROM TBL_Usuario WHERE usuario = '"+usuario+"'";
                 //Helper.MensajeSistema(query);
                 return ejecutarConsultaDT(query);
             }
@@ -47,6 +65,40 @@ namespace ProcesadorTicket.Core.DA
             }
 
         }
+
+        public DataTable validarUsuarioID(string usuario = "",string id="")
+        {
+
+            try
+            {
+                string query = "SELECT count(1) AS usuarios FROM TBL_Usuario WHERE usuario = '"+usuario+"' and idUsuario = "+id+"";
+                //Helper.MensajeSistema(query);
+                return ejecutarConsultaDT(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+        public DataTable obtenerConfigurable()
+        {
+
+            try
+            {
+                string query = "SELECT configurable FROM TBL_Usuario WHERE ucase(usuario) ='"+Globals.usuario.ToUpper()+"'";
+                //Helper.MensajeSistema(query);
+                return ejecutarConsultaDT(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
 
         public Boolean eliminar(string id)
         {

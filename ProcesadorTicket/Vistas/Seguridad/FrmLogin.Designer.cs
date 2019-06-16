@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtTitulo = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -37,18 +37,18 @@
             this.btnIniciar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // txtTitulo
             // 
-            this.label1.BackColor = System.Drawing.Color.SteelBlue;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 53);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Iniciar Sesión";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtTitulo.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTitulo.Location = new System.Drawing.Point(0, 0);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(362, 53);
+            this.txtTitulo.TabIndex = 2;
+            this.txtTitulo.Text = "Iniciar Sesión";
+            this.txtTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtUsuario
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -151,7 +151,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtTitulo;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPass;

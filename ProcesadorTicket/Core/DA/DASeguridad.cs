@@ -15,7 +15,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + Helper.GetMD5( pass )+ "'and TBL_Usuario.usuario = '" + usuario + "'; ");
+                return ejecutarConsultaDT("SELECT TBL_Usuario.idUsuario, TBL_Usuario.usuario FROM TBL_Usuario WHERE TBL_Usuario.pass = '" + Helper.GetMD5( pass )+ "'and TBL_Usuario.usuario = '" + usuario + "' and estado = 1; ");
 
             }
             catch (Exception ex)
@@ -40,6 +40,20 @@ namespace ProcesadorTicket.Core.DA
                 throw ex;
             }
             return res;
+        }
+
+        public DataTable validarPermisoUsuario(string usuario, string permiso)
+        {
+            try
+            {
+                string query = "SELECT SEC_TBL_UsuarioPermiso.activo, SEC_TBL_Permiso.descripcion, SEC_TBL_Permiso.informacion FROM (SEC_TBL_Permiso LEFT JOIN SEC_TBL_UsuarioPermiso ON SEC_TBL_Permiso.IdPermiso = SEC_TBL_UsuarioPermiso.idPermiso) LEFT JOIN TBL_Usuario ON TBL_Usuario.idUsuario = SEC_TBL_UsuarioPermiso.idUsuario where TBL_Usuario.usuario = '"+usuario+"' AND SEC_TBL_Permiso.descripcion = '"+permiso+"'";
+                return ejecutarConsultaDT(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

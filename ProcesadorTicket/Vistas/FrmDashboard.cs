@@ -100,17 +100,7 @@ namespace ProcesadorTicket
             }
         }
 
-        private void nuevoClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                FrmClientes frmCl = new FrmClientes();
-                frmCl.ShowDialog(this);
-            }catch(Exception ex)
-            {
-                Helper.erroLog(ex);
-            }
-        }
+        
 
         private void GestionUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -133,6 +123,56 @@ namespace ProcesadorTicket
             {
                 FrmCambioPass pass = new FrmCambioPass();
                 pass.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void nuevoClienteToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmClientes frmCl = new FrmClientes();
+                frmCl.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void administrarUnidadesDeMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmUnidadMedida unidad = new FrmUnidadMedida();
+                unidad.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void AdministrarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmProducto producto = new FrmProducto();
+                producto.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void NuevaEntradaProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmEntradaProducto entradaProducto = new FrmEntradaProducto();
+                entradaProducto.ShowDialog(this);
+
             }catch(Exception ex)
             {
                 Helper.erroLog(ex);
