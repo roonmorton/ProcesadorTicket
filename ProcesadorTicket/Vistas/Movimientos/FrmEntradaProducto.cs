@@ -54,7 +54,7 @@ namespace ProcesadorTicket
             try
             {
                 limpiar();
-                cargarComboUnidadMedia();
+                //cargarComboUnidadMedia();
             }
             catch (Exception ex)
             {
@@ -83,18 +83,18 @@ namespace ProcesadorTicket
             }
         }
 
-        private void cargarComboUnidadMedia()
-        {
-            try
-            {
-                DAUnidadMedida tipo = new DAUnidadMedida();
-                cargarCombos(tipo.seleccionar(), this.cmbUnidadMedida);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //private void cargarComboUnidadMedia()
+        //{
+        //    try
+        //    {
+        //        DAUnidadMedida tipo = new DAUnidadMedida();
+        //        cargarCombos(tipo.seleccionar(), this.cmbUnidadMedida);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
         private void cargarCombos(DataTable dataTable, ComboBox combo)
         {
@@ -161,12 +161,12 @@ namespace ProcesadorTicket
                     return;
                 }
 
-                if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
-                {
-                    Helper.MensajeSistema("Selecionar un tipo para guardar...");
-                    cmbUnidadMedida.Focus();
-                    return;
-                }
+                //if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
+                //{
+                //    Helper.MensajeSistema("Selecionar un tipo para guardar...");
+                //    cmbUnidadMedida.Focus();
+                //    return;
+                //}
 
                /* if (Int32.Parse(pStock) < 0)
                 {
@@ -191,8 +191,8 @@ namespace ProcesadorTicket
                 dr["precio"] = pPrecio;
                 dr["cantidad"] = txtCantidad.Text.ToString();
                 dr["stock"] = pStock;
-                dr["idUnidadMedida"] = cmbUnidadMedida.SelectedValue.ToString();
-                dr["unidadMedida"] = cmbUnidadMedida.SelectedText.ToString(); ;
+                //dr["idUnidadMedida"] = cmbUnidadMedida.SelectedValue.ToString();
+                //dr["unidadMedida"] = cmbUnidadMedida.SelectedText.ToString(); ;
 
 
 
@@ -237,6 +237,21 @@ namespace ProcesadorTicket
             {
                 Helper.erroLog(ex);
             }
+        }
+
+        private void txtFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

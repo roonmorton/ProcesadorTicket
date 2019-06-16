@@ -60,7 +60,7 @@ namespace ProcesadorTicket
         {
             try
             {
-                DAUnidadMedida tipo = new DAUnidadMedida();
+                DATipo tipo = new DATipo(); 
                 cargarCombos(tipo.seleccionar(), this.cmbTipo);
             }
             catch (Exception ex)
