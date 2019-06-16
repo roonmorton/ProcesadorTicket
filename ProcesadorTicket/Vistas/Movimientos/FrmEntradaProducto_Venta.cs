@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ProcesadorTicket
 {
-    public partial class FrmEntradaProducto : Form
+    public partial class FrmEntradaProducto_Venta: Form
     {
         private DataTable detalle;
         private string pidProducto = "0";
@@ -20,7 +20,7 @@ namespace ProcesadorTicket
         private string pStock = "0";
         private string pDescripcion = "0";
 
-        public FrmEntradaProducto()
+        public FrmEntradaProducto_Venta()
         {
             InitializeComponent();
            
@@ -33,14 +33,12 @@ namespace ProcesadorTicket
                 detalle = new DataTable();
                 detalle.Columns.Add("idProducto");
 
-                detalle.Columns.Add("codigo");
-                detalle.Columns.Add("descripcion");
-                detalle.Columns.Add("precio");
-                detalle.Columns.Add("cantidad");
-                detalle.Columns.Add("stock");
-
-                detalle.Columns.Add("unidadMedida");
-                detalle.Columns.Add("idUnidadMedida");
+                //detalle.Columns.Add("codigo");
+                //detalle.Columns.Add("descripcion");
+                //detalle.Columns.Add("precio");
+                //detalle.Columns.Add("cantidad");
+                //detalle.Columns.Add("unidadMedida");
+                //detalle.Columns.Add("idUnidadMedida");
 
             }
             catch (Exception ex)
@@ -168,37 +166,23 @@ namespace ProcesadorTicket
                     return;
                 }
 
-               /* if (Int32.Parse(pStock) < 0)
+                if (Int32.Parse(pStock) < 0)
                 {
                     Helper.MensajeSistema("No hay stock para procesar el producto...");
                     
                     return;
-                }*/
-                DataRow dr = detalle.NewRow();
+                }
 
-                //detalle.Columns.Add("codigo");
-                //detalle.Columns.Add("descripcion");
-                //detalle.Columns.Add("precio");
-                //detalle.Columns.Add("cantidad");
-                //detalle.Columns.Add("stock");
-
-                //detalle.Columns.Add("unidadMedida");
-                //detalle.Columns.Add("idUnidadMedida");
-
-                dr["idProducto"] = pidProducto;
-                dr["codigo"] = pCodigo;
-                dr["descripcion"] = pDescripcion;
-                dr["precio"] = pPrecio;
-                dr["cantidad"] = txtCantidad.Text.ToString();
-                dr["stock"] = pStock;
-                dr["idUnidadMedida"] = cmbUnidadMedida.SelectedValue.ToString();
-                dr["unidadMedida"] = cmbUnidadMedida.SelectedText.ToString(); ;
-
-
-
-                detalle.Rows.Add(dr);
-                
-                grdData.DataSource = detalle;
+                detalle.Rows.Add(
+                        pidProducto
+                        //pCodigo,
+                        //pDescripcion,
+                        //pPrecio,
+                        //txtCantidad.Text.ToString(),
+                        //cmbUnidadMedida.SelectedText.ToString(),
+                        //cmbUnidadMedida.SelectedValue.ToString()
+                        );
+                //grdData.DataSource = detalle;
 
             }
             catch(Exception ex)

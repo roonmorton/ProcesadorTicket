@@ -60,7 +60,7 @@ namespace ProcesadorTicket
         {
             try
             {
-                DATipo tipo = new DATipo();
+                DAUnidadMedida tipo = new DAUnidadMedida();
                 cargarCombos(tipo.seleccionar(), this.cmbTipo);
             }
             catch (Exception ex)
@@ -72,7 +72,7 @@ namespace ProcesadorTicket
         private void cargarCombos(DataTable dataTable, ComboBox combo)
         {
             Dictionary<int, String> dicTipo = new Dictionary<int, string>();
-            dicTipo.Add(0, "Seleccione un Tipo...");
+            dicTipo.Add(0, "Seleccione unida de Medida...");
             foreach (DataRow row in dataTable.Rows)
             {
                 dicTipo.Add(Int32.Parse(row[0].ToString()), row[1].ToString());

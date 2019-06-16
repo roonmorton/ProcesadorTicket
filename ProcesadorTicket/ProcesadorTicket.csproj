@@ -134,6 +134,12 @@
     <Compile Include="Vistas\Maestros\FrmUnidadMedida.Designer.cs">
       <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Movimientos\FrmEntradaProducto_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\FrmEntradaProducto_Venta.Designer.cs">
+      <DependentUpon>FrmEntradaProducto_Venta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Movimientos\FrmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Maestros\FrmUnidadMedida.resx">
       <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Movimientos\FrmEntradaProducto_Venta.resx">
+      <DependentUpon>FrmEntradaProducto_Venta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Movimientos\FrmVenta.resx">
       <DependentUpon>FrmVenta.cs</DependentUpon>

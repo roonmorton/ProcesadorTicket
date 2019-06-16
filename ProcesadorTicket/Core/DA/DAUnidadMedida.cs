@@ -1,15 +1,23 @@
 ﻿using ProcesadorTicket.Core.DataBase;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProcesadorTicket.Core.DA
 {
     class DAUnidadMedida : DB
     {
+
+        public DataTable seleccionar()
+        {
+            try
+            {
+                return ejecutarConsultaDT("SELECT idUnidadMedida, descripcion FROM TBL_UnidadMedida");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public Boolean insertaActualizar(string id, string descripcion)
         {
