@@ -238,5 +238,20 @@ namespace ProcesadorTicket
                 Helper.erroLog(ex);
             }
         }
+
+        private void txtFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,5 +50,10 @@ namespace ProcesadorTicket
                 Helper.erroLog(ex);
             }
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
