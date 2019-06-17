@@ -77,6 +77,7 @@ namespace ProcesadorTicket
                 txtCantidad.Clear();
                 txtCodigo.Focus();
                 crearData();
+                btnGuardar.Enabled = false;
             }catch(Exception ex)
             {
                 throw ex;
@@ -199,6 +200,8 @@ namespace ProcesadorTicket
                 detalle.Rows.Add(dr);
                 
                 grdData.DataSource = detalle;
+                if (detalle.Rows.Count > 0)
+                    btnGuardar.Enabled = true;
 
             }
             catch(Exception ex)

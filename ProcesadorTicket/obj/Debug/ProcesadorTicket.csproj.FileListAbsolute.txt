@@ -68,3 +68,7 @@ C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debu
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.exe
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.pdb
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmMain.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmEntradaProducto_Venta.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCTickets.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCInicio.resources
