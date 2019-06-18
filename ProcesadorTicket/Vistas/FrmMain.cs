@@ -150,8 +150,10 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmClientes frmCl = new FrmClientes();
-                frmCl.ShowDialog(this);
+                UCClientes clientes = new UCClientes();
+                nuevaPestana(clientes, "Clientes");
+                //FrmClientes frmCl = new FrmClientes();
+                //frmCl.ShowDialog(this);
             }
             catch (Exception ex)
             {

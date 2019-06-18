@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabMain = new System.Windows.Forms.TabControl();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarContraseniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,8 +37,6 @@
             this.gestionUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrarUnidadesDeMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +48,11 @@
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabMain = new System.Windows.Forms.TabControl();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,61 +75,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(754, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.lblComputadora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 399);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(754, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
-            // 
-            // lblComputadora
-            // 
-            this.lblComputadora.Name = "lblComputadora";
-            this.lblComputadora.Size = new System.Drawing.Size(12, 17);
-            this.lblComputadora.Text = "_";
-            this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // tabMain
-            // 
-            this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabMain.Location = new System.Drawing.Point(0, 30);
-            this.tabMain.Margin = new System.Windows.Forms.Padding(0);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.Padding = new System.Drawing.Point(0, 0);
-            this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(754, 366);
-            this.tabMain.TabIndex = 3;
-            this.tabMain.Tag = "";
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.Image = global::ProcesadorTicket.Properties.Resources.close_window_24px;
-            this.btnCerrar.Location = new System.Drawing.Point(728, 34);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(21, 22);
-            this.btnCerrar.TabIndex = 4;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // archivoToolStripMenuItem
             // 
@@ -189,7 +132,6 @@
             // movimientosToolStripMenuItem
             // 
             this.movimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.unidadMedidaToolStripMenuItem,
             this.productoToolStripMenuItem,
             this.clienteToolStripMenuItem});
             this.movimientosToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_agregar_base_de_datos_32;
@@ -197,30 +139,13 @@
             this.movimientosToolStripMenuItem.Size = new System.Drawing.Size(145, 28);
             this.movimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
-            // unidadMedidaToolStripMenuItem
-            // 
-            this.unidadMedidaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administrarUnidadesDeMedidaToolStripMenuItem});
-            this.unidadMedidaToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.industrial_scales_connected_32px;
-            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
-            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
-            this.unidadMedidaToolStripMenuItem.Text = "Unidad de Medida";
-            // 
-            // administrarUnidadesDeMedidaToolStripMenuItem
-            // 
-            this.administrarUnidadesDeMedidaToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.insert_row_below_32px;
-            this.administrarUnidadesDeMedidaToolStripMenuItem.Name = "administrarUnidadesDeMedidaToolStripMenuItem";
-            this.administrarUnidadesDeMedidaToolStripMenuItem.Size = new System.Drawing.Size(287, 30);
-            this.administrarUnidadesDeMedidaToolStripMenuItem.Text = "Administrar Unidades de Medida";
-            this.administrarUnidadesDeMedidaToolStripMenuItem.Click += new System.EventHandler(this.administrarUnidadesDeMedidaToolStripMenuItem_Click);
-            // 
             // productoToolStripMenuItem
             // 
             this.productoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarProductosToolStripMenuItem});
             this.productoToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.icons8_mover_por_carretilla_32;
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
             // administrarProductosToolStripMenuItem
@@ -237,7 +162,7 @@
             this.nuevoClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Image = global::ProcesadorTicket.Properties.Resources.customer_insight_32px;
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(199, 30);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.clienteToolStripMenuItem.Text = "Clientes";
             // 
             // nuevoClienteToolStripMenuItem
@@ -306,6 +231,61 @@
             this.ticketsToolStripMenuItem1.Text = "Tickets";
             this.ticketsToolStripMenuItem1.Click += new System.EventHandler(this.ticketsToolStripMenuItem1_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.lblComputadora});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 399);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(754, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // lblComputadora
+            // 
+            this.lblComputadora.Name = "lblComputadora";
+            this.lblComputadora.Size = new System.Drawing.Size(12, 17);
+            this.lblComputadora.Text = "_";
+            this.lblComputadora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tabMain
+            // 
+            this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMain.Location = new System.Drawing.Point(0, 30);
+            this.tabMain.Margin = new System.Windows.Forms.Padding(0);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.Padding = new System.Drawing.Point(0, 0);
+            this.tabMain.SelectedIndex = 0;
+            this.tabMain.Size = new System.Drawing.Size(754, 366);
+            this.tabMain.TabIndex = 3;
+            this.tabMain.Tag = "";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.Image = global::ProcesadorTicket.Properties.Resources.close_window_24px;
+            this.btnCerrar.Location = new System.Drawing.Point(728, 34);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 22);
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,8 +335,6 @@
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unidadMedidaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administrarUnidadesDeMedidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevaEntradaProductoToolStripMenuItem;
         private System.Windows.Forms.TabControl tabMain;
