@@ -53,6 +53,7 @@ namespace ProcesadorTicket
             try
             {
                 limpiar();
+                
                 //cargarComboUnidadMedia();
             }
             catch (Exception ex)
@@ -75,8 +76,11 @@ namespace ProcesadorTicket
                 txtReferencia.Clear();
                 txtCantidad.Clear();
                 txtCodigo.Focus();
-                crearData();
                 btnGuardar.Enabled = false;
+                if (detalle != null) detalle.Dispose();
+                crearData();
+                grdData.DataSource = detalle;
+                
             }
             catch (Exception ex)
             {
@@ -97,7 +101,7 @@ namespace ProcesadorTicket
         //    }
         //}
 
-        private void cargarCombos(DataTable dataTable, ComboBox combo)
+       /* private void cargarCombos(DataTable dataTable, ComboBox combo)
         {
             Dictionary<int, String> dicTipo = new Dictionary<int, string>();
             dicTipo.Add(0, "Seleccione un Tipo...");
@@ -109,11 +113,22 @@ namespace ProcesadorTicket
             combo.ValueMember = "Key";
             combo.DataSource = dicTipo.ToArray();
         }
-
-        private void cargarData()
+        */
+        private void guardar()
         {
             try
             {
+                if(grdData.Rows.Count < 0)
+                {
+                    Helper.MensajeSistema("No hay datos a guardar...");
+                    return;
+                }
+                DAProducto producto = new DAProducto();
+
+                if(producto.guardarDetalle(detalle))
+                    Helper.MensajeSistema("Guardado Correctamente...");
+                else
+                    Helper.MensajeSistema("No se ha guardado...");
 
             }
             catch (Exception ex)
@@ -251,12 +266,24 @@ namespace ProcesadorTicket
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                guardar();
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                limpiar();
+            } catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
         }
 
     }

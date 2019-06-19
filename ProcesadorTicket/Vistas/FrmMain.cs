@@ -200,8 +200,11 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmEntradaProducto entradaProducto = new FrmEntradaProducto();
-                entradaProducto.ShowDialog(this);
+                //FrmEntradaProducto entradaProducto = new FrmEntradaProducto();
+                //entradaProducto.ShowDialog(this);
+                UCEntradaProductot eProducto = new UCEntradaProductot();
+                eProducto.Dock = DockStyle.Fill;
+                nuevaPestana(eProducto,"Ingreso de productos");
 
             }catch(Exception ex)
             {

@@ -10,6 +10,17 @@ namespace ProcesadorTicket.Core.DataBase
 
         private OleDbConnection con = new OleDbConnection(ConfigurationManager.ConnectionStrings["cnDefault"].ToString());
 
+
+        public OleDbConnection getCon()
+        {
+            try
+            {
+                return con;
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
         public Boolean fNull(string xstring)
         {
             try
