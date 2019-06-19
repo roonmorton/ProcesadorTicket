@@ -176,6 +176,12 @@
     <Compile Include="Vistas\Movimientos\FrmEntradaProducto.Designer.cs">
       <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Movimientos\UCEntradaProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\UCEntradaProducto.Designer.cs">
+      <DependentUpon>UCEntradaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Reportes\FrmReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Movimientos\FrmEntradaProducto.resx">
       <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Movimientos\UCEntradaProducto.resx">
+      <DependentUpon>UCEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Reportes\FrmReports.resx">
       <DependentUpon>FrmReports.cs</DependentUpon>
