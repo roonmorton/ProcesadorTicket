@@ -94,7 +94,7 @@ namespace ProcesadorTicket
         {
             try
             {
-                UCTickets frm = new UCTickets();
+                UCTicket frm = new UCTicket();
                 frm.Dock = DockStyle.Fill;
                 nuevaPestana(frm, "Tickets");
                 //frm.ShowDialog(this);
@@ -109,8 +109,12 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmReports rpt = new FrmReports();
-                rpt.ShowDialog(this);
+                // FrmReports rpt = new FrmReports();
+                // rpt.ShowDialog(this);
+                UCReports reports = new UCReports();
+                reports.Dock = DockStyle.Fill;
+                nuevaPestana(reports, "Reportes");
+
             }catch(Exception ex)
             {
                 Helper.erroLog(ex);
@@ -123,8 +127,11 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmUsuario frmU = new FrmUsuario();
-                frmU.ShowDialog(this);
+                //FrmUsuario frmU = new FrmUsuario();
+                //frmU.ShowDialog(this);}
+                UCUsuario usuario = new UCUsuario();
+                usuario.Dock = DockStyle.Fill;
+                nuevaPestana(usuario, "Usuarios");
             }catch(Exception ex)
             {
                 Helper.erroLog(ex);
@@ -151,6 +158,7 @@ namespace ProcesadorTicket
             try
             {
                 UCClientes clientes = new UCClientes();
+                clientes.Dock = DockStyle.Fill;
                 nuevaPestana(clientes, "Clientes");
                 //FrmClientes frmCl = new FrmClientes();
                 //frmCl.ShowDialog(this);
@@ -177,8 +185,11 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmProducto producto = new FrmProducto();
-                producto.ShowDialog(this);
+                //FrmProducto producto = new FrmProducto();
+                //producto.ShowDialog(this);
+                UCProducto producto = new UCProducto();
+                producto.Dock = DockStyle.Fill;
+                nuevaPestana(producto,"Productos");
             }catch(Exception ex)
             {
                 Helper.erroLog(ex);

@@ -72,3 +72,11 @@ C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\De
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmEntradaProducto_Venta.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCTickets.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCInicio.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmMain.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCClientes.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCProducto.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCTicket.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCReports.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCInicio.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCUsuario.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCLayout.resources

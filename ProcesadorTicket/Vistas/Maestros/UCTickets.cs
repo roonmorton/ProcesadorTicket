@@ -11,11 +11,11 @@ using System.Media;
 
 namespace ProcesadorTicket
 {
-    public partial class UCTickets : UserControl
+    public partial class UCTicket : UserControl
     {
         private string idTicket = "0";
         private string idCliente = "0";
-        public UCTickets()
+        public UCTicket()
         {
             InitializeComponent();
         }
