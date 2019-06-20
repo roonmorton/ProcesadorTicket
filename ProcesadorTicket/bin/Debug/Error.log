@@ -425,3 +425,6 @@ Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaPro
    15/06/2019 13:20:29   Admin   DESKTOP-FGSF9HR   La cadena de entrada no tiene el formato correcto.   agregarProducto      en ProcesadorTicket.FrmEntradaProducto.agregarProducto() en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 185
    en ProcesadorTicket.FrmEntradaProducto.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\FrmEntradaProducto.cs:línea 193
 
+   19/06/2019 17:24:31   Admin   CEN-SIS-6395W9L   Referencia a objeto no establecida como instancia de un objeto.   guardar      en ProcesadorTicket.UCEntradaProductot.guardar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 136
+   en ProcesadorTicket.UCEntradaProductot.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 271
+

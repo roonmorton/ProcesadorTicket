@@ -1,6 +1,7 @@
 ﻿using ProcesadorTicket.Core.DataBase;
 using System;
 using System.Data;
+using System.Data.OleDb;
 
 namespace ProcesadorTicket.Core.DA
 {
@@ -58,6 +59,70 @@ namespace ProcesadorTicket.Core.DA
             {
                 throw ex;
             }
+
+        }
+
+        public Boolean guardarDetalle(DataTable data = null)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbTransaction transaccion = null;
+            Boolean estado = false;
+            string query = "";
+            OleDbConnection con = null;
+            try
+            {
+                if(data != null)
+                {
+                    if(data.Rows.Count > 0)
+                    {
+                        con = getCon();
+
+                        if (con.State == ConnectionState.Open) con.Close();
+                        con.Open();
+                        cmd.Connection = con;
+                        transaccion = con.BeginTransaction(IsolationLevel.ReadCommitted);
+                        cmd.Connection = con;
+                        cmd.Transaction = transaccion;
+                        cmd.CommandType = CommandType.Text;
+                        DataTable dt = new DataTable();
+                        OleDbDataAdapter da = new OleDbDataAdapter();
+
+                        //Falta Agregar insercion de encabezado
+                        foreach (DataRow row in data.Rows)
+                        {
+                            query = "SELECT idStockProducto FROM TBL_StockProducto WHERE idProducto = " + row["idProducto"].ToString();
+                            cmd.CommandText = query;
+                            da.SelectCommand = cmd;
+                            da.Fill(dt);
+
+                            if(dt.Rows.Count > 0)//Actualiza
+                                query = "UPDATE TBL_StockProducto SET cantidad = (cantidad+"+ row["cantidad"].ToString() +") WHERE idProducto = "+ row["idProducto"].ToString();
+                            else //Inserta
+                                query = "INSERT INTO TBL_StockProducto(idProducto, cantidad) VALUES("+ row["idProducto"].ToString() + ","+ row["cantidad"].ToString() + "     )";
+                            cmd.CommandText = query;
+                            cmd.ExecuteNonQuery();
+                            dt.Dispose();
+                            da.Dispose();
+                            dt = new DataTable();
+                            da = new OleDbDataAdapter();
+                        }
+                        transaccion.Commit();
+                        con.Close();
+                        estado = true;
+                    }
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                if (transaccion != null) transaccion.Rollback();
+                if (con.State == ConnectionState.Open) con.Close();
+                throw ex;
+            }
+            finally{
+                if (con.State == ConnectionState.Open) con.Close();
+            }
+            return estado;
 
         }
     }
