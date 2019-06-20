@@ -428,3 +428,24 @@ Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaPro
    19/06/2019 17:24:31   Admin   CEN-SIS-6395W9L   Referencia a objeto no establecida como instancia de un objeto.   guardar      en ProcesadorTicket.UCEntradaProductot.guardar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 136
    en ProcesadorTicket.UCEntradaProductot.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 271
 
+   20/06/2019 09:18:00   Admin   CEN-SIS-6395W9L   El motor de base de datos de Microsoft Access no puede encontrar la tabla o consulta de entrada 'TBL_StockProducto'. Asegúrese de que existe y de que el nombre está escrito correctamente.   buscarProducto      en ProcesadorTicket.UCEntradaProductot.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 160
+   en ProcesadorTicket.UCEntradaProductot.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 263
+
+   20/06/2019 09:21:53   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:21:58   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:22:03   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:22:15   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:23:51   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:29:25   Admin   CEN-SIS-6395W9L   El motor de base de datos de Microsoft Access no puede encontrar la tabla o consulta de entrada 'TBL_StockProducto'. Asegúrese de que existe y de que el nombre está escrito correctamente.   limpiar      en ProcesadorTicket.UCProducto.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 53
+   en ProcesadorTicket.UCProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 30
+

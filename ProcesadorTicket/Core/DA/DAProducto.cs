@@ -38,7 +38,7 @@ namespace ProcesadorTicket.Core.DA
         {
             try
             {
-                string query = "SELECT TOP 20 TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,( SELECT SUM(TBL_StockProducto.cantidad) FROM TBL_StockProducto WHERE TBL_StockProducto.idProducto = TBL_Producto.idProducto) AS stock FROM TBL_Producto WHERE TBL_Producto.descripcion LIKE '%"+producto+"%' ORDER BY idProducto DESC";
+                string query = "SELECT TOP 20 TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,TBLProducto.cantidad AS stock FROM TBL_Producto WHERE TBL_Producto.descripcion LIKE '%"+producto+"%' ORDER BY idProducto DESC";
                 return ejecutarConsultaDT(query);
             }
             catch (Exception ex)
@@ -52,7 +52,7 @@ namespace ProcesadorTicket.Core.DA
         {
             try
             {
-                string query = "SELECT TBL_Producto.idProducto, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,   TBL_StockProducto.cantidad as stock FROM TBL_Producto  LEFT JOIN TBL_StockProducto ON  TBL_StockProducto.idProducto = TBL_Producto.idProducto WHERE TBL_Producto.codigo = '"+codigo+"'";
+                string query = "SELECT TBL_Producto.idProducto, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,   TBL_Producto.cantidad as stock FROM TBL_Producto  WHERE TBL_Producto.codigo = '" + codigo+"'";
                 return ejecutarConsultaDT(query);
             }
             catch (Exception ex)
