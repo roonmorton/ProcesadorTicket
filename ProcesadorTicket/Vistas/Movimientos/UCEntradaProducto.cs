@@ -80,7 +80,31 @@ namespace ProcesadorTicket
                 if (detalle != null) detalle.Dispose();
                 crearData();
                 grdData.DataSource = detalle;
-                
+                txtContador.Text = "Productos("+ detalle.Rows.Count+")";
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void limpiarFormulario()
+        {
+            try
+            {
+                pidProducto = "0";
+                pCodigo = "0";
+                pPrecio = "0";
+                pStock = "0";
+                pDescripcion = "0";
+                txtCodigo.Clear();
+                txtDescripcion.Clear();
+                txtReferencia.Clear();
+                txtCantidad.Clear();
+                txtCodigo.Focus();
+                btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
+                grdData.DataSource = detalle;
+                txtContador.Text = "Registros(" + detalle.Rows.Count + ")";
             }
             catch (Exception ex)
             {
@@ -125,10 +149,13 @@ namespace ProcesadorTicket
                 }
                 DAProducto producto = new DAProducto();
 
-                if(producto.guardarDetalle(detalle))
+                if (producto.guardarDetalleEntrada(txtReferencia.Text, DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
+                {
                     Helper.MensajeSistema("Guardado Correctamente...");
+                    limpiar();
+                }
                 else
-                    Helper.MensajeSistema("No se ha guardado...");
+                    Helper.MensajeSistema("No se ha guardado, contactar con soporte...");
 
             }
             catch (Exception ex)
@@ -192,34 +219,35 @@ namespace ProcesadorTicket
 
                      return;
                  }*/
+                Boolean flag = false;
                 DataRow dr = detalle.NewRow();
-
-                //detalle.Columns.Add("codigo");
-                //detalle.Columns.Add("descripcion");
-                //detalle.Columns.Add("precio");
-                //detalle.Columns.Add("cantidad");
-                //detalle.Columns.Add("stock");
-
-                //detalle.Columns.Add("unidadMedida");
-                //detalle.Columns.Add("idUnidadMedida");
-
-                dr["idProducto"] = pidProducto;
-                dr["codigo"] = pCodigo;
-                dr["descripcion"] = pDescripcion;
-                dr["precio"] = pPrecio;
-                dr["cantidad"] = txtCantidad.Text.ToString();
-                dr["stock"] = pStock;
-                //dr["idUnidadMedida"] = cmbUnidadMedida.SelectedValue.ToString();
-                //dr["unidadMedida"] = cmbUnidadMedida.SelectedText.ToString(); ;
-
-
-
-                detalle.Rows.Add(dr);
-
-                grdData.DataSource = detalle;
                 if (detalle.Rows.Count > 0)
-                    btnGuardar.Enabled = true;
+                {
+                    foreach (DataRow row in detalle.Rows)
+                    {
+                        if (row["codigo"].ToString().Equals(pCodigo))// Si existe en el grid actualiza
+                        {
+                            row["cantidad"] = (Int32.Parse(row["cantidad"].ToString()) + Int32.Parse(txtCantidad.Text.ToString())).ToString();
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
 
+                if (!flag)
+                {
+                    dr["idProducto"] = pidProducto;
+                    dr["codigo"] = pCodigo;
+                    dr["descripcion"] = pDescripcion;
+                    dr["precio"] = pPrecio;
+                    dr["cantidad"] = txtCantidad.Text.ToString();
+                    dr["stock"] = pStock;
+                    detalle.Rows.Add(dr);
+                }
+                
+                
+                //btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
+                limpiarFormulario();
             }
             catch (Exception ex)
             {

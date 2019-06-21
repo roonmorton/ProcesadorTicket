@@ -318,7 +318,7 @@ namespace ProcesadorTicket
                                 //{
 
                                     DATicket ticket = new DATicket();
-                                    DataTable dt = ticket.ticket(
+                                    DataTable dt = ticket.cliente(
                                         data[0].ToString().Trim(),
                                         data[1].ToString().Trim().Replace("H", "")
                                         );

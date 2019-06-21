@@ -237,7 +237,6 @@ namespace ProcesadorTicket
         {
             Boolean enc = false;
             int i = 0;
-
             while ((i < tabMain.TabPages.Count) && (enc == false))
             {
                 if (tabMain.TabPages[i].Text == titulo)
@@ -245,11 +244,26 @@ namespace ProcesadorTicket
                 else
                     i++;
             }
-            if (enc)
+
+            return enc ? i : -1;
+            /*if (enc)
                 return i;
             else
-                return -1;
+                return -1;*/
 
+        }
+
+        private void NuevaVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UCVenta venta = new UCVenta();
+                venta.Dock = DockStyle.Fill;
+                nuevaPestana(venta,"Venta");
+            }catch(Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
         }
     }
 }

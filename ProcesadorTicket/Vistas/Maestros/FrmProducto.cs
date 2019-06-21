@@ -38,7 +38,7 @@ namespace ProcesadorTicket
                 txtDescripcion.Clear();
                 txtPrecio.Clear();
                 btnPrecio.Enabled = false;
-                txtPrecio.Enabled = true;
+                //txtPrecio.Enabled = true;
                 buscar();
                 idProducto = "0";
                 txtDescripcion.Focus();

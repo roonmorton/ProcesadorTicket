@@ -1,0 +1,25 @@
+
+Unidad de Medida (Descripcion)
+Producto(Descripcion)
+Stock(producto,cantidad,precio)
+
+IngresosProducto(fechaIngreso,Referencia=
+DetalleIngresoProducto(producto,(Descripcion opcional), cantidadPorProducto)
+
+Venta(fechaVenta, correlativo, empleado)
+DetalleVenta(Producto, cantidad, precio)
+
+Permisos
+DetallePermisos
+
+
+Reportes
+Ventas 
+	- Ventas generales por rango de fecha
+	- Ventas detallada por producto rango de fecha
+	
+Productos 
+	- Stock producto
+	- 
+
+

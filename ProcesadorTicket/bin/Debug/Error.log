@@ -428,3 +428,102 @@ Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaPro
    19/06/2019 17:24:31   Admin   CEN-SIS-6395W9L   Referencia a objeto no establecida como instancia de un objeto.   guardar      en ProcesadorTicket.UCEntradaProductot.guardar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 136
    en ProcesadorTicket.UCEntradaProductot.btnGuardar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 271
 
+   20/06/2019 09:18:00   Admin   CEN-SIS-6395W9L   El motor de base de datos de Microsoft Access no puede encontrar la tabla o consulta de entrada 'TBL_StockProducto'. Asegúrese de que existe y de que el nombre está escrito correctamente.   buscarProducto      en ProcesadorTicket.UCEntradaProductot.buscarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 160
+   en ProcesadorTicket.UCEntradaProductot.TxtCodigo_TextChanged(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 263
+
+   20/06/2019 09:21:53   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:21:58   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:22:03   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:22:15   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:23:51   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   agregarProducto      en ProcesadorTicket.UCEntradaProductot.agregarProducto() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 236
+   en ProcesadorTicket.UCEntradaProductot.BtnAgregar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 244
+
+   20/06/2019 09:29:25   Admin   CEN-SIS-6395W9L   El motor de base de datos de Microsoft Access no puede encontrar la tabla o consulta de entrada 'TBL_StockProducto'. Asegúrese de que existe y de que el nombre está escrito correctamente.   limpiar      en ProcesadorTicket.UCProducto.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 53
+   en ProcesadorTicket.UCProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 30
+
+   21/06/2019 12:00:58   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.UCProducto.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 53
+   en ProcesadorTicket.UCProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 30
+
+   21/06/2019 14:24:32   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.UCProducto.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 53
+   en ProcesadorTicket.UCProducto.FrmProducto_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 30
+
+   21/06/2019 14:36:25   Admin   CEN-SIS-6395W9L   Uso no válido de la función de agregado Sum() y el tipo: String.   Aggregate      en System.Data.Common.StringStorage.Aggregate(Int32[] recordNos, AggregateType kind)
+   en System.Data.DataColumn.GetAggregateValue(Int32[] records, AggregateType kind)
+   en System.Data.AggregateNode.Eval(Int32[] records)
+   en System.Data.DataExpression.Evaluate(DataRow[] rows, DataRowVersion version)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:38:51   Admin   CEN-SIS-6395W9L   Uso no válido de la función de agregado Sum() y el tipo: String.   Aggregate      en System.Data.Common.StringStorage.Aggregate(Int32[] recordNos, AggregateType kind)
+   en System.Data.DataColumn.GetAggregateValue(Int32[] records, AggregateType kind)
+   en System.Data.AggregateNode.Eval(Int32[] records)
+   en System.Data.DataExpression.Evaluate(DataRow[] rows, DataRowVersion version)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:40:34   Admin   CEN-SIS-6395W9L   Error de sintaxis en el argumento aggregate: Se esperaba una columna simple con un calificador 'Child'.   ParseAggregateArgument      en System.Data.ExpressionParser.ParseAggregateArgument(FunctionId aggregate)
+   en System.Data.ExpressionParser.Parse()
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:41:21   Admin   CEN-SIS-6395W9L   Uso no válido de la función de agregado Sum() y el tipo: String.   Aggregate      en System.Data.Common.StringStorage.Aggregate(Int32[] recordNos, AggregateType kind)
+   en System.Data.DataColumn.GetAggregateValue(Int32[] records, AggregateType kind)
+   en System.Data.AggregateNode.Eval(DataRow row, DataRowVersion version)
+   en System.Data.Select.AcceptRecord(Int32 record)
+   en System.Data.Select.GetLinearFilteredRows(Range range)
+   en System.Data.Select.SelectRows()
+   en System.Data.DataTable.Select(String filterExpression)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:42:28   Admin   CEN-SIS-6395W9L   Uso no válido de la función de agregado Sum() y el tipo: String.   Aggregate      en System.Data.Common.StringStorage.Aggregate(Int32[] recordNos, AggregateType kind)
+   en System.Data.DataColumn.GetAggregateValue(Int32[] records, AggregateType kind)
+   en System.Data.AggregateNode.Eval(Int32[] records)
+   en System.Data.DataExpression.Evaluate(DataRow[] rows, DataRowVersion version)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:49:51   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:50:05   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:50:48   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:51:08   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:51:59   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:57:14   Admin   CEN-SIS-6395W9L   Error de sintaxis en el argumento aggregate: Se esperaba una columna simple con un calificador 'Child'.   ParseAggregateArgument      en System.Data.ExpressionParser.ParseAggregateArgument(FunctionId aggregate)
+   en System.Data.ExpressionParser.Parse()
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en ProcesadorTicket.UCVenta.limpiarFormulario() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 172
+
+   21/06/2019 14:58:49   Admin   CEN-SIS-6395W9L   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToDecimal(String value)
+   en ProcesadorTicket.UCVenta.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 205
+

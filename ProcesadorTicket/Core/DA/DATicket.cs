@@ -63,7 +63,7 @@ namespace ProcesadorTicket.Core.DA
 
         }
 
-        public DataTable ticket(string id, string codigoEmpleado)
+        public DataTable cliente(string id, string codigoEmpleado)
         {
 
             try
