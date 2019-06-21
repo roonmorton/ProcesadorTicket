@@ -80,7 +80,31 @@ namespace ProcesadorTicket
                 if (detalle != null) detalle.Dispose();
                 crearData();
                 grdData.DataSource = detalle;
-                
+                txtContador.Text = "Productos("+ detalle.Rows.Count+")";
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void limpiarFormulario()
+        {
+            try
+            {
+                pidProducto = "0";
+                pCodigo = "0";
+                pPrecio = "0";
+                pStock = "0";
+                pDescripcion = "0";
+                txtCodigo.Clear();
+                txtDescripcion.Clear();
+                txtReferencia.Clear();
+                txtCantidad.Clear();
+                txtCodigo.Focus();
+                btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
+                grdData.DataSource = detalle;
+                txtContador.Text = "Registros(" + detalle.Rows.Count + ")";
             }
             catch (Exception ex)
             {
@@ -125,10 +149,13 @@ namespace ProcesadorTicket
                 }
                 DAProducto producto = new DAProducto();
 
-                if(producto.guardarDetalle(detalle))
+                if (producto.guardarDetalleEntrada(txtReferencia.Text, DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
+                {
                     Helper.MensajeSistema("Guardado Correctamente...");
+                    limpiar();
+                }
                 else
-                    Helper.MensajeSistema("No se ha guardado...");
+                    Helper.MensajeSistema("No se ha guardado, contactar con soporte...");
 
             }
             catch (Exception ex)
@@ -204,29 +231,8 @@ namespace ProcesadorTicket
                             flag = true;
                             break;
                         }
-                        /*else // Se inserta cuando no hay agregado en el grid
-                        {
-                            dr["idProducto"] = pidProducto;
-                            dr["codigo"] = pCodigo;
-                            dr["descripcion"] = pDescripcion;
-                            dr["precio"] = pPrecio;
-                            dr["cantidad"] = txtCantidad.Text.ToString();
-                            dr["stock"] = pStock;
-                            detalle.Rows.Add(dr);
-                            break;
-                        }*/
                     }
                 }
-                /*else // Se inserta cuando no hay agregado en el grid
-                {
-                    dr["idProducto"] = pidProducto;
-                    dr["codigo"] = pCodigo;
-                    dr["descripcion"] = pDescripcion;
-                    dr["precio"] = pPrecio;
-                    dr["cantidad"] = txtCantidad.Text.ToString();
-                    dr["stock"] = pStock;
-                    detalle.Rows.Add(dr);
-                }*/
 
                 if (!flag)
                 {
@@ -239,10 +245,9 @@ namespace ProcesadorTicket
                     detalle.Rows.Add(dr);
                 }
                 
-                grdData.DataSource = detalle;
-                if (detalle.Rows.Count > 0)
-                    btnGuardar.Enabled = true;
-
+                
+                //btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
+                limpiarFormulario();
             }
             catch (Exception ex)
             {

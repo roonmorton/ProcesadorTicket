@@ -113,7 +113,7 @@
             this.stock});
             this.grdData.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.grdData.Location = new System.Drawing.Point(0, 135);
-            this.grdData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdData.Margin = new System.Windows.Forms.Padding(2);
             this.grdData.MultiSelect = false;
             this.grdData.Name = "grdData";
             this.grdData.ReadOnly = true;
@@ -194,7 +194,7 @@
             this.btnPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrecio.Location = new System.Drawing.Point(154, 101);
             this.btnPrecio.Name = "btnPrecio";
-            this.btnPrecio.Size = new System.Drawing.Size(73, 29);
+            this.btnPrecio.Size = new System.Drawing.Size(92, 29);
             this.btnPrecio.TabIndex = 45;
             this.btnPrecio.Text = "Habilitar";
             this.btnPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -206,7 +206,7 @@
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(353, 59);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(143, 23);
             this.txtCodigo.TabIndex = 43;
@@ -230,7 +230,7 @@
             this.btnBuscar.Image = global::ProcesadorTicket.Properties.Resources.search_32px;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(521, 101);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(160, 25);
             this.btnBuscar.TabIndex = 42;
@@ -247,7 +247,7 @@
             this.btnLimpiar.Image = global::ProcesadorTicket.Properties.Resources.broom_32px;
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiar.Location = new System.Drawing.Point(521, 71);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(160, 25);
             this.btnLimpiar.TabIndex = 41;
@@ -264,7 +264,7 @@
             this.btnGuardar.Image = global::ProcesadorTicket.Properties.Resources.save_32px;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(521, 40);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(161, 25);
             this.btnGuardar.TabIndex = 40;
@@ -276,7 +276,7 @@
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(8, 101);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(143, 23);
             this.txtPrecio.TabIndex = 38;
@@ -295,7 +295,7 @@
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(8, 59);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(342, 23);
             this.txtDescripcion.TabIndex = 36;

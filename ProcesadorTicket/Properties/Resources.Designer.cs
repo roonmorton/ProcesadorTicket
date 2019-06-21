@@ -83,6 +83,16 @@ namespace ProcesadorTicket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap area_chart_32px {
+            get {
+                object obj = ResourceManager.GetObject("area_chart_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barcode_scanner_32px {
             get {
                 object obj = ResourceManager.GetObject("barcode_scanner_32px", resourceCulture);
@@ -176,6 +186,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap filter_32px {
             get {
                 object obj = ResourceManager.GetObject("filter_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap graph_32px {
+            get {
+                object obj = ResourceManager.GetObject("graph_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +486,16 @@ namespace ProcesadorTicket.Properties {
         internal static System.Drawing.Bitmap search_32px {
             get {
                 object obj = ResourceManager.GetObject("search_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shipped_32px {
+            get {
+                object obj = ResourceManager.GetObject("shipped_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

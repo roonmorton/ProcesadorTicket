@@ -182,6 +182,12 @@
     <Compile Include="Vistas\Movimientos\UCEntradaProducto.Designer.cs">
       <DependentUpon>UCEntradaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Movimientos\UCVenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\Movimientos\UCVenta.Designer.cs">
+      <DependentUpon>UCVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Reportes\FrmReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Movimientos\UCEntradaProducto.resx">
       <DependentUpon>UCEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Movimientos\UCVenta.resx">
+      <DependentUpon>UCVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Reportes\FrmReports.resx">
       <DependentUpon>FrmReports.cs</DependentUpon>
@@ -437,6 +446,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\icons\close_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\shipped_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\area_chart_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\icons\graph_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
