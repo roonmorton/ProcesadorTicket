@@ -1,6 +1,4 @@
 
-
-
 Unidad de Medida (Descripcion)
 Producto(Descripcion)
 Stock(producto,cantidad,precio)
@@ -14,9 +12,14 @@ DetalleVenta(Producto, cantidad, precio)
 Permisos
 DetallePermisos
 
-hola
 
-
-Hola
+Reportes
+Ventas 
+	- Ventas generales por rango de fecha
+	- Ventas detallada por producto rango de fecha
+	
+Productos 
+	- Stock producto
+	- 
 
 
