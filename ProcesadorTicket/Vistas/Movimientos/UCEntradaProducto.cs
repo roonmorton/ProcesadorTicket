@@ -271,7 +271,7 @@ namespace ProcesadorTicket
         {
             try
             {
-                string texto = ((TextBox)sender).Text.ToString();
+               /* string texto = ((TextBox)sender).Text.ToString();
                 if (texto.Length > 0)
                 {
                     //Helper.MensajeSistema("ultimo: " + texto[texto.Length]);
@@ -279,7 +279,7 @@ namespace ProcesadorTicket
                     {
                         buscarProducto();
                     }
-                }
+                }*/
             }
             catch (Exception ex)
             {
@@ -314,5 +314,13 @@ namespace ProcesadorTicket
             }
         }
 
+        private void txtCodigo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buscarProducto();
+                //Helper.MensajeSistema("Código: " + txtCodigoProducto.Text);
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using ProcesadorTicket.Core.DA;
 using System.Media;
+using ClosedXML.Excel;
 
 namespace ProcesadorTicket
 {
@@ -69,7 +70,55 @@ namespace ProcesadorTicket
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (grdHistorico.Rows.Count < 1)
+                {
+                    Helper.MensajeSistema("No hay datos para exportar");
+                    return;
+                }
 
+
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.FileName = "Reporte_" + DateTime.Today.ToString("dd_MM_yyyy_hh_mm");
+                sfd.Filter = "files (*.xlsx)|*.xlsx";
+                sfd.FilterIndex = 2;
+                sfd.RestoreDirectory = true;
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    if (!String.IsNullOrEmpty(sfd.FileName))
+                    {
+                        //Exporting to Excel
+                        string fileName = sfd.FileName;
+                        //if (!Directory.Exists(folderPath))
+                        //{
+                        //    Directory.CreateDirectory(folderPath);
+                        //}
+                        using (XLWorkbook wb = new XLWorkbook())
+                        {
+                            DataTable dt = (DataTable)grdHistorico.DataSource;
+                            wb.Worksheets.Add(dt, "Ticket");
+
+                            wb.SaveAs(fileName);
+                            if (MessageBox.Show("Archivo generado correctamente,¿Desea abrirlo?", "Abrir Archivo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                            {
+                                System.Diagnostics.Process.Start(fileName);
+                            }
+                        }
+
+                    }
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                Helper.erroLog(ex);
+            }
         }
     }
 }

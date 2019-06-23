@@ -41,3 +41,5 @@ C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debu
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCInicio.resources
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCUsuario.resources
 C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCLayout.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCEntradaProductot.resources
+C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCVenta.resources

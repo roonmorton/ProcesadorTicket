@@ -23,3 +23,8 @@ Productos
 	- 
 
 
+
+Valida stock 
+(Analizar la opcion de dejar pasar auque no haya stock y realizar ajuste ?)
+
+
