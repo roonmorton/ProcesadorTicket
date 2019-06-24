@@ -99,7 +99,7 @@ namespace ProcesadorTicket
                 pDescripcion = "0";
                 txtCodigo.Clear();
                 txtDescripcion.Clear();
-                txtReferencia.Clear();
+                //txtReferencia.Clear();
                 txtCantidad.Clear();
                 txtCodigo.Focus();
                 btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
@@ -149,7 +149,7 @@ namespace ProcesadorTicket
                 }
                 DAProducto producto = new DAProducto();
 
-                if (producto.guardarDetalleEntrada(txtReferencia.Text, DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
+                if (producto.guardarDetalleEntrada(txtReferencia.Text.ToString(), DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
                 {
                     Helper.MensajeSistema("Guardado Correctamente...");
                     limpiar();
