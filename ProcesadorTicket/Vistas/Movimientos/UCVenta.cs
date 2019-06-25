@@ -79,11 +79,17 @@ namespace ProcesadorTicket
                     txtCantidad.Focus();
                     return;
                 }
+                if (pidProducto.Equals("0"))
+                {
+                    Helper.MensajeSistema("Debe de ingresar una cantidad..");
+                    txtCodigoProducto.Focus();
+                    return;
+                }
                 if(Convert.ToDecimal(pStock) <= 0)
                 {
                     Helper.MensajeSistema("No hay Stock de este producto, verificar...");
                     txtCodigoProducto.Focus();
-                    return;
+                   //return;
                 }
 
                 //if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
@@ -446,6 +452,32 @@ namespace ProcesadorTicket
             {
                 buscarProducto();
                 //Helper.MensajeSistema("Código: " + txtCodigoProducto.Text);
+            }
+        }
+
+        private void GrdData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 0:
+                        string id = grdData.SelectedRows[0].Cells["idProducto"].Value.ToString();
+                        foreach (DataRow dr in detalle.Rows)
+                            if (dr["idProducto"].Equals(id))
+                            {
+                                detalle.Rows.Remove(dr);
+                                break;
+                            }
+                        detalle.AcceptChanges();
+                        grdData.DataSource = detalle;
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                //idUsuario = "0";
+                Helper.erroLog(ex);
             }
         }
     }

@@ -69,9 +69,9 @@ namespace ProcesadorTicket
                 {
 
                     DASeguridad seg = new DASeguridad();
-                    DataTable dtSeg = seg.validarPermisoUsuario(this.txtUsuario.Text.ToString(), this.strPermiso);
+                    //DataTable dtSeg = seg.validarPermisoUsuario(this.txtUsuario.Text.ToString(), this.strPermiso);
 
-                    if (dtSeg.Rows.Count > 0)
+                    if (seg.validarPermisoUsuario(this.txtUsuario.Text.ToString(), this.strPermiso))
                     {
                         this.validacion = true;
                         //Helper.MensajeSistema("Usuario Valido");

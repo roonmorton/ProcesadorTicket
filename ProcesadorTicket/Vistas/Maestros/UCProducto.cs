@@ -75,9 +75,9 @@ namespace ProcesadorTicket
             {
                 string permiso = "Precios";
                 DASeguridad seg = new DASeguridad();
-                DataTable dtSeg = seg.validarPermisoUsuario(Globals.usuario, permiso);
+                //DataTable dtSeg = seg.validarPermisoUsuario(Globals.usuario, permiso);
 
-                if (dtSeg.Rows.Count == 0)
+                if (!seg.validarPermisoUsuario(Globals.usuario, permiso))
                 {
 
                     FrmLogin login = new FrmLogin();

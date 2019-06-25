@@ -173,6 +173,8 @@ namespace ProcesadorTicket
             return sb.ToString();
         }
 
+        
+
 
     }
 
