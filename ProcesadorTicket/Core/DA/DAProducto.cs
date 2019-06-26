@@ -88,7 +88,7 @@ namespace ProcesadorTicket.Core.DA
                         OleDbDataAdapter da = new OleDbDataAdapter();
 
                         //Insertar Encabezado
-                        query = "INSERT INTO TBL_EntradaProducto(fecha, referencia) values('" + fecha.ToString() + "','" + referencia + "')";
+                        query = "INSERT INTO TBL_EntradaProducto(fecha, referencia,usuarioCreacion) values('" + fecha.ToString() + "','" + referencia + "','"+Globals.usuario+"')";
                         cmd.CommandText = query;
                         cmd.ExecuteNonQuery();
                         //Obtiene ID Ingresado en entrada
@@ -103,10 +103,10 @@ namespace ProcesadorTicket.Core.DA
                         {
                             foreach (DataRow row in data.Rows)
                             {
-                                query = "UPDATE TBL_Producto SET cantidad = (cantidad + " + row["cantidad"].ToString() + ") WHERE idProducto = " + row["idProducto"].ToString();
+                                query = "UPDATE TBL_Producto SET cantidad = (cantidad + " + row["cantidad"].ToString() + "), usuarioModificacion='"+Globals.usuario+"' WHERE idProducto = " + row["idProducto"].ToString();
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
-                                query = "INSERT INTO TBL_DetalleEntradaProducto(idProducto,idEntradaProducto,cantidad) values(" + row["idProducto"].ToString() + "," + idEntradaProducto + "," + row["cantidad"].ToString() + ");";
+                                query = "INSERT INTO TBL_DetalleEntradaProducto(idProducto,idEntradaProducto,cantidad,usuarioCreacion,precioEntrada) values(" + row["idProducto"].ToString() + "," + idEntradaProducto + "," + row["cantidad"].ToString() + ",'"+Globals.usuario+"',"+ row["precio"].ToString() + ");";
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
                             }
@@ -160,7 +160,7 @@ namespace ProcesadorTicket.Core.DA
                         OleDbDataAdapter da = new OleDbDataAdapter();
 
                         //Insertar Encabezado
-                        query = "INSERT INTO TBL_VENTA(fecha,idCliente,total) values('"+fecha.ToString()+"',"+idCliente+","+data.Compute("sum(subtotal)","")+")";
+                        query = "INSERT INTO TBL_VENTA(fecha,idCliente,total,usuarioCreacion) values('"+fecha.ToString()+"',"+idCliente+","+data.Compute("sum(subtotal)","")+",'"+Globals.usuario+"')";
                         cmd.CommandText = query;
                         cmd.ExecuteNonQuery();
                         //Obtiene ID Ingresado en entrada
@@ -175,10 +175,10 @@ namespace ProcesadorTicket.Core.DA
                         {
                             foreach (DataRow row in data.Rows)
                             {
-                                query = "UPDATE TBL_Producto SET cantidad = (cantidad - " + row["cantidad"].ToString() + ") WHERE idProducto = " + row["idProducto"].ToString();
+                                query = "UPDATE TBL_Producto SET cantidad = (cantidad - " + row["cantidad"].ToString() + "), usuarioModificacion = '"+Globals.usuario+"' WHERE idProducto = " + row["idProducto"].ToString();
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
-                                query = "INSERT INTO TBL_DetalleVenta(idProducto, idVenta,cantidad,precioVenta) VALUES("+ row["idProducto"].ToString()+","+ idVenta + ","+ row["cantidad"].ToString()+","+ row["precio"].ToString() + ");";
+                                query = "INSERT INTO TBL_DetalleVenta(idProducto, idVenta,cantidad,precioVenta,usuarioCreacion) VALUES("+ row["idProducto"].ToString()+","+ idVenta + ","+ row["cantidad"].ToString()+","+ row["precio"].ToString() + ",'"+Globals.usuario+"');";
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
                             }
