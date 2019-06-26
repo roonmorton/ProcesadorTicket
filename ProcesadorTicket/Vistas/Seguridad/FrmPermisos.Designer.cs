@@ -1,4 +1,4 @@
-﻿namespace ProcesadorTicket.Vistas.Seguridad
+﻿namespace ProcesadorTicket
 {
     partial class FrmPermisos
     {
@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.grdHistorico = new System.Windows.Forms.DataGridView();
+            this.grdData = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtContador = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.idUsuarioPermiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPermiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.permiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.informacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -51,68 +56,50 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(759, 52);
+            this.label1.Size = new System.Drawing.Size(570, 34);
             this.label1.TabIndex = 3;
             this.label1.Text = "Permisos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblNombre
+            // grdData
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(12, 66);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(80, 20);
-            this.lblNombre.TabIndex = 6;
-            this.lblNombre.Text = "Nombres";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(12, 97);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(98, 20);
-            this.lblUsuario.TabIndex = 7;
-            this.lblUsuario.Text = "Usuario: ( )";
-            // 
-            // grdHistorico
-            // 
-            this.grdHistorico.AllowUserToAddRows = false;
-            this.grdHistorico.AllowUserToDeleteRows = false;
-            this.grdHistorico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grdData.AllowUserToAddRows = false;
+            this.grdData.AllowUserToDeleteRows = false;
+            this.grdData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdHistorico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdHistorico.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.grdHistorico.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grdHistorico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdHistorico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.grdHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdHistorico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
+            this.grdData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdData.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.grdData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idUsuarioPermiso,
             this.idPermiso,
-            this.permiso,
+            this.descripcion,
+            this.informacion,
             this.estado});
-            this.grdHistorico.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.grdHistorico.Location = new System.Drawing.Point(5, 146);
-            this.grdHistorico.MultiSelect = false;
-            this.grdHistorico.Name = "grdHistorico";
-            this.grdHistorico.ReadOnly = true;
-            this.grdHistorico.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.grdHistorico.RowHeadersVisible = false;
-            this.grdHistorico.RowTemplate.Height = 28;
-            this.grdHistorico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdHistorico.Size = new System.Drawing.Size(754, 397);
-            this.grdHistorico.TabIndex = 10;
+            this.grdData.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.grdData.Location = new System.Drawing.Point(0, 65);
+            this.grdData.Margin = new System.Windows.Forms.Padding(2);
+            this.grdData.MultiSelect = false;
+            this.grdData.Name = "grdData";
+            this.grdData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.grdData.RowHeadersVisible = false;
+            this.grdData.RowTemplate.Height = 28;
+            this.grdData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdData.Size = new System.Drawing.Size(567, 211);
+            this.grdData.TabIndex = 10;
             // 
             // dataGridViewImageColumn1
             // 
@@ -141,6 +128,31 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.Width = 50;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.txtContador});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 278);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(570, 22);
+            this.statusStrip1.TabIndex = 24;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // txtContador
+            // 
+            this.txtContador.Name = "txtContador";
+            this.txtContador.Size = new System.Drawing.Size(12, 17);
+            this.txtContador.Text = "_";
+            this.txtContador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -149,66 +161,115 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnGuardar.Image = global::ProcesadorTicket.Properties.Resources.save_32px;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(600, 66);
+            this.btnGuardar.Location = new System.Drawing.Point(367, 36);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(147, 38);
-            this.btnGuardar.TabIndex = 11;
+            this.btnGuardar.Size = new System.Drawing.Size(98, 25);
+            this.btnGuardar.TabIndex = 28;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // ID
+            // btnCerrar
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID.DataPropertyName = "ID";
-            this.ID.FillWeight = 50F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 75;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 75;
+            this.btnCerrar.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCerrar.Image = global::ProcesadorTicket.Properties.Resources.save_32px;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(469, 36);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(98, 25);
+            this.btnCerrar.TabIndex = 27;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(1, 43);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(49, 13);
+            this.lblUsuario.TabIndex = 29;
+            this.lblUsuario.Text = "Usuario: ";
+            // 
+            // idUsuarioPermiso
+            // 
+            this.idUsuarioPermiso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idUsuarioPermiso.DataPropertyName = "idUsuarioPermiso";
+            this.idUsuarioPermiso.FillWeight = 50F;
+            this.idUsuarioPermiso.HeaderText = "ID";
+            this.idUsuarioPermiso.MinimumWidth = 75;
+            this.idUsuarioPermiso.Name = "idUsuarioPermiso";
+            this.idUsuarioPermiso.Visible = false;
+            this.idUsuarioPermiso.Width = 75;
             // 
             // idPermiso
             // 
-            this.idPermiso.HeaderText = "idPermiso";
+            this.idPermiso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idPermiso.DataPropertyName = "idPermiso";
+            this.idPermiso.HeaderText = "ID Permiso";
+            this.idPermiso.MinimumWidth = 75;
             this.idPermiso.Name = "idPermiso";
-            this.idPermiso.ReadOnly = true;
             this.idPermiso.Visible = false;
+            this.idPermiso.Width = 75;
             // 
-            // permiso
+            // descripcion
             // 
-            this.permiso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.permiso.DataPropertyName = "permiso";
-            this.permiso.HeaderText = "Nombres";
-            this.permiso.Name = "permiso";
-            this.permiso.ReadOnly = true;
+            this.descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcion.DataPropertyName = "descripcion";
+            this.descripcion.HeaderText = "Permiso";
+            this.descripcion.Name = "descripcion";
+            // 
+            // informacion
+            // 
+            this.informacion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.informacion.DataPropertyName = "informacion";
+            this.informacion.HeaderText = "Información";
+            this.informacion.Name = "informacion";
             // 
             // estado
             // 
             this.estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.estado.DataPropertyName = "estado";
+            this.estado.FalseValue = "0";
             this.estado.HeaderText = "Estado";
-            this.estado.MinimumWidth = 150;
+            this.estado.IndeterminateValue = "0";
+            this.estado.MinimumWidth = 75;
             this.estado.Name = "estado";
-            this.estado.ReadOnly = true;
-            this.estado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.estado.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.estado.Width = 150;
+            this.estado.TrueValue = "1";
+            this.estado.Width = 75;
             // 
             // FrmPermisos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(759, 543);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.grdHistorico);
+            this.ClientSize = new System.Drawing.Size(570, 300);
+            this.ControlBox = false;
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.grdData);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPermisos";
-            this.Text = "FrmPermisos";
-            ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Permisos";
+            this.Load += new System.EventHandler(this.FrmPermisos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,16 +278,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.DataGridView grdHistorico;
+        private System.Windows.Forms.DataGridView grdData;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel txtContador;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idUsuarioPermiso;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPermiso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn permiso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn informacion;
         private System.Windows.Forms.DataGridViewCheckBoxColumn estado;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

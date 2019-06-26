@@ -72,6 +72,7 @@ namespace ProcesadorTicket
         {
             try
             {
+                
                 limpiar();
             }
             catch (Exception ex)
@@ -175,7 +176,11 @@ namespace ProcesadorTicket
                         break;
                     case 2:
                         string id = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString();
-
+                        string strUsuario = grdHistorico.SelectedRows[0].Cells["usuario"].Value.ToString();
+                        FrmPermisos permisos = new FrmPermisos();
+                        permisos.setIdUsuario(id);
+                        permisos.setUsuario(strUsuario);
+                        permisos.ShowDialog(this);
                         break;
                 }
             }

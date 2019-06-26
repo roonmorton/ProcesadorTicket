@@ -70,7 +70,7 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.SteelBlue;
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
@@ -124,7 +124,7 @@
             this.idProducto});
             this.grdData.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.grdData.Location = new System.Drawing.Point(2, 133);
-            this.grdData.Margin = new System.Windows.Forms.Padding(2);
+            this.grdData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grdData.MultiSelect = false;
             this.grdData.Name = "grdData";
             this.grdData.ReadOnly = true;
@@ -132,8 +132,9 @@
             this.grdData.RowHeadersVisible = false;
             this.grdData.RowTemplate.Height = 28;
             this.grdData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdData.Size = new System.Drawing.Size(980, 229);
+            this.grdData.Size = new System.Drawing.Size(980, 231);
             this.grdData.TabIndex = 31;
+            this.grdData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdData_CellClick);
             // 
             // borrar
             // 
@@ -199,7 +200,7 @@
             this.txtPrecio.Enabled = false;
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(419, 95);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(104, 23);
             this.txtPrecio.TabIndex = 60;
@@ -230,7 +231,7 @@
             this.txtCantidad.Enabled = false;
             this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(633, 96);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(104, 23);
             this.txtCantidad.TabIndex = 55;
@@ -240,7 +241,7 @@
             this.txtStock.Enabled = false;
             this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStock.Location = new System.Drawing.Point(525, 95);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(104, 23);
             this.txtStock.TabIndex = 58;
@@ -270,7 +271,7 @@
             this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(119, 96);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(294, 23);
             this.txtDescripcion.TabIndex = 53;
@@ -289,11 +290,12 @@
             // 
             this.txtCodigoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoProducto.Location = new System.Drawing.Point(12, 96);
-            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigoProducto.Name = "txtCodigoProducto";
             this.txtCodigoProducto.Size = new System.Drawing.Size(104, 23);
             this.txtCodigoProducto.TabIndex = 51;
             this.txtCodigoProducto.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
+            this.txtCodigoProducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigoProducto_KeyDown);
             // 
             // label3
             // 
@@ -309,7 +311,7 @@
             // 
             this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCliente.Location = new System.Drawing.Point(215, 56);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(271, 23);
             this.txtCliente.TabIndex = 66;
@@ -328,7 +330,7 @@
             // 
             this.txtTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTicket.Location = new System.Drawing.Point(126, 56);
-            this.txtTicket.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTicket.Name = "txtTicket";
             this.txtTicket.Size = new System.Drawing.Size(79, 23);
             this.txtTicket.TabIndex = 64;
@@ -349,7 +351,7 @@
             this.txtFecha.Enabled = false;
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFecha.Location = new System.Drawing.Point(11, 56);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(104, 23);
             this.txtFecha.TabIndex = 62;
@@ -396,7 +398,7 @@
             this.btnLimpiar.Image = global::ProcesadorTicket.Properties.Resources.broom_32px;
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiar.Location = new System.Drawing.Point(695, 41);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(79, 25);
             this.btnLimpiar.TabIndex = 70;
@@ -414,7 +416,7 @@
             this.btnGuardar.Image = global::ProcesadorTicket.Properties.Resources.save_32px;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(612, 41);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(79, 25);
             this.btnGuardar.TabIndex = 69;
@@ -431,7 +433,7 @@
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAgregar.Image = global::ProcesadorTicket.Properties.Resources.filled_plus_2_math_24px;
             this.btnAgregar.Location = new System.Drawing.Point(569, 41);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(39, 25);
             this.btnAgregar.TabIndex = 68;

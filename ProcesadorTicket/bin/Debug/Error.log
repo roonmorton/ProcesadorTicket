@@ -527,3 +527,40 @@ Nombre del parámetro: dataType   limpiar      en ProcesadorTicket.FrmEntradaPro
    en System.Convert.ToDecimal(String value)
    en ProcesadorTicket.UCVenta.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 205
 
+   25/06/2019 15:08:17   Admin   CEN-SIS-6395W9L   Error de sintaxis en la instrucción INSERT INTO.   guardar      en ProcesadorTicket.DAPermiso.guardar(DataTable dtPermisos, String idUsuario) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAPermiso.cs:línea 94
+   en ProcesadorTicket.FrmPermisos.Button1_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmPermisos.cs:línea 89
+
+   25/06/2019 15:09:50   Admin   CEN-SIS-6395W9L   Error de sintaxis en la instrucción INSERT INTO.   guardar      en ProcesadorTicket.DAPermiso.guardar(DataTable dtPermisos, String idUsuario) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAPermiso.cs:línea 95
+   en ProcesadorTicket.FrmPermisos.Button1_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmPermisos.cs:línea 89
+
+   25/06/2019 15:15:28   Admin   CEN-SIS-6395W9L   Error de sintaxis en la instrucción INSERT INTO.   guardar      en ProcesadorTicket.DAPermiso.guardar(DataTable dtPermisos, String idUsuario) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAPermiso.cs:línea 97
+   en ProcesadorTicket.FrmPermisos.Button1_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Seguridad\FrmPermisos.cs:línea 89
+
+   25/06/2019 15:38:32   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   validarPermisoUsuario      en ProcesadorTicket.Core.DA.DASeguridad.validarPermisoUsuario(String usuario, String permiso) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DASeguridad.cs:línea 58
+   en ProcesadorTicket.UCProducto.BtnPrecio_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 80
+
+   25/06/2019 15:39:44   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   validarPermisoUsuario      en ProcesadorTicket.Core.DA.DASeguridad.validarPermisoUsuario(String usuario, String permiso) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DASeguridad.cs:línea 59
+   en ProcesadorTicket.UCProducto.BtnPrecio_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCProducto.cs:línea 80
+
+   25/06/2019 16:16:53   Admin   CEN-SIS-6395W9L   No se pudo encontrar la columna denominada ID.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 333
+
+   25/06/2019 16:19:02   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 334
+
+   25/06/2019 16:20:00   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 334
+
+   25/06/2019 16:21:05   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 334
+
+   25/06/2019 16:22:24   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 334
+
+   25/06/2019 16:28:38   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 334
+
+   25/06/2019 16:31:09   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
+   en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 335
+

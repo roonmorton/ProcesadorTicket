@@ -99,7 +99,7 @@ namespace ProcesadorTicket
                 pDescripcion = "0";
                 txtCodigo.Clear();
                 txtDescripcion.Clear();
-                txtReferencia.Clear();
+                //txtReferencia.Clear();
                 txtCantidad.Clear();
                 txtCodigo.Focus();
                 btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
@@ -149,7 +149,7 @@ namespace ProcesadorTicket
                 }
                 DAProducto producto = new DAProducto();
 
-                if (producto.guardarDetalleEntrada(txtReferencia.Text, DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
+                if (producto.guardarDetalleEntrada(txtReferencia.Text.ToString(), DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss"), detalle))
                 {
                     Helper.MensajeSistema("Guardado Correctamente...");
                     limpiar();
@@ -206,6 +206,12 @@ namespace ProcesadorTicket
                     return;
                 }
 
+                if (pidProducto.Equals("0"))
+                {
+                    Helper.MensajeSistema("Ingrese un codigo producto valido..");
+                    txtCodigo.Focus();
+                    return;
+                }
                 //if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
                 //{
                 //    Helper.MensajeSistema("Selecionar un tipo para guardar...");
@@ -267,31 +273,6 @@ namespace ProcesadorTicket
             }
         }
 
-        private void TxtCodigo_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string texto = ((TextBox)sender).Text.ToString();
-                if (texto.Length > 0)
-                {
-                    //Helper.MensajeSistema("ultimo: " + texto[texto.Length]);
-                    if (texto[texto.Length - 1] == 'H')
-                    {
-                        buscarProducto();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Helper.erroLog(ex);
-            }
-        }
-
-        private void txtFecha_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -314,5 +295,66 @@ namespace ProcesadorTicket
             }
         }
 
+        private void txtCodigo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buscarProducto();
+                //Helper.MensajeSistema("Código: " + txtCodigoProducto.Text);
+            }
+        }
+
+        private void GrdData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 0:
+                        string id = grdData.SelectedRows[0].Cells["idProducto"].Value.ToString();
+                        //DataTable dtAux = detalle;
+                        foreach (DataRow dr in detalle.Rows)
+                            if (dr["idProducto"].Equals(id))
+                            {
+
+                                detalle.Rows.Remove(dr);
+                                break;
+                            }
+                        detalle.AcceptChanges();
+                        //detalle = dtAux;
+                        grdData.DataSource = detalle;
+                        
+                        /*txtNombres.Text = grdHistorico.SelectedRows[0].Cells["nombres"].Value.ToString();
+                        txtApellidos.Text = grdHistorico.SelectedRows[0].Cells["apellidos"].Value.ToString();
+                        txtUsuario.Text = grdHistorico.SelectedRows[0].Cells["usuario"].Value.ToString();
+                        checkEstado.Checked = (grdHistorico.SelectedRows[0].Cells["estadoUsuario"].Value.ToString() == "Activo" ? true : false);
+                        txtUsuario.Enabled = false;*/
+                        break;
+                   /* case 1:
+                        DialogResult dr = MessageBox.Show("¿Reestablecer contraseña de usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dr == DialogResult.Yes)
+                        {
+                            DAUsuario usuario = new DAUsuario();
+                            usuario.resetPass(grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString());
+                            Helper.MensajeSistema("Se ha reestablecido la contraseña...");
+                        }
+
+                        break;
+                    case 2:
+                        string id = grdHistorico.SelectedRows[0].Cells["ID"].Value.ToString();
+                        string strUsuario = grdHistorico.SelectedRows[0].Cells["usuario"].Value.ToString();
+                        FrmPermisos permisos = new FrmPermisos();
+                        permisos.setIdUsuario(id);
+                        permisos.setUsuario(strUsuario);
+                        permisos.ShowDialog(this);
+                        break;*/
+                }
+            }
+            catch (Exception ex)
+            {
+                //idUsuario = "0";
+                Helper.erroLog(ex);
+            }
+        }
     }
 }

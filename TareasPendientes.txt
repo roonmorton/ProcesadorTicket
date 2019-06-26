@@ -16,10 +16,144 @@ DetallePermisos
 Reportes
 Ventas 
 	- Ventas generales por rango de fecha
+	
+	SELECT 
+	venta.idVenta,
+	venta.fechaCreacion AS fecha,
+	(SELECT COUNT(1) FROM TBL_DetalleVenta WHERE TBL_DetalleVenta.idVenta = venta.idVenta ) AS productos,
+	venta.total,
+	IIf(cliente.idCliente IS NULL, "S/N", cliente.nombres) AS Cliente,
+	venta.usuarioCreacion AS usuarioVenta
+	FROM TBL_VENTA AS venta
+	LEFT JOIN TBL_Cliente AS cliente
+	ON venta.idCliente = cliente.idCliente
+	WHERE 
+	format(venta.fechaCreacion, 'dd/MM/yyyy')  
+	BETWEEN format('1/06/2019', 'dd/MM/yyyy') AND format('26/06/2019', 'dd/MM/yyyy');
+	
+	
 	- Ventas detallada por producto rango de fecha
 	
+	SELECT 
+	venta.idVenta,
+	venta.fechaCreacion AS fecha,
+	IIF(
+		(SELECT cliente.nombres from TBL_Cliente AS cliente WHERE cliente.idCliente = venta.idCliente ) is null, 
+		"S/N", 
+		(SELECT cliente.nombres from TBL_Cliente AS cliente WHERE cliente.idCliente = venta.idCliente )
+		)
+	,
+	venta.usuarioCreacion AS usuarioEntrada,
+	detalle.descripcion,
+	detalle.cantidad,
+	detalle.precioVenta,
+	venta.usuarioCreacion AS usuario
+	FROM TBL_Venta AS venta
+	LEFT JOIN 
+	(
+	SELECT 
+	producto.idProducto,
+	producto.codigo,
+	producto.descripcion,
+	detalle.idVenta,
+	detalle.cantidad,
+	detalle.precioVenta
+	FROM TBL_Producto AS producto 
+	INNER JOIN TBL_DetalleVenta AS detalle 
+	ON producto.idProducto = detalle.idProducto
+	) AS detalle 
+	ON detalle.idVenta = venta.idVenta
+	WHERE 
+	format(venta.fechaCreacion, 'dd/MM/yyyy')  
+	BETWEEN format('1/06/2019', 'dd/MM/yyyy') AND format('26/06/2019', 'dd/MM/yyyy');	
+	
+	
+	
 Productos 
-	- Stock producto
-	- 
+	- Entrada productos por fecha 
+	
+	SELECT 
+	entrada.idEntradaProducto,
+	entrada.fechaCreacion AS fecha,
+	entrada.referencia,
+	(SELECT COUNT(1) FROM TBL_DetalleEntradaProducto WHERE TBL_DetalleEntradaProducto.idEntradaProducto = entrada.idEntradaProducto ) AS productos,
+	entrada.usuarioCreacion AS usuarioEntrada
+	FROM TBL_EntradaProducto AS entrada
+	WHERE 
+	format(entrada.fechaCreacion, 'dd/MM/yyyy')  
+	BETWEEN format('1/06/2019', 'dd/MM/yyyy') AND format('26/06/2019', 'dd/MM/yyyy');
+	
+	
+	- Entrada productos detallado por fecha 
+	
+	SELECT 
+	entrada.idEntradaProducto,
+	entrada.fechaCreacion AS fecha,
+	entrada.referencia,
+	entrada.usuarioCreacion AS usuarioEntrada,
+	detalle.descripcion,
+	detalle.cantidad,
+	detalle.precioEntrada,
+	entrada.usuarioCreacion AS usuario
+	FROM TBL_EntradaProducto AS entrada
+	RIGHT JOIN 
+	(
+	SELECT 
+	producto.idProducto,
+	producto.codigo,
+	producto.descripcion,
+	detalle.idEntradaProducto,
+	detalle.cantidad,
+	detalle.precioEntrada
+	FROM TBL_Producto AS producto 
+	INNER JOIN TBL_DetalleEntradaProducto AS detalle 
+	ON producto.idProducto = detalle.idProducto
+	) AS detalle 
+	ON detalle.idEntradaProducto = entrada.idEntradaProducto
+	WHERE 
+	format(entrada.fechaCreacion, 'dd/MM/yyyy')  
+	BETWEEN format('22/06/2019', 'dd/MM/yyyy') AND format('26/06/2019', 'dd/MM/yyyy');
+	
+	
+	
+	
+	 - Stock producto
+	SELECT * FROM TBL_Producto ORDER BY precio ASC;
+	
+	- Productos mas vendido
+	
+	SELECT 
+	producto.idProducto,
+	producto.codigo, 
+	producto.descripcion, 
+	count(venta.cantidad) AS ventas 
+	FROM TBL_Producto AS producto
+	INNER JOIN TBL_DetalleVenta AS venta
+	ON producto.idProducto = venta.idVenta 
+	GROUP BY 
+	producto.idProducto, 
+	producto.descripcion,
+	producto.codigo 
+	ORDER BY count(venta.cantidad) DESC;
+	
+	
+	--Producto mas vendido
+	SELECT TOP 1
+	producto.idProducto,
+	producto.codigo, 
+	producto.descripcion, 
+	count(venta.cantidad) AS ventas 
+	FROM TBL_Producto AS producto
+	INNER JOIN TBL_DetalleVenta AS venta
+	ON producto.idProducto = venta.idVenta 
+	GROUP BY 
+	producto.idProducto, 
+	producto.descripcion,
+	producto.codigo 
+	ORDER BY count(venta.cantidad) DESC;
+
+
+Valida stock 
+(Analizar la opcion de dejar pasar auque no haya stock y realizar ajuste ?)
 
 

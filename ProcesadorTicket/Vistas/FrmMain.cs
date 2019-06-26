@@ -1,10 +1,13 @@
-﻿using System;
+﻿using ProcesadorTicket.Core.DA;
+using System;
 using System.Windows.Forms;
 
 namespace ProcesadorTicket
 {
     public partial class FrmMain : Form
     {
+        DASeguridad seguridad = new DASeguridad();
+
         public FrmMain()
         {
             InitializeComponent();
@@ -61,7 +64,7 @@ namespace ProcesadorTicket
         {
             try
             {
-                
+
                 Application.Exit();
 
             }
@@ -71,11 +74,11 @@ namespace ProcesadorTicket
             }
         }
 
-        
+
 
         private void ingresosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -115,13 +118,14 @@ namespace ProcesadorTicket
                 reports.Dock = DockStyle.Fill;
                 nuevaPestana(reports, "Reportes");
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
         }
 
-        
+
 
         private void GestionUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -129,16 +133,22 @@ namespace ProcesadorTicket
             {
                 //FrmUsuario frmU = new FrmUsuario();
                 //frmU.ShowDialog(this);}
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Usuarios"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCUsuario usuario = new UCUsuario();
                 usuario.Dock = DockStyle.Fill;
                 nuevaPestana(usuario, "Usuarios");
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
         }
 
-       
+
 
         private void CambiarContraseniaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -147,7 +157,8 @@ namespace ProcesadorTicket
             {
                 FrmCambioPass pass = new FrmCambioPass();
                 pass.ShowDialog(this);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -175,7 +186,8 @@ namespace ProcesadorTicket
             {
                 FrmUnidadMedida unidad = new FrmUnidadMedida();
                 unidad.ShowDialog(this);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -189,8 +201,9 @@ namespace ProcesadorTicket
                 //producto.ShowDialog(this);
                 UCProducto producto = new UCProducto();
                 producto.Dock = DockStyle.Fill;
-                nuevaPestana(producto,"Productos");
-            }catch(Exception ex)
+                nuevaPestana(producto, "Productos");
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -204,9 +217,10 @@ namespace ProcesadorTicket
                 //entradaProducto.ShowDialog(this);
                 UCEntradaProductot eProducto = new UCEntradaProductot();
                 eProducto.Dock = DockStyle.Fill;
-                nuevaPestana(eProducto,"Ingreso de productos");
+                nuevaPestana(eProducto, "Ingreso de productos");
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }
@@ -259,8 +273,9 @@ namespace ProcesadorTicket
             {
                 UCVenta venta = new UCVenta();
                 venta.Dock = DockStyle.Fill;
-                nuevaPestana(venta,"Venta");
-            }catch(Exception ex)
+                nuevaPestana(venta, "Venta");
+            }
+            catch (Exception ex)
             {
                 Helper.erroLog(ex);
             }

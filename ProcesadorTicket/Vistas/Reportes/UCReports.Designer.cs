@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.txtContador = new System.Windows.Forms.ToolStripStatusLabel();
@@ -230,6 +231,9 @@
             // fecha
             // 
             this.fecha.DataPropertyName = "FECHA";
+            dataGridViewCellStyle2.Format = "G";
+            dataGridViewCellStyle2.NullValue = null;
+            this.fecha.DefaultCellStyle = dataGridViewCellStyle2;
             this.fecha.FillWeight = 69.19699F;
             this.fecha.HeaderText = "Fecha";
             this.fecha.Name = "fecha";
@@ -239,9 +243,9 @@
             // monto
             // 
             this.monto.DataPropertyName = "MONTO";
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = "{0:C}";
-            this.monto.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = "{0:C}";
+            this.monto.DefaultCellStyle = dataGridViewCellStyle3;
             this.monto.FillWeight = 69.19699F;
             this.monto.HeaderText = "Monto";
             this.monto.Name = "monto";
