@@ -1,6 +1,6 @@
 ﻿namespace ProcesadorTicket
 {
-    partial class FrmReports
+    partial class FrmReporteTicket
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.grdHistorico = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.dtFechaInicio = new System.Windows.Forms.DateTimePicker();
@@ -40,11 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnExportar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(756, 34);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Reporte";
+            this.label1.Text = "Reporte Tickets";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // grdHistorico
@@ -91,7 +91,7 @@
             this.monto});
             this.grdHistorico.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.grdHistorico.Location = new System.Drawing.Point(3, 96);
-            this.grdHistorico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdHistorico.Margin = new System.Windows.Forms.Padding(2);
             this.grdHistorico.MultiSelect = false;
             this.grdHistorico.Name = "grdHistorico";
             this.grdHistorico.ReadOnly = true;
@@ -100,105 +100,6 @@
             this.grdHistorico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdHistorico.Size = new System.Drawing.Size(753, 401);
             this.grdHistorico.TabIndex = 26;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 465);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
-            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.statusStrip1.Size = new System.Drawing.Size(756, 22);
-            this.statusStrip1.TabIndex = 19;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(118, 17);
-            this.lblStatus.Text = "toolStripStatusLabel2";
-            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblStatus.ToolTipText = "Registros (0)";
-            // 
-            // dtFechaInicio
-            // 
-            this.dtFechaInicio.CustomFormat = "dd/MM/yyyy";
-            this.dtFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaInicio.Location = new System.Drawing.Point(8, 65);
-            this.dtFechaInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtFechaInicio.Name = "dtFechaInicio";
-            this.dtFechaInicio.Size = new System.Drawing.Size(183, 24);
-            this.dtFechaInicio.TabIndex = 20;
-            // 
-            // dtFechaFin
-            // 
-            this.dtFechaFin.CustomFormat = "dd/MM/yyyy";
-            this.dtFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaFin.Location = new System.Drawing.Point(193, 65);
-            this.dtFechaFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtFechaFin.Name = "dtFechaFin";
-            this.dtFechaFin.Size = new System.Drawing.Size(183, 24);
-            this.dtFechaFin.TabIndex = 21;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 15);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Fecha Inicio";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(193, 49);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 15);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Fecha Fin";
-            // 
-            // btnExportar
-            // 
-            this.btnExportar.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExportar.Image = global::ProcesadorTicket.Properties.Resources.ms_excel_32px;
-            this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportar.Location = new System.Drawing.Point(585, 48);
-            this.btnExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(163, 37);
-            this.btnExportar.TabIndex = 25;
-            this.btnExportar.Text = "Guardar Excel";
-            this.btnExportar.UseVisualStyleBackColor = false;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.BackColor = System.Drawing.Color.Navy;
-            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnConsultar.Image = global::ProcesadorTicket.Properties.Resources.filter_32px;
-            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(388, 48);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(184, 37);
-            this.btnConsultar.TabIndex = 24;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // ID
             // 
@@ -249,7 +150,106 @@
             this.monto.ReadOnly = true;
             this.monto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // FrmReports
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblStatus});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 465);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.statusStrip1.Size = new System.Drawing.Size(756, 22);
+            this.statusStrip1.TabIndex = 19;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(118, 17);
+            this.lblStatus.Text = "toolStripStatusLabel2";
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblStatus.ToolTipText = "Registros (0)";
+            // 
+            // dtFechaInicio
+            // 
+            this.dtFechaInicio.CustomFormat = "dd/MM/yyyy";
+            this.dtFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaInicio.Location = new System.Drawing.Point(8, 65);
+            this.dtFechaInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.dtFechaInicio.Name = "dtFechaInicio";
+            this.dtFechaInicio.Size = new System.Drawing.Size(183, 24);
+            this.dtFechaInicio.TabIndex = 20;
+            // 
+            // dtFechaFin
+            // 
+            this.dtFechaFin.CustomFormat = "dd/MM/yyyy";
+            this.dtFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaFin.Location = new System.Drawing.Point(193, 65);
+            this.dtFechaFin.Margin = new System.Windows.Forms.Padding(2);
+            this.dtFechaFin.Name = "dtFechaFin";
+            this.dtFechaFin.Size = new System.Drawing.Size(183, 24);
+            this.dtFechaFin.TabIndex = 21;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Fecha Inicio";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(193, 49);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Fecha Fin";
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnExportar.Image = global::ProcesadorTicket.Properties.Resources.ms_excel_32px;
+            this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExportar.Location = new System.Drawing.Point(585, 48);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(163, 37);
+            this.btnExportar.TabIndex = 25;
+            this.btnExportar.Text = "Guardar Excel";
+            this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Navy;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnConsultar.Image = global::ProcesadorTicket.Properties.Resources.filter_32px;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultar.Location = new System.Drawing.Point(388, 48);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(184, 37);
+            this.btnConsultar.TabIndex = 24;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // FrmReporteTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -263,8 +263,8 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.grdHistorico);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FrmReports";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FrmReporteTicket";
             this.Text = "Rerportes";
             this.Load += new System.EventHandler(this.FrmReports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdHistorico)).EndInit();

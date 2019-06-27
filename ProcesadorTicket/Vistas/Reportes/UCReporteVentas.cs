@@ -1,44 +1,25 @@
-﻿using ClosedXML.Excel;
-using ProcesadorTicket.Core.DA;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProcesadorTicket.Core.DA;
+using System.Media;
+using ClosedXML.Excel;
 
 namespace ProcesadorTicket
 {
-    public partial class FrmReports : Form
+    public partial class UCReporteVentas : UserControl
     {
-        public FrmReports()
+      
+        public UCReporteVentas()
         {
             InitializeComponent();
         }
 
-        private void FrmReports_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                cargar();
-            }catch(Exception ex)
-            {
-                Helper.erroLog(ex);
-            }
-        }
-
-        private void btnConsultar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                cargar();
-            }catch(Exception ex){
-                Helper.erroLog(ex);
-            }
-        }
 
         private void cargar()
         {
@@ -46,24 +27,23 @@ namespace ProcesadorTicket
             {
                 DAReporte rpt = new DAReporte();
                 DataTable dt = new DataTable();
-                dt.Columns.Add("ID");
+                /*dt.Columns.Add("ID");
                 dt.Columns.Add("Nombres");
                 dt.Columns.Add("Monto", System.Type.GetType("System.Decimal"));
                 dt.Columns.Add("Tipo");
-                dt.Columns.Add("Fecha");
-
-
-                dt = rpt.TicketFecha(dtFechaInicio.Text.Trim(), dtFechaFin.Text.Trim());
-                
-                int i = 1;
+                dt.Columns.Add("Fecha");*/
+                //Helper.MensajeSistema("Indice: " + cmbTipo.SelectedIndex.ToString());
+                dt = cmbTipo.SelectedIndex.ToString().Equals("0") ? rpt.VentaFecha(dtFechaInicio.Text.Trim(), dtFechaFin.Text.Trim()) : rpt.VentaDetalleFecha(dtFechaInicio.Text.Trim(), dtFechaFin.Text.Trim());
+               
+                /* int i = 1;
                 foreach (DataRow row in dt.Rows)
                 {
                     row["ID"] = i.ToString();
-                    row["monto"] = Math.Round(double.Parse(row["monto"].ToString()),2);
+                    row["monto"] = Math.Round(double.Parse(row["monto"].ToString()), 2);
                     i++;
-                }
-                grdHistorico.DataSource = dt;
-                lblStatus.Text = "Registros(" + dt.Rows.Count.ToString() +")";
+                }*/
+                grdReporte.DataSource = dt;
+                txtContador.Text = "Registros(" + dt.Rows.Count.ToString() + ")";
             }
             catch (Exception ex)
             {
@@ -71,11 +51,38 @@ namespace ProcesadorTicket
             }
         }
 
-        private void btnExportar_Click(object sender, EventArgs e)
+        private void BtnConsultar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (grdHistorico.Rows.Count < 1)
+                cargar();
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void FrmReporteVentas_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                cmbTipo.Items.Insert(0, "Todo");
+                cmbTipo.Items.Insert(1, "Detalle por producto");
+                cmbTipo.SelectedIndex = 0;
+                cargar();
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void BtnExportar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (grdReporte.Rows.Count < 1)
                 {
                     Helper.MensajeSistema("No hay datos para exportar");
                     return;
@@ -83,7 +90,7 @@ namespace ProcesadorTicket
 
 
                 SaveFileDialog sfd = new SaveFileDialog();
-                sfd.FileName = "Reporte_"+DateTime.Today.ToString("dd_MM_yyyy_hh_mm");
+                sfd.FileName = "Reporte_" + DateTime.Today.ToString("dd_MM_yyyy_hh_mm");
                 sfd.Filter = "files (*.xlsx)|*.xlsx";
                 sfd.FilterIndex = 2;
                 sfd.RestoreDirectory = true;
@@ -100,9 +107,9 @@ namespace ProcesadorTicket
                         //}
                         using (XLWorkbook wb = new XLWorkbook())
                         {
-                            DataTable dt = (DataTable)grdHistorico.DataSource;
+                            DataTable dt = (DataTable)grdReporte.DataSource;
                             wb.Worksheets.Add(dt, "Ticket");
-                           
+
                             wb.SaveAs(fileName);
                             if (MessageBox.Show("Archivo generado correctamente,¿Desea abrirlo?", "Abrir Archivo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                             {

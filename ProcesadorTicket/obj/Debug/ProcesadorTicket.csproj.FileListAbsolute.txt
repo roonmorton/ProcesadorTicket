@@ -60,8 +60,6 @@ C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\De
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmEntradaProducto.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCEntradaProductot.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCVenta.resources
-C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmReports.resources
-C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCReports.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmCambioPass.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmLogin.resources
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmPermisos.resources
@@ -89,3 +87,7 @@ C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\bin\De
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.csproj.CopyComplete
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.exe
 C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.pdb
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.FrmReporteTicket.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCReporteVentas.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCReporteTickets.resources
+C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\obj\Debug\ProcesadorTicket.UCReporteProductos.resources

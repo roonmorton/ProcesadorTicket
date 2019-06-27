@@ -1,6 +1,6 @@
 ﻿namespace ProcesadorTicket
 {
-    partial class UCReports
+    partial class UCReporteTickets
     {
         /// <summary> 
         /// Variable del diseñador requerida.
@@ -58,22 +58,22 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.txtContador});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 739);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 491);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1348, 30);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(899, 22);
             this.statusStrip1.TabIndex = 24;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 25);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // txtContador
             // 
             this.txtContador.Name = "txtContador";
-            this.txtContador.Size = new System.Drawing.Size(19, 25);
+            this.txtContador.Size = new System.Drawing.Size(12, 17);
             this.txtContador.Text = "_";
             this.txtContador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -84,10 +84,11 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1348, 52);
+            this.label1.Size = new System.Drawing.Size(899, 35);
             this.label1.TabIndex = 25;
-            this.label1.Text = "Reporte";
+            this.label1.Text = "Reporte Tickets";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnExportar
@@ -98,9 +99,10 @@
             this.btnExportar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExportar.Image = global::ProcesadorTicket.Properties.Resources.ms_excel_32px;
             this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportar.Location = new System.Drawing.Point(877, 64);
+            this.btnExportar.Location = new System.Drawing.Point(585, 43);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(244, 57);
+            this.btnExportar.Size = new System.Drawing.Size(163, 38);
             this.btnExportar.TabIndex = 32;
             this.btnExportar.Text = "Guardar Excel";
             this.btnExportar.UseVisualStyleBackColor = false;
@@ -114,9 +116,10 @@
             this.btnConsultar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnConsultar.Image = global::ProcesadorTicket.Properties.Resources.filter_32px;
             this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(581, 64);
+            this.btnConsultar.Location = new System.Drawing.Point(387, 43);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(276, 57);
+            this.btnConsultar.Size = new System.Drawing.Size(184, 38);
             this.btnConsultar.TabIndex = 31;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -126,9 +129,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(289, 65);
+            this.label3.Location = new System.Drawing.Point(193, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 22);
+            this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 30;
             this.label3.Text = "Fecha Fin";
             // 
@@ -136,9 +140,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 64);
+            this.label2.Location = new System.Drawing.Point(9, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 22);
+            this.label2.Size = new System.Drawing.Size(73, 15);
             this.label2.TabIndex = 29;
             this.label2.Text = "Fecha Inicio";
             // 
@@ -147,9 +152,10 @@
             this.dtFechaFin.CustomFormat = "dd/MM/yyyy";
             this.dtFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaFin.Location = new System.Drawing.Point(289, 90);
+            this.dtFechaFin.Location = new System.Drawing.Point(193, 60);
+            this.dtFechaFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtFechaFin.Name = "dtFechaFin";
-            this.dtFechaFin.Size = new System.Drawing.Size(272, 32);
+            this.dtFechaFin.Size = new System.Drawing.Size(183, 24);
             this.dtFechaFin.TabIndex = 28;
             // 
             // dtFechaInicio
@@ -157,9 +163,10 @@
             this.dtFechaInicio.CustomFormat = "dd/MM/yyyy";
             this.dtFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaInicio.Location = new System.Drawing.Point(11, 90);
+            this.dtFechaInicio.Location = new System.Drawing.Point(7, 60);
+            this.dtFechaInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtFechaInicio.Name = "dtFechaInicio";
-            this.dtFechaInicio.Size = new System.Drawing.Size(272, 32);
+            this.dtFechaInicio.Size = new System.Drawing.Size(183, 24);
             this.dtFechaInicio.TabIndex = 27;
             // 
             // grdHistorico
@@ -189,7 +196,8 @@
             this.fecha,
             this.monto});
             this.grdHistorico.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.grdHistorico.Location = new System.Drawing.Point(0, 137);
+            this.grdHistorico.Location = new System.Drawing.Point(0, 91);
+            this.grdHistorico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grdHistorico.MultiSelect = false;
             this.grdHistorico.Name = "grdHistorico";
             this.grdHistorico.ReadOnly = true;
@@ -197,7 +205,7 @@
             this.grdHistorico.RowHeadersVisible = false;
             this.grdHistorico.RowTemplate.Height = 28;
             this.grdHistorico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdHistorico.Size = new System.Drawing.Size(1348, 599);
+            this.grdHistorico.Size = new System.Drawing.Size(899, 399);
             this.grdHistorico.TabIndex = 33;
             // 
             // ID
@@ -252,9 +260,9 @@
             this.monto.ReadOnly = true;
             this.monto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // UCReports
+            // UCReporteTickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -267,9 +275,8 @@
             this.Controls.Add(this.grdHistorico);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "UCReports";
-            this.Size = new System.Drawing.Size(1348, 769);
+            this.Name = "UCReporteTickets";
+            this.Size = new System.Drawing.Size(899, 513);
             this.Load += new System.EventHandler(this.UCReports_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
