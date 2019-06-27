@@ -564,3 +564,30 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    25/06/2019 16:31:09   Admin   CEN-SIS-6395W9L   Colección modificada; la operación de enumeración no se puede ejecutar.   MoveNext      en System.Data.RBTree`1.RBTreeEnumerator.MoveNext()
    en ProcesadorTicket.UCEntradaProductot.GrdData_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCEntradaProducto.cs:línea 335
 
+   27/06/2019 16:26:54   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.FrmReporteVentas_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 72
+
+   27/06/2019 16:27:05   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 57
+
+   27/06/2019 16:27:09   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 57
+
+   27/06/2019 16:27:16   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 57
+
+   27/06/2019 16:27:22   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 57
+
+   27/06/2019 16:28:27   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteVentas.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 49
+   en ProcesadorTicket.UCReporteVentas.FrmReporteVentas_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteVentas.cs:línea 72
+
+   27/06/2019 16:55:14   Admin   CEN-SIS-6395W9L   Error de sintaxis (falta operador) en la expresión de consulta 'entrada.idEntradaProducto ID_ENTRADA'.   cargar      en ProcesadorTicket.UCReporteProductos.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 69
+   en ProcesadorTicket.UCReporteProductos.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 77
+
+   27/06/2019 16:56:29   Admin   CEN-SIS-6395W9L   Error de sintaxis (falta operador) en la expresión de consulta 'entrada.idEntradaProducto ID_ENTRADA'.   cargar      en ProcesadorTicket.UCReporteProductos.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 69
+   en ProcesadorTicket.UCReporteProductos.BtnConsultar_Click(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 77
+
+   27/06/2019 16:58:12   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteProductos.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 69
+   en ProcesadorTicket.UCReporteProductos.FrmReporteVentas_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 95
+

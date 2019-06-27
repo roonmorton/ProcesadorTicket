@@ -114,7 +114,7 @@ namespace ProcesadorTicket
             {
                 // FrmReports rpt = new FrmReports();
                 // rpt.ShowDialog(this);
-                UCReports reports = new UCReports();
+                UCReporteTickets reports = new UCReporteTickets();
                 reports.Dock = DockStyle.Fill;
                 nuevaPestana(reports, "Reportes");
 
@@ -274,6 +274,35 @@ namespace ProcesadorTicket
                 UCVenta venta = new UCVenta();
                 venta.Dock = DockStyle.Fill;
                 nuevaPestana(venta, "Venta");
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+        }
+
+        private void VentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UCReporteVentas venta = new UCReporteVentas();
+                venta.Dock = DockStyle.Fill;
+                nuevaPestana(venta, "Reporte Ventas");
+            }
+            catch (Exception ex)
+            {
+                Helper.erroLog(ex);
+            }
+
+        }
+
+        private void ProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UCReporteProductos venta = new UCReporteProductos();
+                venta.Dock = DockStyle.Fill;
+                nuevaPestana(venta, "Reporte Productos");
             }
             catch (Exception ex)
             {
