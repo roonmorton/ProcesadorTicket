@@ -189,17 +189,29 @@
     <Compile Include="Vistas\Movimientos\UCVenta.Designer.cs">
       <DependentUpon>UCVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Reportes\FrmReports.cs">
+    <Compile Include="Vistas\Reportes\FrmReporteTickets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Reportes\FrmReports.Designer.cs">
-      <DependentUpon>FrmReports.cs</DependentUpon>
+    <Compile Include="Vistas\Reportes\FrmReporteTickets.Designer.cs">
+      <DependentUpon>FrmReporteTickets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Reportes\UCReports.cs">
+    <Compile Include="Vistas\Reportes\UCReporteProductos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vistas\Reportes\UCReports.Designer.cs">
-      <DependentUpon>UCReports.cs</DependentUpon>
+    <Compile Include="Vistas\Reportes\UCReporteProductos.Designer.cs">
+      <DependentUpon>UCReporteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\UCReporteVentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\UCReporteVentas.Designer.cs">
+      <DependentUpon>UCReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\UCReporteTickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\UCReporteTickets.Designer.cs">
+      <DependentUpon>UCReporteTickets.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Seguridad\FrmCambioPass.cs">
       <SubType>Form</SubType>
@@ -293,11 +305,17 @@
     <EmbeddedResource Include="Vistas\Movimientos\UCVenta.resx">
       <DependentUpon>UCVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Reportes\FrmReports.resx">
-      <DependentUpon>FrmReports.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Reportes\FrmReporteTickets.resx">
+      <DependentUpon>FrmReporteTickets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Reportes\UCReports.resx">
-      <DependentUpon>UCReports.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Reportes\UCReporteProductos.resx">
+      <DependentUpon>UCReporteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\UCReporteVentas.resx">
+      <DependentUpon>UCReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\UCReporteTickets.resx">
+      <DependentUpon>UCReporteTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\FrmCambioPass.resx">
       <DependentUpon>FrmCambioPass.cs</DependentUpon>

@@ -73,11 +73,11 @@ Productos
 	- Entrada productos por fecha 
 	
 	SELECT 
-	entrada.idEntradaProducto,
-	entrada.fechaCreacion AS fecha,
-	entrada.referencia,
-	(SELECT COUNT(1) FROM TBL_DetalleEntradaProducto WHERE TBL_DetalleEntradaProducto.idEntradaProducto = entrada.idEntradaProducto ) AS productos,
-	entrada.usuarioCreacion AS usuarioEntrada
+	entrada.idEntradaProducto AS ID_ENTRADA,
+	entrada.fechaCreacion AS FECHA_ENTRADA,
+	entrada.referencia AS REFERENCIA,
+	(SELECT COUNT(1) FROM TBL_DetalleEntradaProducto WHERE TBL_DetalleEntradaProducto.idEntradaProducto = entrada.idEntradaProducto ) AS CANTIDAD_PRODUCTOS,
+	entrada.usuarioCreacion AS USARIO_ENTRADA
 	FROM TBL_EntradaProducto AS entrada
 	WHERE 
 	format(entrada.fechaCreacion, 'dd/MM/yyyy')  
@@ -87,14 +87,13 @@ Productos
 	- Entrada productos detallado por fecha 
 	
 	SELECT 
-	entrada.idEntradaProducto,
-	entrada.fechaCreacion AS fecha,
-	entrada.referencia,
-	entrada.usuarioCreacion AS usuarioEntrada,
-	detalle.descripcion,
-	detalle.cantidad,
-	detalle.precioEntrada,
-	entrada.usuarioCreacion AS usuario
+	entrada.idEntradaProducto ID_ENTRADA,
+	entrada.fechaCreacion AS FECHA_ENTRADA,
+	entrada.referencia REFERENCIA_ENTRADA,
+	detalle.descripcion DESCRIPCION_PRODUCTO,
+	detalle.cantidad CANTIDAD_PRODUCTO,
+	detalle.precioEntrada PRECIO_ENTRADA,
+	entrada.usuarioCreacion AS USUARIO
 	FROM TBL_EntradaProducto AS entrada
 	RIGHT JOIN 
 	(
