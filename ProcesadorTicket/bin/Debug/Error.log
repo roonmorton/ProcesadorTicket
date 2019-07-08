@@ -591,3 +591,9 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    27/06/2019 16:58:12   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   cargar      en ProcesadorTicket.UCReporteProductos.cargar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 69
    en ProcesadorTicket.UCReporteProductos.FrmReporteVentas_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Reportes\UCReporteProductos.cs:línea 95
 
+   6/07/2019 22:42:48   Admin   DESKTOP-FGSF9HR   No se puede agregar o cambiar el registro porque se necesita un registro relacionado en la tabla 'TBL_Cliente'.   guardarDetalleVenta      en ProcesadorTicket.Core.DA.DAProducto.guardarDetalleVenta(String fecha, String idCliente, DataTable data) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAProducto.cs:línea 200
+   en ProcesadorTicket.UCVenta.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 442
+
+   6/07/2019 22:45:54   Admin   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta ''06/07/2019 12:00:00,2550,'Admin')'.   guardarDetalleVenta      en ProcesadorTicket.Core.DA.DAProducto.guardarDetalleVenta(String fecha, String idCliente, DataTable data) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAProducto.cs:línea 205
+   en ProcesadorTicket.UCVenta.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 442
+

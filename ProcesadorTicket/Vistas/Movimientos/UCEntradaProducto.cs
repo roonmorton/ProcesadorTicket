@@ -178,9 +178,16 @@ namespace ProcesadorTicket
                     pDescripcion = dt.Rows[0]["descripcion"].ToString();
                     pidProducto = dt.Rows[0]["idProducto"].ToString();
                     txtDescripcion.Text = pDescripcion;
+                    txtCantidad.Focus();
+                    SystemSounds.Hand.Play();
+                    txtDescripcion.BackColor = Color.DarkSeaGreen;
                 }
                 else
+                {
+                    txtDescripcion.BackColor = Color.White;
                     Helper.MensajeSistema("Producto no encontrado, debe de registrarlo");
+
+                }
             }
             catch (Exception ex)
             {

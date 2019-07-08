@@ -2,3 +2,8 @@
 *.cache
 *.csproj
 .vs/
+*.exe
+*.exe.*
+*.pdb
+*.vshost.exe
+*.vshost.exe*

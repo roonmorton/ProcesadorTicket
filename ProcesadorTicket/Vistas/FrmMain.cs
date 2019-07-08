@@ -97,6 +97,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Tickets"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCTicket frm = new UCTicket();
                 frm.Dock = DockStyle.Fill;
                 nuevaPestana(frm, "Tickets");
@@ -112,6 +117,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Reportes"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 // FrmReports rpt = new FrmReports();
                 // rpt.ShowDialog(this);
                 UCReporteTickets reports = new UCReporteTickets();
@@ -168,6 +178,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Clientes"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCClientes clientes = new UCClientes();
                 clientes.Dock = DockStyle.Fill;
                 nuevaPestana(clientes, "Clientes");
@@ -197,6 +212,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Productos"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 //FrmProducto producto = new FrmProducto();
                 //producto.ShowDialog(this);
                 UCProducto producto = new UCProducto();
@@ -213,6 +233,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Productos"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 //FrmEntradaProducto entradaProducto = new FrmEntradaProducto();
                 //entradaProducto.ShowDialog(this);
                 UCEntradaProductot eProducto = new UCEntradaProductot();
@@ -271,6 +296,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Ventas"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCVenta venta = new UCVenta();
                 venta.Dock = DockStyle.Fill;
                 nuevaPestana(venta, "Venta");
@@ -285,6 +315,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Reportes"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCReporteVentas venta = new UCReporteVentas();
                 venta.Dock = DockStyle.Fill;
                 nuevaPestana(venta, "Reporte Ventas");
@@ -300,6 +335,11 @@ namespace ProcesadorTicket
         {
             try
             {
+                if (!seguridad.validarPermisoUsuario(Globals.usuario, "Reportes"))
+                {
+                    Helper.MensajeSistema("No tiene permisos para esta acción");
+                    return;
+                }
                 UCReporteProductos venta = new UCReporteProductos();
                 venta.Dock = DockStyle.Fill;
                 nuevaPestana(venta, "Reporte Productos");
@@ -308,6 +348,11 @@ namespace ProcesadorTicket
             {
                 Helper.erroLog(ex);
             }
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

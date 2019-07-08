@@ -5,7 +5,7 @@ using System.Data.OleDb;
 
 namespace ProcesadorTicket.Core.DA
 {
-    class DAProducto:DB 
+    class DAProducto : DB
     {
 
         public Boolean AgregarActualizar(string idProducto, string codigo, string descripcion, string precio)
@@ -21,12 +21,12 @@ namespace ProcesadorTicket.Core.DA
                 }
                 else
                 {
-                    string query = "UPDATE TBL_Producto SET TBL_Producto.codigo = '"+codigo+"', TBL_Producto.Descripcion = '"+descripcion+"', TBL_Producto.precio = '"+precio+"', TBL_Producto.usuarioModificacion = '"+Globals.usuario+"', TBL_Producto.fechaModificacion = '"+ DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss") + "' WHERE idProducto = " + idProducto;
+                    string query = "UPDATE TBL_Producto SET TBL_Producto.codigo = '" + codigo + "', TBL_Producto.Descripcion = '" + descripcion + "', TBL_Producto.precio = '" + precio + "', TBL_Producto.usuarioModificacion = '" + Globals.usuario + "', TBL_Producto.fechaModificacion = '" + DateTime.Today.ToString("dd/MM/yyyy hh:mm:ss") + "' WHERE idProducto = " + idProducto;
                     ejecutarConsulta(query);
                 }
                 res = true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -38,7 +38,7 @@ namespace ProcesadorTicket.Core.DA
         {
             try
             {
-                string query = "SELECT TOP 20 TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,TBL_Producto.cantidad AS stock FROM TBL_Producto WHERE TBL_Producto.descripcion LIKE '%"+producto+ "%' ORDER BY TBL_Producto.idProducto DESC";
+                string query = "SELECT TOP 20 TBL_Producto.idProducto AS ID, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,TBL_Producto.cantidad AS stock FROM TBL_Producto WHERE TBL_Producto.descripcion LIKE '%" + producto + "%' ORDER BY TBL_Producto.idProducto DESC";
                 return ejecutarConsultaDT(query);
             }
             catch (Exception ex)
@@ -52,7 +52,7 @@ namespace ProcesadorTicket.Core.DA
         {
             try
             {
-                string query = "SELECT TBL_Producto.idProducto, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,   TBL_Producto.cantidad as stock FROM TBL_Producto  WHERE TBL_Producto.codigo = '" + codigo+"'";
+                string query = "SELECT TBL_Producto.idProducto, TBL_Producto.codigo, TBL_Producto.descripcion, TBL_Producto.precio,   TBL_Producto.cantidad as stock FROM TBL_Producto  WHERE TBL_Producto.codigo = '" + codigo + "'";
                 return ejecutarConsultaDT(query);
             }
             catch (Exception ex)
@@ -71,9 +71,9 @@ namespace ProcesadorTicket.Core.DA
             OleDbConnection con = null;
             try
             {
-                if(data != null)
+                if (data != null)
                 {
-                    if(data.Rows.Count > 0)
+                    if (data.Rows.Count > 0)
                     {
                         con = getCon();
 
@@ -88,7 +88,7 @@ namespace ProcesadorTicket.Core.DA
                         OleDbDataAdapter da = new OleDbDataAdapter();
 
                         //Insertar Encabezado
-                        query = "INSERT INTO TBL_EntradaProducto(fecha, referencia,usuarioCreacion) values('" + fecha.ToString() + "','" + referencia + "','"+Globals.usuario+"')";
+                        query = "INSERT INTO TBL_EntradaProducto(fecha, referencia,usuarioCreacion) values('" + fecha.ToString() + "','" + referencia + "','" + Globals.usuario + "')";
                         cmd.CommandText = query;
                         cmd.ExecuteNonQuery();
                         //Obtiene ID Ingresado en entrada
@@ -97,16 +97,16 @@ namespace ProcesadorTicket.Core.DA
                         da.SelectCommand = cmd;
                         da.Fill(dt);
                         string idEntradaProducto = (dt.Rows.Count > 0) ? dt.Rows[0]["ID"].ToString() : "X";
-                       
+
 
                         if (!idEntradaProducto.Equals("X"))
                         {
                             foreach (DataRow row in data.Rows)
                             {
-                                query = "UPDATE TBL_Producto SET cantidad = (cantidad + " + row["cantidad"].ToString() + "), usuarioModificacion='"+Globals.usuario+"' WHERE idProducto = " + row["idProducto"].ToString();
+                                query = "UPDATE TBL_Producto SET cantidad = (cantidad + " + row["cantidad"].ToString() + "), usuarioModificacion='" + Globals.usuario + "' WHERE idProducto = " + row["idProducto"].ToString();
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
-                                query = "INSERT INTO TBL_DetalleEntradaProducto(idProducto,idEntradaProducto,cantidad,usuarioCreacion,precioEntrada) values(" + row["idProducto"].ToString() + "," + idEntradaProducto + "," + row["cantidad"].ToString() + ",'"+Globals.usuario+"',"+ row["precio"].ToString() + ");";
+                                query = "INSERT INTO TBL_DetalleEntradaProducto(idProducto,idEntradaProducto,cantidad,usuarioCreacion,precioEntrada) values(" + row["idProducto"].ToString() + "," + idEntradaProducto + "," + row["cantidad"].ToString() + ",'" + Globals.usuario + "'," + row["precio"].ToString() + ");";
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
                             }
@@ -114,12 +114,12 @@ namespace ProcesadorTicket.Core.DA
                             con.Close();
                             estado = true;
                         }
-                        }
-
-                        
                     }
-                
-               
+
+
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -127,7 +127,8 @@ namespace ProcesadorTicket.Core.DA
                 if (con.State == ConnectionState.Open) con.Close();
                 throw ex;
             }
-            finally{
+            finally
+            {
                 if (con.State == ConnectionState.Open) con.Close();
             }
             return estado;
@@ -160,7 +161,11 @@ namespace ProcesadorTicket.Core.DA
                         OleDbDataAdapter da = new OleDbDataAdapter();
 
                         //Insertar Encabezado
-                        query = "INSERT INTO TBL_VENTA(fecha,idCliente,total,usuarioCreacion) values('"+fecha.ToString()+"',"+idCliente+","+data.Compute("sum(subtotal)","")+",'"+Globals.usuario+"')";
+                        if (idCliente.Equals("0"))
+                            query = "INSERT INTO TBL_VENTA(fecha,total,usuarioCreacion) values('" + fecha.ToString() + "'," + data.Compute("sum(subtotal)", "") + ",'" + Globals.usuario + "')";
+                        else
+                            query = "INSERT INTO TBL_VENTA(fecha,idCliente,total,usuarioCreacion) values('" + fecha.ToString() + "'," + idCliente + "," + data.Compute("sum(subtotal)", "") + ",'" + Globals.usuario + "')";
+
                         cmd.CommandText = query;
                         cmd.ExecuteNonQuery();
                         //Obtiene ID Ingresado en entrada
@@ -175,10 +180,10 @@ namespace ProcesadorTicket.Core.DA
                         {
                             foreach (DataRow row in data.Rows)
                             {
-                                query = "UPDATE TBL_Producto SET cantidad = (cantidad - " + row["cantidad"].ToString() + "), usuarioModificacion = '"+Globals.usuario+"' WHERE idProducto = " + row["idProducto"].ToString();
+                                query = "UPDATE TBL_Producto SET cantidad = (cantidad - " + row["cantidad"].ToString() + "), usuarioModificacion = '" + Globals.usuario + "' WHERE idProducto = " + row["idProducto"].ToString();
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
-                                query = "INSERT INTO TBL_DetalleVenta(idProducto, idVenta,cantidad,precioVenta,usuarioCreacion) VALUES("+ row["idProducto"].ToString()+","+ idVenta + ","+ row["cantidad"].ToString()+","+ row["precio"].ToString() + ",'"+Globals.usuario+"');";
+                                query = "INSERT INTO TBL_DetalleVenta(idProducto, idVenta,cantidad,precioVenta,usuarioCreacion) VALUES(" + row["idProducto"].ToString() + "," + idVenta + "," + row["cantidad"].ToString() + "," + row["precio"].ToString() + ",'" + Globals.usuario + "');";
                                 cmd.CommandText = query;
                                 cmd.ExecuteNonQuery();
                             }

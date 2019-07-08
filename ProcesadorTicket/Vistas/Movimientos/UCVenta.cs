@@ -48,6 +48,7 @@ namespace ProcesadorTicket
                     // txtFecha.Text = pDescripcion;
                     txtCantidad.Text = "1";
                     txtCantidad.Enabled = true;
+                    txtCantidad.Focus();
                 }
                 else
                 {
@@ -63,7 +64,7 @@ namespace ProcesadorTicket
             }
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
+        private void agregar()
         {
             try
             {
@@ -85,11 +86,23 @@ namespace ProcesadorTicket
                     txtCodigoProducto.Focus();
                     return;
                 }
-                if(Convert.ToDecimal(pStock) <= 0)
+                /* if(Convert.ToDecimal(pStock) <= 0)
+                 {
+                     Helper.MensajeSistema("No hay Stock de este producto, verificar...");
+                     txtCodigoProducto.Focus();
+                    //return;
+                 }*/
+                if (Convert.ToInt32(txtCantidad.Text) < 0)
+                {
+                    Helper.MensajeSistema("Cantidad invalida, verificar...");
+                    txtCantidad.Focus();
+                    return;
+                }
+
+                if (Convert.ToInt32(txtStock.Text) < Convert.ToInt32(txtCantidad.Text))
                 {
                     Helper.MensajeSistema("No hay Stock de este producto, verificar...");
                     txtCodigoProducto.Focus();
-                   //return;
                 }
 
                 //if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
@@ -129,10 +142,102 @@ namespace ProcesadorTicket
                     dr["precio"] = Convert.ToDecimal(pPrecio);
                     dr["cantidad"] = Convert.ToInt32(txtCantidad.Text.ToString());
                     dr["subtotal"] = Convert.ToDecimal(Convert.ToDecimal(pPrecio) * Convert.ToDecimal(txtCantidad.Text.ToString()));
-                    detalle.Rows.Add(dr);   
+                    detalle.Rows.Add(dr);
                 }
                 //btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
                 limpiarFormulario();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                agregar();
+               // if (txtCodigoProducto.Text.Equals(""))
+               // {
+               //     Helper.MensajeSistema("Codigo no debe de estar vacio...");
+               //     txtCodigoProducto.Focus();
+               //     return;
+               // }
+               // if (txtCantidad.Text.Equals(""))
+               // {
+               //     Helper.MensajeSistema("Debe de ingresar una cantidad..");
+               //     txtCantidad.Focus();
+               //     return;
+               // }
+               // if (pidProducto.Equals("0"))
+               // {
+               //     Helper.MensajeSistema("Debe de ingresar una cantidad..");
+               //     txtCodigoProducto.Focus();
+               //     return;
+               // }
+               ///* if(Convert.ToDecimal(pStock) <= 0)
+               // {
+               //     Helper.MensajeSistema("No hay Stock de este producto, verificar...");
+               //     txtCodigoProducto.Focus();
+               //    //return;
+               // }*/
+               // if(Convert.ToInt32(txtCantidad.Text) < 0)
+               // {
+               //     Helper.MensajeSistema("Cantidad invalida, verificar...");
+               //     txtCantidad.Focus();
+               //     return;
+               // }
+
+               // if(Convert.ToInt32(txtStock.Text) < Convert.ToInt32(txtCantidad.Text))
+               // {
+               //     Helper.MensajeSistema("No hay Stock de este producto, verificar...");
+               //     txtCodigoProducto.Focus();
+               // }
+
+               // //if (cmbUnidadMedida.SelectedValue.ToString().Equals("0"))
+               // //{
+               // //    Helper.MensajeSistema("Selecionar un tipo para guardar...");
+               // //    cmbUnidadMedida.Focus();
+               // //    return;
+               // //}
+
+               // /* if (Int32.Parse(pStock) < 0)
+               //  {
+               //      Helper.MensajeSistema("No hay stock para procesar el producto...");
+
+               //      return;
+               //  }*/
+               // Boolean flag = false;
+               // DataRow dr = detalle.NewRow();
+               // //Decimal suma = 0;
+               // if (detalle.Rows.Count > 0)
+               // {
+               //     foreach (DataRow row in detalle.Rows)
+               //     {
+               //         if (row["codigo"].ToString().Equals(pCodigo))// Si existe en el grid actualiza
+               //         {
+               //             row["cantidad"] = (Int32.Parse(row["cantidad"].ToString()) + Int32.Parse(txtCantidad.Text.ToString())).ToString();
+               //             row["subtotal"] = Convert.ToDecimal(row["cantidad"].ToString()) * Convert.ToDecimal(pPrecio);
+               //             flag = true;
+               //             break;
+               //         }
+               //     }
+               // }
+               // if (!flag)
+               // {
+               //     dr["idProducto"] = pidProducto;
+               //     dr["codigo"] = pCodigo;
+               //     dr["descripcion"] = txtDescripcion.Text;
+               //     dr["precio"] = Convert.ToDecimal(pPrecio);
+               //     dr["cantidad"] = Convert.ToInt32(txtCantidad.Text.ToString());
+               //     dr["subtotal"] = Convert.ToDecimal(Convert.ToDecimal(pPrecio) * Convert.ToDecimal(txtCantidad.Text.ToString()));
+               //     detalle.Rows.Add(dr);   
+               // }
+               // //btnGuardar.Enabled = detalle.Rows.Count > 0 ? true : false;
+               // limpiarFormulario();
 
             }
             catch (Exception ex)
@@ -163,10 +268,10 @@ namespace ProcesadorTicket
                 pPrecio = "0";
                 pStock = "0";
                 // pDescripcion = "0";
-                idCliente = "0";
+                //idCliente = "0";
 
-                txtTicket.Clear();
-                txtCliente.Clear();
+                //txtTicket.Clear();
+                //txtCliente.Clear();
 
                 txtCodigoProducto.Clear();
                 txtDescripcion.Clear();
@@ -478,6 +583,16 @@ namespace ProcesadorTicket
             {
                 //idUsuario = "0";
                 Helper.erroLog(ex);
+            }
+        }
+
+        private void txtCantidad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                agregar();
+                //buscarProducto();
+                //Helper.MensajeSistema("Código: " + txtCodigoProducto.Text);
             }
         }
     }

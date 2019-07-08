@@ -68,7 +68,7 @@ namespace ProcesadorTicket.Core.DA
 
             try
             {
-                return ejecutarConsultaDT("SELECT * FROM TBL_Cliente WHERE idCliente = "+id+" and codigoEmpleado = '"+codigoEmpleado+"'");
+                return ejecutarConsultaDT("SELECT * FROM TBL_Cliente WHERE idCliente = "+id+" and codigoEmpleado = '"+codigoEmpleado+"' AND estado = 1");
             }
             catch (Exception ex)
             {
