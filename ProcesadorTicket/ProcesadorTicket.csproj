@@ -60,7 +60,6 @@
       <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -105,41 +104,11 @@
     <Compile Include="Vistas\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmDashboard.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Vistas\Inicio.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmDashboard.Designer.cs">
-      <DependentUpon>FrmDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\FrmDashboard_update.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\FrmDashboard_update.Designer.cs">
-      <DependentUpon>FrmDashboard_update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmClientes.Designer.cs">
-      <DependentUpon>FrmClientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmProducto.Designer.cs">
-      <DependentUpon>FrmProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmTicket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmTicket.Designer.cs">
-      <DependentUpon>FrmTicket.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmUnidadMedida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Maestros\FrmUnidadMedida.Designer.cs">
-      <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
+    <Compile Include="Vistas\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Maestros\UCClientes.cs">
       <SubType>UserControl</SubType>
@@ -159,24 +128,6 @@
     <Compile Include="Vistas\Maestros\UCTickets.Designer.cs">
       <DependentUpon>UCTickets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Movimientos\FrmEntradaProducto_Venta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Movimientos\FrmEntradaProducto_Venta.Designer.cs">
-      <DependentUpon>FrmEntradaProducto_Venta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Movimientos\FrmVenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Movimientos\FrmVenta.Designer.cs">
-      <DependentUpon>FrmVenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Movimientos\FrmEntradaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Movimientos\FrmEntradaProducto.Designer.cs">
-      <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Movimientos\UCEntradaProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,12 +139,6 @@
     </Compile>
     <Compile Include="Vistas\Movimientos\UCVenta.Designer.cs">
       <DependentUpon>UCVenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Reportes\FrmReporteTickets.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Reportes\FrmReporteTickets.Designer.cs">
-      <DependentUpon>FrmReporteTickets.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Reportes\UCReporteProductos.cs">
       <SubType>UserControl</SubType>
@@ -231,18 +176,6 @@
     <Compile Include="Vistas\Seguridad\FrmPermisos.Designer.cs">
       <DependentUpon>FrmPermisos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Seguridad\FrmUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Seguridad\FrmUsuario.Designer.cs">
-      <DependentUpon>FrmUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Inicio.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Vistas\Inicio.Designer.cs">
-      <DependentUpon>Inicio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Seguridad\UCUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -263,24 +196,6 @@
     <EmbeddedResource Include="Vistas\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmDashboard.resx">
-      <DependentUpon>FrmDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmDashboard_update.resx">
-      <DependentUpon>FrmDashboard_update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Maestros\FrmClientes.resx">
-      <DependentUpon>FrmClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Maestros\FrmProducto.resx">
-      <DependentUpon>FrmProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Maestros\FrmTicket.resx">
-      <DependentUpon>FrmTicket.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Maestros\FrmUnidadMedida.resx">
-      <DependentUpon>FrmUnidadMedida.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Maestros\UCClientes.resx">
       <DependentUpon>UCClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,23 +205,11 @@
     <EmbeddedResource Include="Vistas\Maestros\UCTickets.resx">
       <DependentUpon>UCTickets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Movimientos\FrmEntradaProducto_Venta.resx">
-      <DependentUpon>FrmEntradaProducto_Venta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Movimientos\FrmVenta.resx">
-      <DependentUpon>FrmVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Movimientos\FrmEntradaProducto.resx">
-      <DependentUpon>FrmEntradaProducto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Movimientos\UCEntradaProducto.resx">
       <DependentUpon>UCEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Movimientos\UCVenta.resx">
       <DependentUpon>UCVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Reportes\FrmReporteTickets.resx">
-      <DependentUpon>FrmReporteTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Reportes\UCReporteProductos.resx">
       <DependentUpon>UCReporteProductos.cs</DependentUpon>
@@ -325,12 +228,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\FrmPermisos.resx">
       <DependentUpon>FrmPermisos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Seguridad\FrmUsuario.resx">
-      <DependentUpon>FrmUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Inicio.resx">
-      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Seguridad\UCUsuario.resx">
       <DependentUpon>UCUsuario.cs</DependentUpon>

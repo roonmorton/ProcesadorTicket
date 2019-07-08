@@ -199,8 +199,8 @@ namespace ProcesadorTicket
         {
             try
             {
-                FrmUnidadMedida unidad = new FrmUnidadMedida();
-                unidad.ShowDialog(this);
+               /* FrmUnidadMedida unidad = new FrmUnidadMedida();
+                unidad.ShowDialog(this);*/
             }
             catch (Exception ex)
             {

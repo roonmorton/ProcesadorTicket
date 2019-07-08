@@ -597,3 +597,6 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    6/07/2019 22:45:54   Admin   DESKTOP-FGSF9HR   Error de sintaxis (falta operador) en la expresión de consulta ''06/07/2019 12:00:00,2550,'Admin')'.   guardarDetalleVenta      en ProcesadorTicket.Core.DA.DAProducto.guardarDetalleVenta(String fecha, String idCliente, DataTable data) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Core\DA\DAProducto.cs:línea 205
    en ProcesadorTicket.UCVenta.BtnGuardar_Click(Object sender, EventArgs e) en C:\Users\Ron Quevedo\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Movimientos\UCVenta.cs:línea 442
 
+   8/07/2019 09:59:39   Admin   CEN-SIS-6395W9L   No se han especificado valores para algunos de los parámetros requeridos.   limpiar      en ProcesadorTicket.UCClientes.limpiar() en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCClientes.cs:línea 52
+   en ProcesadorTicket.UCClientes.UCClientes_Load(Object sender, EventArgs e) en C:\Users\Administrador\Documents\GitHub\ProcesadorTicket\ProcesadorTicket\Vistas\Maestros\UCClientes.cs:línea 199
+
